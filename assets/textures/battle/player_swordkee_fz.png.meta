@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "e4187101-af99-41c4-9186-33b86a320f4e",
+  "uuid": "eac14401-67a7-4b4c-a206-b31ae1360680",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "player_swordkee_fz": {
       "ver": "1.0.0",
-      "uuid": "f51f0dcd-e34b-47ac-a2e2-cb0fc00aa47a",
-      "rawTextureUuid": "e4187101-af99-41c4-9186-33b86a320f4e",
+      "uuid": "0f02860e-bcce-4804-858c-af58ebcc68f6",
+      "rawTextureUuid": "eac14401-67a7-4b4c-a206-b31ae1360680",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

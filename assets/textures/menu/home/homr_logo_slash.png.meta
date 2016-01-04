@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "359db5a7-207e-4ace-8e13-8f79a446638e",
+  "uuid": "bfa3cbc5-78cd-43be-9622-14b06e03f454",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "homr_logo_slash": {
       "ver": "1.0.0",
-      "uuid": "8b0b03f6-b6f3-4b89-a85c-88f8e2d54220",
-      "rawTextureUuid": "359db5a7-207e-4ace-8e13-8f79a446638e",
+      "uuid": "e9561810-ac30-4e8d-93e7-7174bfc65c15",
+      "rawTextureUuid": "bfa3cbc5-78cd-43be-9622-14b06e03f454",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

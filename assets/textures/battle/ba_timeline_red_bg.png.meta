@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "1f039363-3247-4701-8555-e74876f1bf7d",
+  "uuid": "1afa1105-398e-40f3-b6f2-4409a0223ad6",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "ba_timeline_red_bg": {
       "ver": "1.0.0",
-      "uuid": "d9fd62b6-e658-463b-8865-019cee56c55e",
-      "rawTextureUuid": "1f039363-3247-4701-8555-e74876f1bf7d",
+      "uuid": "9b81b567-05d8-470d-a9b3-ead8ac055a34",
+      "rawTextureUuid": "1afa1105-398e-40f3-b6f2-4409a0223ad6",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

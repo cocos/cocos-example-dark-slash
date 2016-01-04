@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "08f2888c-07ea-4fa0-a675-9ba2da0ab46c",
+  "uuid": "5397ee4d-b0fb-47d2-8c90-3243669770c5",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "home_c_zombie_1": {
       "ver": "1.0.0",
-      "uuid": "a2126a6d-1946-4013-84da-ba7cee213379",
-      "rawTextureUuid": "08f2888c-07ea-4fa0-a675-9ba2da0ab46c",
+      "uuid": "ab1b05ba-dca3-415b-9704-3bff9e4893e6",
+      "rawTextureUuid": "5397ee4d-b0fb-47d2-8c90-3243669770c5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

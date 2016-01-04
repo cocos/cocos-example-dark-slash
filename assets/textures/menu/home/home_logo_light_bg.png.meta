@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "ce83c989-406a-453c-9ade-8ee91929983f",
+  "uuid": "c0afa77b-cb52-4ed7-a788-2865f3109ca2",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "home_logo_light_bg": {
       "ver": "1.0.0",
-      "uuid": "cebea3a0-4242-4db6-b4b8-a7913427ff71",
-      "rawTextureUuid": "ce83c989-406a-453c-9ade-8ee91929983f",
+      "uuid": "22b43511-a140-4509-a677-e2428b97978b",
+      "rawTextureUuid": "c0afa77b-cb52-4ed7-a788-2865f3109ca2",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

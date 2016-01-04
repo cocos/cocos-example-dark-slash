@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "22e2f986-094c-4e4a-81bf-86cd8d2c0908",
+  "uuid": "c3e8d9d4-6c41-410b-9918-bd3fa94b6914",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "home_btn_veewo_on": {
       "ver": "1.0.0",
-      "uuid": "3bd47ace-b0ad-462f-a8b4-82e12215ea7e",
-      "rawTextureUuid": "22e2f986-094c-4e4a-81bf-86cd8d2c0908",
+      "uuid": "39d8491f-e91e-4ca0-8a37-e31c0a79d4a7",
+      "rawTextureUuid": "c3e8d9d4-6c41-410b-9918-bd3fa94b6914",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

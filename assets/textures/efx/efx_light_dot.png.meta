@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "98a036dc-47e8-4294-b68f-d163add49c32",
+  "uuid": "e3620e24-2776-4358-879d-55b445e9fed2",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "efx_light_dot": {
       "ver": "1.0.0",
-      "uuid": "79d92353-4960-4174-9e08-8d9e1f9f9ace",
-      "rawTextureUuid": "98a036dc-47e8-4294-b68f-d163add49c32",
+      "uuid": "930983d0-03a6-489b-a1cc-2d40aedb360c",
+      "rawTextureUuid": "e3620e24-2776-4358-879d-55b445e9fed2",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
