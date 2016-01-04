@@ -1,0 +1,28 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e4187101-af99-41c4-9186-33b86a320f4e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "player_swordkee_fz": {
+      "ver": "1.0.0",
+      "uuid": "f51f0dcd-e34b-47ac-a2e2-cb0fc00aa47a",
+      "rawTextureUuid": "e4187101-af99-41c4-9186-33b86a320f4e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 17,
+      "height": 320,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
