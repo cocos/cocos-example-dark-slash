@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "warn_bg": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "5eb4c2d5-a35d-45f1-9a7d-14f9fc5805c1",
       "rawTextureUuid": "a66fc9c0-b26d-4b0e-bd5c-2479a6b18ee9",
       "trimType": "auto",

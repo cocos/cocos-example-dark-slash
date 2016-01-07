@@ -6,14 +6,14 @@
   "filterMode": "bilinear",
   "subMetas": {
     "home_logo_light_bg": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "22b43511-a140-4509-a677-e2428b97978b",
       "rawTextureUuid": "c0afa77b-cb52-4ed7-a788-2865f3109ca2",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 6.5,
       "trimX": 0,
       "trimY": 19,
       "width": 568,

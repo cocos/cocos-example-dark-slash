@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "ba_kills_txt": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "dbd37fa7-7298-47c1-841e-96dbe3ffc393",
       "rawTextureUuid": "3a38402f-78d5-430a-af2d-8a9572bf2700",
       "trimType": "auto",

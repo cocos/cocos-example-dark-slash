@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "earphone": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "c41b6fb7-b4fd-4453-bd5e-efc362a091a1",
       "rawTextureUuid": "f575eda3-6e6f-417f-a8d6-2771c3c9e36b",
       "trimType": "auto",

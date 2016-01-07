@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "ba_wave_txt": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "8a52c467-8bf8-4964-924f-ca90164f678e",
       "rawTextureUuid": "37e8615f-e658-4fa2-9459-8f3d9a150cba",
       "trimType": "auto",

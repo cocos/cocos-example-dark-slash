@@ -6,14 +6,14 @@
   "filterMode": "bilinear",
   "subMetas": {
     "home_bg_dark_bot": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "c74410e1-ee93-412a-aab3-59c7ec89ef09",
       "rawTextureUuid": "53081315-9d83-4466-9750-842aad13ec78",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": -8,
       "trimX": 0,
       "trimY": 16,
       "width": 1136,
