@@ -6,14 +6,14 @@
   "filterMode": "bilinear",
   "subMetas": {
     "player_swordkee_1": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "12e44e26-e1d9-4ffc-b06d-db1058929a65",
       "rawTextureUuid": "8aff0cf6-19a1-4623-a7b3-855d1fe0e396",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 19,
       "trimX": 0,
       "trimY": 0,
       "width": 12,

@@ -6,14 +6,14 @@
   "filterMode": "bilinear",
   "subMetas": {
     "home_blade": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "d57b5370-44f7-4110-bef0-55456929ed0c",
       "rawTextureUuid": "b4a8760e-aa9d-4e9a-a4a9-9e3e74475346",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
-      "offsetX": 0,
-      "offsetY": 0,
+      "offsetX": -2.5,
+      "offsetY": 8.5,
       "trimX": 14,
       "trimY": 1,
       "width": 23,

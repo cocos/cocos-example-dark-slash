@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "efx_light_dot": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "930983d0-03a6-489b-a1cc-2d40aedb360c",
       "rawTextureUuid": "e3620e24-2776-4358-879d-55b445e9fed2",
       "trimType": "auto",

@@ -6,14 +6,14 @@
   "filterMode": "bilinear",
   "subMetas": {
     "death_btn_cancle": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "46e2c1e9-f7b9-4a47-b3b5-1b5592b95a07",
       "rawTextureUuid": "c6cf868b-91a3-41da-ad1b-50eb3a068e38",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
-      "offsetX": 0,
-      "offsetY": 0,
+      "offsetX": 1,
+      "offsetY": -2,
       "trimX": 11,
       "trimY": 18,
       "width": 264,

@@ -6,13 +6,13 @@
   "filterMode": "bilinear",
   "subMetas": {
     "homr_logo_slash": {
-      "ver": "1.0.0",
+      "ver": "1.0.2",
       "uuid": "e9561810-ac30-4e8d-93e7-7174bfc65c15",
       "rawTextureUuid": "bfa3cbc5-78cd-43be-9622-14b06e03f454",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
-      "offsetX": 0,
+      "offsetX": 0.5,
       "offsetY": 0,
       "trimX": 2,
       "trimY": 0,
