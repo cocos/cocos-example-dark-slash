@@ -1,0 +1,787 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "menuAnim",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "homr_logo_slash": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                80
+              ],
+              "curve": "linear"
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": [
+                0,
+                61
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                0,
+                52.5
+              ]
+            }
+          ]
+        }
+      },
+      "homr_logo_dark": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -4,
+                131
+              ],
+              "curve": [
+                0.4,
+                0.4,
+                0.6,
+                0.6
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": [
+                -4,
+                150
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                -4,
+                158.5
+              ]
+            }
+          ]
+        }
+      },
+      "homr_logo_blade": {
+        "props": {
+          "position": [],
+          "scaleX": [
+            {
+              "frame": 0.016666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "home_btn_play": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.2,
+              "value": [
+                0,
+                -317
+              ],
+              "curve": "linear"
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                0,
+                -149.90816326530597
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                0,
+                -129.5
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.2,
+              "value": 3,
+              "curve": [
+                0.4,
+                0.4,
+                0.6,
+                0.6
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 1.217687074829932
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.2,
+              "value": 3,
+              "curve": [
+                0.4,
+                0.4,
+                0.6,
+                0.6
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 1.217687074829932
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.2,
+              "value": 100
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 200
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "home_btn_veewo": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.2,
+              "value": [
+                528,
+                -388
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                328.4528985507244,
+                -153.7608695652171
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                307.7,
+                -129.4
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.2,
+              "value": 1.3
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 1.1
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.2,
+              "value": 1.3
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 1.1
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "home_btn_rank": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.2,
+              "value": [
+                -528,
+                -388
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                -333.6840579710143,
+                -159.11739130434756
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                -308.2,
+                -129.1
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.2,
+              "value": 1.3
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 1.1
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.2,
+              "value": 1.3
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 1.1
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "home_c_player": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.2,
+              "value": [
+                677,
+                -105
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                222.85652173912985,
+                -104.70869565217392
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                209.3,
+                -104.7
+              ]
+            }
+          ]
+        }
+      },
+      "home_c_dead_2_head": {
+        "props": {}
+      },
+      "bg": {
+        "props": {}
+      },
+      "home_c_dead_3_head": {
+        "props": {}
+      },
+      "home_c_dead_1_head": {
+        "props": {}
+      },
+      "home_c_dead_4_head": {
+        "props": {}
+      },
+      "home_c_dead_5_head": {
+        "props": {}
+      },
+      "demon_left": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                14,
+                0
+              ],
+              "curve": [
+                0.4,
+                0.4,
+                0.6,
+                0.6
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": [
+                -5.039999999999899,
+                0
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                0,
+                0
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 2,
+              "curve": [
+                0.4,
+                0.4,
+                0.6,
+                0.6
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 1.0533333333333332
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 2,
+              "curve": [
+                0.4,
+                0.4,
+                0.6,
+                0.6
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 1.0533333333333332
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "demon_left_move": {
+        "props": {}
+      },
+      "home_c_player/home_blade": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": 0.6666666666666667
+            },
+            {
+              "frame": 0.8,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "demon_left/home_c_zombie_8": {
+        "props": {}
+      },
+      "demon_left/home_c_zombie_7": {
+        "props": {}
+      },
+      "demon_left/home_c_zombie_6": {
+        "props": {}
+      },
+      "demon_left_move/home_c_zombie_5": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                -606,
+                -202
+              ]
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": [
+                -289.4784172661878,
+                -202.3884892086331
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                -280.1,
+                -202.4
+              ]
+            }
+          ]
+        }
+      },
+      "demon_left_move/home_c_zombie_4": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.1,
+              "value": [
+                -654,
+                -159
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                -300.7083333333342,
+                -158.90347222222223
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                -288,
+                -158.9
+              ]
+            }
+          ]
+        }
+      },
+      "demon_left_move/home_c_zombie_3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.15,
+              "value": [
+                -803,
+                -149
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": [
+                -410.092907801418,
+                -148.81418439716313
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                -380.1,
+                -148.8
+              ]
+            }
+          ]
+        }
+      },
+      "demon_left_move/home_c_zombie_2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.15,
+              "value": [
+                -884,
+                -131
+              ]
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": [
+                -476.04184397163067,
+                -131
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                -444.9,
+                -131
+              ]
+            }
+          ]
+        }
+      },
+      "demon_left_move/home_c_zombie_1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.25,
+              "value": [
+                -549,
+                -140
+              ]
+            },
+            {
+              "frame": 0.6833333333333333,
+              "value": [
+                -519.9,
+                -140.1
+              ]
+            }
+          ]
+        }
+      },
+      "demon_right": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -313,
+                0
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                0,
+                0
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1.5
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1.5
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "demon_right/home_c_dead_1_head": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                451.7,
+                -74.6
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                451.22,
+                -57.23999999999999
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                451.1,
+                -52.9
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.75,
+              "value": 10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "demon_right/home_c_dead_4_head": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                538.2,
+                -61.1
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                535,
+                -46.45999999999999
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                534.2,
+                -42.8
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.75,
+              "value": 10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "demon_right/home_c_dead_2_head": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                375.9,
+                -61
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                372.78,
+                -46.599999999999994
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                372,
+                -43
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.75,
+              "value": 10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "demon_right/home_c_dead_3_head": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                413.69,
+                -84.84
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                413.938,
+                -63.68799999999999
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                414,
+                -58.4
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.75,
+              "value": 10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "demon_right/home_c_dead_5_head": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                487.7,
+                -82
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                479.22,
+                -21.679999999999957
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                477.1,
+                -6.6
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.75,
+              "value": 10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "opacity": []
+    }
+  },
+  "events": []
+}
