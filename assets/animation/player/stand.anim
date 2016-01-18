@@ -3,10 +3,10 @@
   "_name": "stand",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 1,
-  "sample": 5,
+  "_duration": 0.08333333333333333,
+  "sample": 60,
   "speed": 1,
-  "wrapMode": 2,
+  "wrapMode": 0,
   "curveData": {
     "comps": {
       "cc.Sprite": {
@@ -18,31 +18,31 @@
             }
           },
           {
-            "frame": 0.2,
+            "frame": 0.016666666666666666,
             "value": {
               "__uuid__": "2f878630-44ef-4286-a5af-3565252dc71f"
             }
           },
           {
-            "frame": 0.4,
+            "frame": 0.03333333333333333,
             "value": {
               "__uuid__": "fab65a2d-01c6-4a21-a02d-06645226c5a7"
             }
           },
           {
-            "frame": 0.6,
+            "frame": 0.05,
             "value": {
               "__uuid__": "2f878630-44ef-4286-a5af-3565252dc71f"
             }
           },
           {
-            "frame": 0.8,
+            "frame": 0.06666666666666667,
             "value": {
               "__uuid__": "7d321207-1a43-4428-a542-8ae907177520"
             }
           },
           {
-            "frame": 1,
+            "frame": 0.08333333333333333,
             "value": {
               "__uuid__": "7d321207-1a43-4428-a542-8ae907177520"
             }
