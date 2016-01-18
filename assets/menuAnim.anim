@@ -6,7 +6,7 @@
   "_duration": 2.5,
   "sample": 60,
   "speed": 1,
-  "wrapMode": 1,
+  "wrapMode": 2,
   "curveData": {
     "paths": {
       "homr_logo_slash": {
@@ -290,8 +290,8 @@
             {
               "frame": 0.5,
               "value": [
-                243.19130434782556,
-                -104.72173913043478
+                222.85652173912985,
+                -104.70869565217392
               ]
             },
             {
@@ -305,63 +305,295 @@
         }
       },
       "home_c_dead_2_head": {
-        "props": {
-          "position": [
-            {
-              "frame": 0.5,
-              "value": [
-                375.9,
-                -61
-              ]
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": [
-                372.96666666666664,
-                -49.133333333333326
-              ]
-            },
-            {
-              "frame": 2.5,
-              "value": [
-                371.5,
-                -43.2
-              ]
-            }
-          ]
-        }
+        "props": {}
       },
       "bg": {
         "props": {}
       },
       "home_c_dead_3_head": {
+        "props": {}
+      },
+      "home_c_dead_1_head": {
+        "props": {}
+      },
+      "home_c_dead_4_head": {
+        "props": {}
+      },
+      "home_c_dead_5_head": {
+        "props": {}
+      },
+      "demon_left": {
         "props": {
           "position": [
             {
-              "frame": 0.5,
+              "frame": 0,
               "value": [
-                413.69,
-                -84.84
+                14,
+                0
+              ],
+              "curve": [
+                0.4,
+                0.4,
+                0.6,
+                0.6
               ]
             },
             {
-              "frame": 0.5833333333333334,
+              "frame": 0.2833333333333333,
               "value": [
-                413.98249999999996,
-                -65.46000000000001
+                -5.039999999999899,
+                0
               ]
             },
             {
               "frame": 2.5,
               "value": [
-                414.08,
-                -59
+                0,
+                0
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 2,
+              "curve": [
+                0.4,
+                0.4,
+                0.6,
+                0.6
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 1.0533333333333332
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 2,
+              "curve": [
+                0.4,
+                0.4,
+                0.6,
+                0.6
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 1.0533333333333332
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "demon_left_move": {
+        "props": {}
+      },
+      "home_c_player/home_blade": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": 0.6666666666666667
+            },
+            {
+              "frame": 0.8,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "demon_left/home_c_zombie_8": {
+        "props": {}
+      },
+      "demon_left/home_c_zombie_7": {
+        "props": {}
+      },
+      "demon_left/home_c_zombie_6": {
+        "props": {}
+      },
+      "demon_left_move/home_c_zombie_5": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                -606,
+                -202
+              ]
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": [
+                -289.4784172661878,
+                -202.3884892086331
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                -280.1,
+                -202.4
               ]
             }
           ]
         }
       },
-      "home_c_dead_1_head": {
+      "demon_left_move/home_c_zombie_4": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.1,
+              "value": [
+                -654,
+                -159
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                -300.7083333333342,
+                -158.90347222222223
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                -288,
+                -158.9
+              ]
+            }
+          ]
+        }
+      },
+      "demon_left_move/home_c_zombie_3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.15,
+              "value": [
+                -803,
+                -149
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": [
+                -410.092907801418,
+                -148.81418439716313
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                -380.1,
+                -148.8
+              ]
+            }
+          ]
+        }
+      },
+      "demon_left_move/home_c_zombie_2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.15,
+              "value": [
+                -884,
+                -131
+              ]
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": [
+                -476.04184397163067,
+                -131
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                -444.9,
+                -131
+              ]
+            }
+          ]
+        }
+      },
+      "demon_left_move/home_c_zombie_1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.25,
+              "value": [
+                -549,
+                -140
+              ]
+            },
+            {
+              "frame": 0.6833333333333333,
+              "value": [
+                -519.9,
+                -140.1
+              ]
+            }
+          ]
+        }
+      },
+      "demon_right": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -313,
+                0
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                0,
+                0
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1.5
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1.5
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "demon_right/home_c_dead_1_head": {
         "props": {
           "position": [
             {
@@ -374,21 +606,31 @@
             {
               "frame": 0.5833333333333334,
               "value": [
-                451.12891666666667,
-                -58.320416666666674
+                451.22,
+                -57.23999999999999
               ]
             },
             {
               "frame": 2.5,
               "value": [
-                450.93,
-                -52.65
+                451.1,
+                -52.9
               ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.75,
+              "value": 10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
             }
           ]
         }
       },
-      "home_c_dead_4_head": {
+      "demon_right/home_c_dead_4_head": {
         "props": {
           "position": [
             {
@@ -401,8 +643,8 @@
             {
               "frame": 0.5833333333333334,
               "value": [
-                535.1666666666667,
-                -47.222500000000004
+                535,
+                -46.45999999999999
               ]
             },
             {
@@ -412,10 +654,94 @@
                 -42.8
               ]
             }
+          ],
+          "rotation": [
+            {
+              "frame": 0.75,
+              "value": 10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
           ]
         }
       },
-      "home_c_dead_5_head": {
+      "demon_right/home_c_dead_2_head": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                375.9,
+                -61
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                372.78,
+                -46.599999999999994
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                372,
+                -43
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.75,
+              "value": 10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "demon_right/home_c_dead_3_head": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                413.69,
+                -84.84
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                413.938,
+                -63.68799999999999
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": [
+                414,
+                -58.4
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.75,
+              "value": 10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "demon_right/home_c_dead_5_head": {
         "props": {
           "position": [
             {
@@ -428,23 +754,33 @@
             {
               "frame": 0.5833333333333334,
               "value": [
-                477.89166666666665,
-                -13.158333333333402
+                479.22,
+                -21.679999999999957
               ]
             },
             {
               "frame": 2.5,
               "value": [
-                477,
-                -6.9
+                477.1,
+                -6.6
               ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.75,
+              "value": 10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
             }
           ]
         }
       }
     },
     "props": {
-      "position": []
+      "opacity": []
     }
   },
   "events": []
