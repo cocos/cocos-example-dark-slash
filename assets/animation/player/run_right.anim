@@ -3,7 +3,7 @@
   "_name": "run_right",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.5,
+  "_duration": 0.6,
   "sample": 10,
   "speed": 1,
   "wrapMode": 2,
@@ -43,6 +43,12 @@
           },
           {
             "frame": 0.5,
+            "value": {
+              "__uuid__": "9157922b-1cd4-43e5-a1f0-26acefd3599b"
+            }
+          },
+          {
+            "frame": 0.6,
             "value": {
               "__uuid__": "9157922b-1cd4-43e5-a1f0-26acefd3599b"
             }
