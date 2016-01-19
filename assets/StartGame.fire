@@ -159,7 +159,7 @@
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "1dd1b8hqFdN+57p/kaA/VQ6",
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 4
@@ -226,7 +226,7 @@
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "02030CONsxMPJgj2afKpvOF",
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 6
@@ -375,7 +375,7 @@
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "9b74amE9ihMWK1uJxQQzDBr",
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 10
@@ -524,7 +524,7 @@
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "e856cGkKyVLw6mfbTdIobjU",
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 14
@@ -673,7 +673,7 @@
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "9433dBk+rBDP6JTZjpH0WMN",
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 18
