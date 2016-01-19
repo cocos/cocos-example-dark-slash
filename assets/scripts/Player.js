@@ -29,7 +29,7 @@ cc.Class({
     },
 
     // use this for initialization
-    onLoad: function () {
+    init: function () {
         this.registerInput();
         this.spArrow.active = false;
     },
@@ -59,10 +59,6 @@ cc.Class({
                 });
             }
         }, self.node);
-    },
-
-    start: function () {
-        this.ready();
     },
 
     ready: function () {
