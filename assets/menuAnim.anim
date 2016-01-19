@@ -6,7 +6,7 @@
   "_duration": 2.5,
   "sample": 60,
   "speed": 1,
-  "wrapMode": 1,
+  "wrapMode": 0,
   "curveData": {
     "paths": {
       "homr_logo_slash": {
@@ -85,198 +85,6 @@
           ]
         }
       },
-      "home_btn_play": {
-        "props": {
-          "position": [
-            {
-              "frame": 0.2,
-              "value": [
-                0,
-                -317
-              ],
-              "curve": "linear"
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": [
-                0,
-                -149.90816326530597
-              ]
-            },
-            {
-              "frame": 2.5,
-              "value": [
-                0,
-                -129.5
-              ]
-            }
-          ],
-          "scaleX": [
-            {
-              "frame": 0.2,
-              "value": 3,
-              "curve": [
-                0.4,
-                0.4,
-                0.6,
-                0.6
-              ]
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": 1.217687074829932
-            },
-            {
-              "frame": 2.5,
-              "value": 1
-            }
-          ],
-          "scaleY": [
-            {
-              "frame": 0.2,
-              "value": 3,
-              "curve": [
-                0.4,
-                0.4,
-                0.6,
-                0.6
-              ]
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": 1.217687074829932
-            },
-            {
-              "frame": 2.5,
-              "value": 1
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0.2,
-              "value": 100
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": 200
-            },
-            {
-              "frame": 2.5,
-              "value": 255
-            }
-          ]
-        }
-      },
-      "home_btn_veewo": {
-        "props": {
-          "position": [
-            {
-              "frame": 0.2,
-              "value": [
-                528,
-                -388
-              ]
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": [
-                328.4528985507244,
-                -153.7608695652171
-              ]
-            },
-            {
-              "frame": 2.5,
-              "value": [
-                307.7,
-                -129.4
-              ]
-            }
-          ],
-          "scaleX": [
-            {
-              "frame": 0.2,
-              "value": 1.3
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": 1.1
-            },
-            {
-              "frame": 2.5,
-              "value": 1
-            }
-          ],
-          "scaleY": [
-            {
-              "frame": 0.2,
-              "value": 1.3
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": 1.1
-            },
-            {
-              "frame": 2.5,
-              "value": 1
-            }
-          ]
-        }
-      },
-      "home_btn_rank": {
-        "props": {
-          "position": [
-            {
-              "frame": 0.2,
-              "value": [
-                -528,
-                -388
-              ]
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": [
-                -333.6840579710143,
-                -159.11739130434756
-              ]
-            },
-            {
-              "frame": 2.5,
-              "value": [
-                -308.2,
-                -129.1
-              ]
-            }
-          ],
-          "scaleX": [
-            {
-              "frame": 0.2,
-              "value": 1.3
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": 1.1
-            },
-            {
-              "frame": 2.5,
-              "value": 1
-            }
-          ],
-          "scaleY": [
-            {
-              "frame": 0.2,
-              "value": 1.3
-            },
-            {
-              "frame": 0.5833333333333334,
-              "value": 1.1
-            },
-            {
-              "frame": 2.5,
-              "value": 1
-            }
-          ]
-        }
-      },
       "home_c_player": {
         "props": {
           "position": [
@@ -304,22 +112,7 @@
           ]
         }
       },
-      "home_c_dead_2_head": {
-        "props": {}
-      },
       "bg": {
-        "props": {}
-      },
-      "home_c_dead_3_head": {
-        "props": {}
-      },
-      "home_c_dead_1_head": {
-        "props": {}
-      },
-      "home_c_dead_4_head": {
-        "props": {}
-      },
-      "home_c_dead_5_head": {
         "props": {}
       },
       "demon_left": {
@@ -559,7 +352,7 @@
             {
               "frame": 0,
               "value": [
-                -313,
+                -795,
                 0
               ]
             },
@@ -574,7 +367,7 @@
           "scaleX": [
             {
               "frame": 0,
-              "value": 1.5
+              "value": 3
             },
             {
               "frame": 0.16666666666666666,
@@ -584,7 +377,7 @@
           "scaleY": [
             {
               "frame": 0,
-              "value": 1.5
+              "value": 3
             },
             {
               "frame": 0.16666666666666666,
@@ -777,11 +570,146 @@
             }
           ]
         }
+      },
+      "mask": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.15,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "efx_flare": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                -196,
+                104
+              ]
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": [
+                -13,
+                104
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.18333333333333332,
+              "value": 0
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 22
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.18333333333333332,
+              "value": -40
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 20
+            },
+            {
+              "frame": 0.65,
+              "value": 30
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.18333333333333332,
+              "value": 1
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 24
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.23333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.65,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "btnGroups": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 3
+            },
+            {
+              "frame": 0.25,
+              "value": 3
+            },
+            {
+              "frame": 0.45,
+              "value": 1.1
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 3
+            },
+            {
+              "frame": 0.25,
+              "value": 3
+            },
+            {
+              "frame": 0.45,
+              "value": 1.1
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            }
+          ]
+        }
       }
     },
-    "props": {
-      "opacity": []
-    }
+    "props": {}
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0.36666666666666664,
+      "func": "showParticle",
+      "params": []
+    },
+    {
+      "frame": 2.5,
+      "func": "enableButtons",
+      "params": []
+    }
+  ]
 }
