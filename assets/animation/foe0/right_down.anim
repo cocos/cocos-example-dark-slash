@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "stand",
+  "_name": "right_down",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 0.5,
@@ -14,37 +14,36 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "7d321207-1a43-4428-a542-8ae907177520"
+              "__uuid__": "f35a2a53-cf76-475c-b55e-a359c2b6642f"
             }
           },
           {
             "frame": 0.1,
             "value": {
-              "__uuid__": "2f878630-44ef-4286-a5af-3565252dc71f"
+              "__uuid__": "b64aa1cd-be6b-476e-933b-349e9227aa50"
             }
           },
           {
             "frame": 0.2,
             "value": {
-              "__uuid__": "fab65a2d-01c6-4a21-a02d-06645226c5a7"
+              "__uuid__": "357c9250-0fd8-4da0-b754-000a70f44678"
             }
           },
           {
             "frame": 0.3,
             "value": {
-              "__uuid__": "2f878630-44ef-4286-a5af-3565252dc71f"
+              "__uuid__": "7171d4d4-3ca1-4e8c-9a21-510a1ec35fbb"
             }
           },
           {
             "frame": 0.4,
             "value": {
-              "__uuid__": "7d321207-1a43-4428-a542-8ae907177520"
+              "__uuid__": "3b603a20-5cd0-43ec-846c-67ad2d034aed"
             }
           }
         ]
       }
-    },
-    "props": {}
+    }
   },
   "events": []
 }

@@ -14,12 +14,19 @@ cc.Class({
     },
 
     // use this for initialization
-    onLoad: function () {
-
+    init: function (player) {
+        this.player = player;
     },
 
     // called every frame, uncomment this function to activate update callback
-    // update: function (dt) {
-
-    // },
+    update: function (dt) {
+        if (this.player) {
+            let dir = cc.pSub(this.player.node.position, this.node.position);
+            let rad = cc.pToAngle(dir);
+            let deg = cc.radiansToDegrees(rad);
+            this.node.emit('update-dir', {
+                dir: cc.pNormalize(dir)
+            });
+        }
+    },
 });

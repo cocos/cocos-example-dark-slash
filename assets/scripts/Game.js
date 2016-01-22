@@ -3,7 +3,8 @@ cc.Class({
 
     properties: {
         player: cc.Node,
-        playerIntro: cc.Node
+        playerIntro: cc.Node,
+        foe: cc.Node
     },
 
     // use this for initialization
@@ -13,6 +14,8 @@ cc.Class({
         this.player = this.player.getComponent('Player');
         this.player.init();
         this.player.active = false;
+        this.foe = this.foe.getComponent('Foe');
+        this.foe.init(this.player);
     },
 
     start: function () {
