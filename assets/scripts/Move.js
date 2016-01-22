@@ -77,7 +77,6 @@ cc.Class({
             this.node.x += this.moveSpeed * this.moveDir.x * dt;
             this.node.y += this.moveSpeed * this.moveDir.y * dt;
             let deg = cc.radiansToDegrees(cc.pToAngle(this.moveDir));
-            console.log(deg);
             if (deg >= 45 && deg < 135) {
                 this.moveUp();
             } else if (deg >= 135 || deg < -135) {
