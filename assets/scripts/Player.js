@@ -4,7 +4,8 @@ cc.Class({
     properties: {
         fxTrail: cc.ParticleSystem,
         spArrow: cc.Node,
-        sfAtkDirs: cc.SpriteFrame,
+        sfAtkDirs: [cc.SpriteFrame],
+        attachPoints: [cc.Vec2],
         sfPostAtks: [cc.SpriteFrame],
         spPlayer: cc.Sprite,
         spSlash: cc.Sprite,
@@ -83,6 +84,7 @@ cc.Class({
         var self = this;
         let deg = cc.radiansToDegrees(cc.pAngleSigned(cc.p(0, 1), atkDir));
         let angleDivider = [0, 12, 35, 56, 79, 101, 124, 146, 168, 180];
+        let slashPos = null;
         function getAtkSF(mag, sfAtkDirs) {
             let atkSF = null;
             for (let i = 1; i < angleDivider.length; ++i) {
@@ -91,6 +93,7 @@ cc.Class({
                 if (mag <= max && mag > min) {
                     atkSF = sfAtkDirs[i - 1];
                     self.nextPoseSF = self.sfPostAtks[Math.floor(( i - 1 )/3)];
+                    slashPos = self.attachPoints[i - 1];
                     return atkSF;
                 }
             }
@@ -112,6 +115,10 @@ cc.Class({
         let moveAction = cc.moveTo(this.atkDuration, targetPos).easing(cc.easeQuinticActionOut());
         let callback = cc.callFunc(this.onAtkFinished, this);
         this.node.runAction(cc.sequence(moveAction, callback));
+        this.spSlash.node.position = slashPos;
+        this.spSlash.node.rotation = mag;
+        this.spSlash.enabled = true;
+        this.spSlash.getComponent(cc.Animation).play('slash');
         this.inputEnabled = false;
         this.isAttacking = true;
     },
@@ -120,6 +127,7 @@ cc.Class({
         if (this.nextPoseSF) {
             this.spPlayer.spriteFrame = this.nextPoseSF;
         }
+        this.spSlash.enabled = false;
         this.inputEnabled = true;
     },
 
