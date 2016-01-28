@@ -21,10 +21,6 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         this.moveState = MoveState.Stand;
-        this.node.on('move-up', this.moveUp, this);
-        this.node.on('move-right', this.moveRight, this);
-        this.node.on('move-down', this.moveDown, this);
-        this.node.on('move-left', this.moveLeft, this);
         this.node.on('stand', this.stand, this);
         this.node.on('freeze', this.stop, this);
         this.node.on('update-dir', this.updateDir, this);

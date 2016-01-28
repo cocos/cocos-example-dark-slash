@@ -938,10 +938,10 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_fontSize": 35,
+    "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
-    "_isSystemFontUsed": false,
+    "_isSystemFontUsed": true,
     "_N$string": "Tap or slice to attack, drag to move.",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
@@ -3821,7 +3821,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": 430
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4075,7 +4075,7 @@
     "__type__": "cc.Node",
     "_name": "ring",
     "_objFlags": 0,
-    "_opacity": 255,
+    "_opacity": 0,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -4146,7 +4146,7 @@
     "__type__": "cc.Node",
     "_name": "impact",
     "_objFlags": 0,
-    "_opacity": 255,
+    "_opacity": 0,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -4171,8 +4171,8 @@
     "_children": [],
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleX": 0.857,
+    "_scaleY": 0.485,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -4921,7 +4921,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 40,
+      "width": 28,
       "height": 64
     },
     "_children": [],
@@ -4931,8 +4931,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -331,
-      "y": -82
+      "x": -276,
+      "y": -106
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4968,7 +4968,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "05fed797-e921-4111-9c87-b4905d8c3a6a"
+      "__uuid__": "3b603a20-5cd0-43ec-846c-67ad2d034aed"
     },
     "_type": 0,
     "_useOriginalSize": true,
@@ -6749,10 +6749,10 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_fontSize": 90,
+    "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
-    "_isSystemFontUsed": false,
+    "_isSystemFontUsed": true,
     "_N$string": "0",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
@@ -7019,7 +7019,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
-    "_isSystemFontUsed": false,
+    "_isSystemFontUsed": true,
     "_N$string": "10",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
@@ -7165,7 +7165,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
-    "_isSystemFontUsed": false,
+    "_isSystemFontUsed": true,
     "_N$string": "00'17",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
@@ -7311,7 +7311,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
-    "_isSystemFontUsed": false,
+    "_isSystemFontUsed": true,
     "_N$string": "123",
     "_N$horizontalAlign": 2,
     "_N$verticalAlign": 1,
