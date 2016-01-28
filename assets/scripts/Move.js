@@ -1,4 +1,5 @@
 const MoveState = cc.Enum({
+    None: -1,
     Stand: -1,
     Up: -1,
     Right: -1,
@@ -25,6 +26,7 @@ cc.Class({
         this.node.on('move-down', this.moveDown, this);
         this.node.on('move-left', this.moveLeft, this);
         this.node.on('stand', this.stand, this);
+        this.node.on('freeze', this.stop, this);
         this.node.on('update-dir', this.updateDir, this);
     },
 
@@ -33,6 +35,11 @@ cc.Class({
             this.anim.play('stand');
             this.moveState = MoveState.Stand;
         }
+    },
+
+    stop: function () {
+        this.anim.stop();
+        this.moveState = MoveState.None;
     },
 
     moveUp: function () {
@@ -86,7 +93,7 @@ cc.Class({
             } else {
                 this.moveDown();
             }
-        } else {
+        } else if (this.moveState !== MoveState.None) {
             this.stand();
         }
     },
