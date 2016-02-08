@@ -319,6 +319,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -388,6 +396,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -457,6 +473,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -529,7 +553,7 @@
     },
     "playOnLoad": true,
     "_autoRemoveOnFinish": false,
-    "_totalParticles": 200,
+    "_totalParticles": 100,
     "_duration": -1,
     "_emissionRate": 200,
     "_life": 8,
@@ -579,8 +603,8 @@
     },
     "_posVar": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 960,
+      "y": 640
     },
     "_positionType": 0,
     "_emitterMode": 0,
@@ -734,6 +758,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -803,6 +835,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -872,6 +912,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -941,6 +989,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1010,6 +1066,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1146,6 +1210,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1215,6 +1287,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1284,6 +1364,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1353,6 +1441,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1422,6 +1518,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1491,6 +1595,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1639,6 +1751,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1708,6 +1828,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1777,6 +1905,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1846,6 +1982,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1915,6 +2059,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -1984,6 +2136,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2053,6 +2213,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2122,6 +2290,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2191,6 +2367,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2260,6 +2444,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2329,6 +2521,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2398,6 +2598,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2467,6 +2675,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2536,6 +2752,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2664,6 +2888,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2733,6 +2965,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2750,6 +2990,14 @@
     "_type": 0,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -2907,6 +3155,14 @@
     "_type": 1,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -3070,6 +3326,14 @@
     "_type": 1,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -3221,6 +3485,14 @@
     "_type": 1,
     "_useOriginalSize": true,
     "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
@@ -3366,6 +3638,14 @@
     "_type": 0,
     "_useOriginalSize": false,
     "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null
   },
