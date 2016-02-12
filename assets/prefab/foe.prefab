@@ -117,7 +117,7 @@
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "",
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3
@@ -137,7 +137,7 @@
     "node": {
       "__id__": 2
     },
-    "_enabled": false,
+    "_enabled": true,
     "_spriteFrame": {
       "__uuid__": "c06be84a-394b-43cc-a927-652b404a987b"
     },
@@ -292,6 +292,15 @@
       },
       {
         "__uuid__": "3980904f-2668-4307-bef3-304c0b77ef69"
+      },
+      {
+        "__uuid__": "069cba4f-3815-45c3-887b-9a0048185590"
+      },
+      {
+        "__uuid__": "e9e7fe7a-ab8f-4b27-a32b-536595eb3b03"
+      },
+      {
+        "__uuid__": "143b90fb-8b51-4728-9e4e-9a550fd2d07e"
       }
     ],
     "playOnLoad": false
@@ -465,7 +474,10 @@
     "node": {
       "__id__": 1
     },
-    "_enabled": true
+    "_enabled": true,
+    "fxBlood": {
+      "__id__": 4
+    }
   },
   {
     "__type__": "03fecYvs+9L07SPviQLuLj3",

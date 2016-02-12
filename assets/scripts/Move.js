@@ -36,6 +36,7 @@ cc.Class({
     stop: function () {
         this.anim.stop();
         this.moveState = MoveState.None;
+        this.moveDir = null;
     },
 
     moveUp: function () {

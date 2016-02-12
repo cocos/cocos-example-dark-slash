@@ -126,6 +126,20 @@
             }
           ]
         }
+      },
+      "ba_timeline_red": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.4,
+              "value": 255
+            }
+          ]
+        }
       }
     }
   },

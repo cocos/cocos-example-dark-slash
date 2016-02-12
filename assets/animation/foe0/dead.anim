@@ -1,9 +1,25 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "",
+  "_name": "dead",
   "_objFlags": 0,
+  "_rawFiles": null,
   "_duration": 0,
-  "sample": 60,
-  "curveData": {},
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "2c7dc243-59a0-4c5c-9d1b-ecee59c9fc4a"
+            }
+          }
+        ]
+      }
+    }
+  },
   "events": []
 }
