@@ -1,0 +1,139 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "turn-red",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.9,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "bg": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "ba_timeline_light": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.2,
+              "value": 1.273
+            },
+            {
+              "frame": 0.4,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.2,
+              "value": [
+                -199,
+                0
+              ]
+            },
+            {
+              "frame": 0.4,
+              "value": [
+                180,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "flare1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.9,
+              "value": 0
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.16666666666666666,
+              "value": -60
+            },
+            {
+              "frame": 0.9,
+              "value": -70
+            }
+          ]
+        }
+      },
+      "flare2": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.9,
+              "value": 30
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.9,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "efx_light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 128
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.16666666666666666,
+      "func": "showParticle",
+      "params": []
+    }
+  ]
+}
