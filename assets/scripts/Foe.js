@@ -3,19 +3,22 @@ cc.Class({
 
     properties: {
         hurtRadius: 0,
+        corpseDuration: 0,
+        fxSmoke: cc.ParticleSystem,
         fxBlood: cc.Animation
     },
 
     // use this for initialization
-    init (player) {
-        this.player = player;
+    init (waveMng) {
+        this.waveMng = waveMng;
+        this.player = waveMng.player;
         this.isMoving = true;
         this.move = this.getComponent('Move');
         this.anim = this.move.anim;
         this.bloodDuration = this.fxBlood.getAnimationState('blood').clip.duration;
         this.fxBlood.node.active = false;
+        this.fxSmoke.resetSystem();
         // console.log(this.bloodDuration);
-        // this.scheduleOnce(this.dead, 1);
     },
 
     // called every frame, uncomment this function to activate update callback
@@ -48,12 +51,17 @@ cc.Class({
         this.fxBlood.node.active = true;
         this.fxBlood.node.scaleX = this.anim.node.scaleX;
         this.fxBlood.play('blood');
-        // setTimeout(this.corpse.bind(this), this.bloodDuration * 1000);
         this.scheduleOnce(this.corpse, this.bloodDuration);
+        this.waveMng.killFoe();
     },
 
     corpse () {
         this.anim.play('corpse');
         this.fxBlood.node.active = false;
+        this.scheduleOnce(this.recycle, this.corpseDuration);
+    },
+
+    recycle () {
+        this.waveMng.despawnFoe(this);
     }
 });

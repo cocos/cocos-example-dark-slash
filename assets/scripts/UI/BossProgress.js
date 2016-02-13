@@ -2,12 +2,22 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        fxParticle: cc.ParticleSystem
+        fxParticle: cc.ParticleSystem,
+        anim: cc.Animation
     },
 
     // use this for initialization
-    onLoad: function () {
+    init (waveMng) {
+        this.waveMng = waveMng;
+    },
 
+    show () {
+        this.node.active = true;
+        this.anim.play('turn-red');
+    },
+
+    hide () {
+        this.node.active = false;
     },
 
     showParticle () {

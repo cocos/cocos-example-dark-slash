@@ -179,7 +179,7 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "a91ceJBPrVJKaoWBF1b8zou"
+    "fileId": "ddff3Q+FBBNy5gZln5/sK1H"
   },
   {
     "__type__": "cc.Node",
@@ -311,7 +311,7 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "44ce1uE3+FMFJGJRtURd2xd"
+    "fileId": "a5a2fkfPvNDGbepOGewHD+k"
   },
   {
     "__type__": "cc.Node",
@@ -465,7 +465,7 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "ac7fdg+qB1AkY/2dlJRjTkY"
+    "fileId": "8efe9OMWkhF8ZaxTebTBCXl"
   },
   {
     "__type__": "d887bx46FZAa4lxVyJ37BSp",
@@ -475,6 +475,11 @@
       "__id__": 1
     },
     "_enabled": true,
+    "hurtRadius": 45,
+    "corpseDuration": 3,
+    "fxSmoke": {
+      "__id__": 11
+    },
     "fxBlood": {
       "__id__": 4
     }
@@ -498,6 +503,6 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "c190bomWfNDrLJEnqau75rl"
+    "fileId": "fbcfeZJPQNE66jfAHbCeHcN"
   }
 ]

@@ -5,7 +5,8 @@ cc.Class({
         player: cc.Node,
         inGameUI: cc.Node,
         playerIntro: cc.Node,
-        foe: cc.Node
+        waveMng: cc.Node,
+        canvas: cc.Node
     },
 
     // use this for initialization
@@ -15,20 +16,20 @@ cc.Class({
         this.player = this.player.getComponent('Player');
         this.player.init();
         this.player.active = false;
-        this.foe = this.foe.getComponent('Foe');
-        this.foe.init(this.player);
-
-        // UI
-        this.inGameUI = this.inGameUI.getComponent('InGameUI');
-        this.inGameUI.init();
+        this.waveMng = this.waveMng.getComponent('WaveMng');
+        this.waveMng.init(this);
     },
 
     start: function () {
         this.playerIntro.playIntro();
+        // UI initialization
+        this.inGameUI = this.inGameUI.getComponent('InGameUI');
+        this.inGameUI.init(this);
     },
 
     playerReady: function () {
         this.inGameUI.showWave(1);
+        this.waveMng.startWave();
         this.player.active = true;
         this.player.ready();
     }
