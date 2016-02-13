@@ -3,6 +3,7 @@ cc.Class({
 
     properties: {
         player: cc.Node,
+        inGameUI: cc.Node,
         playerIntro: cc.Node,
         foe: cc.Node
     },
@@ -16,6 +17,10 @@ cc.Class({
         this.player.active = false;
         this.foe = this.foe.getComponent('Foe');
         this.foe.init(this.player);
+
+        // UI
+        this.inGameUI = this.inGameUI.getComponent('InGameUI');
+        this.inGameUI.init();
     },
 
     start: function () {
@@ -23,6 +28,7 @@ cc.Class({
     },
 
     playerReady: function () {
+        this.inGameUI.showWave(1);
         this.player.active = true;
         this.player.ready();
     }

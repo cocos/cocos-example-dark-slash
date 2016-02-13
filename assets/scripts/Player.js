@@ -129,6 +129,7 @@ cc.Class({
         }
         this.spSlash.enabled = false;
         this.inputEnabled = true;
+        this.isAttacking = false;
     },
 
     // called every frame, uncomment this function to activate update callback

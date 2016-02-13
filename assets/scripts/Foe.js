@@ -2,6 +2,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        hurtRadius: 0,
         fxBlood: cc.Animation
     },
 
@@ -14,12 +15,23 @@ cc.Class({
         this.bloodDuration = this.fxBlood.getAnimationState('blood').clip.duration;
         this.fxBlood.node.active = false;
         // console.log(this.bloodDuration);
-        this.scheduleOnce(this.dead, 1);
+        // this.scheduleOnce(this.dead, 1);
     },
 
     // called every frame, uncomment this function to activate update callback
     update (dt) {
-        if (this.isMoving && this.player) {
+        if (this.isMoving === false) {
+            return;
+        }
+
+        if (this.player.isAttacking) {
+            let dist = cc.pDistance(this.player.node.position, this.node.position);
+            if (dist < this.hurtRadius) {
+                this.dead();
+                return;
+            }
+        }
+        if (this.player) {
             let dir = cc.pSub(this.player.node.position, this.node.position);
             let rad = cc.pToAngle(dir);
             let deg = cc.radiansToDegrees(rad);
