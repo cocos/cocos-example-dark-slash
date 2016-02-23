@@ -6463,7 +6463,7 @@
     "spSlash": {
       "__id__": 153
     },
-    "touchThreshold": 200,
+    "touchThreshold": 150,
     "atkDist": 300,
     "atkDuration": 0.2
   },
