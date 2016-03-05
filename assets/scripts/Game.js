@@ -6,7 +6,7 @@ cc.Class({
         inGameUI: cc.Node,
         playerIntro: cc.Node,
         waveMng: cc.Node,
-        canvas: cc.Node
+        foeGroup: cc.Node
     },
 
     // use this for initialization
@@ -14,7 +14,7 @@ cc.Class({
         this.playerIntro = this.playerIntro.getComponent('PlayerIntro');
         this.playerIntro.init(this);
         this.player = this.player.getComponent('Player');
-        this.player.init();
+        this.player.init(this);
         this.player.active = false;
         this.waveMng = this.waveMng.getComponent('WaveMng');
         this.waveMng.init(this);
@@ -32,6 +32,11 @@ cc.Class({
         this.waveMng.startWave();
         this.player.active = true;
         this.player.ready();
+    },
+
+    gameOver: function () {
+        cc.log('game over');
+        cc.director.loadScene('PlayGame');
     }
 
     // called every frame, uncomment this function to activate update callback

@@ -15,7 +15,12 @@ cc.Class({
         anim: {
             default: null,
             type: cc.Animation
-        }
+        },
+
+    },
+
+    statics: {
+        MoveState: MoveState
     },
 
     // use this for initialization

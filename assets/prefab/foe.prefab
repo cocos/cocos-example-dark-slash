@@ -49,14 +49,13 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -276,
-      "y": -106
+      "x": 335,
+      "y": 385
     },
     "_skewX": 0,
     "_skewY": 0,
     "_localZOrder": 0,
     "_globalZOrder": 0,
-    "_ignoreAnchorPointForPosition": false,
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "",
@@ -113,7 +112,6 @@
     "_skewY": 0,
     "_localZOrder": 0,
     "_globalZOrder": 0,
-    "_ignoreAnchorPointForPosition": false,
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "",
@@ -153,6 +151,8 @@
     "_fillStart": 0,
     "_fillRange": 0,
     "_isTrimmedMode": false,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
     "_atlas": {
       "__uuid__": "aad1c392-32e5-4482-8797-b852e9b1e2fe"
     }
@@ -179,7 +179,7 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "ddff3Q+FBBNy5gZln5/sK1H"
+    "fileId": "e55375CLvpLUL/2IE036Jv/"
   },
   {
     "__type__": "cc.Node",
@@ -221,7 +221,6 @@
     "_skewY": 0,
     "_localZOrder": 0,
     "_globalZOrder": 0,
-    "_ignoreAnchorPointForPosition": false,
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "",
@@ -261,6 +260,8 @@
     "_fillStart": 0,
     "_fillRange": 0,
     "_isTrimmedMode": false,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
     "_atlas": {
       "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c"
     }
@@ -311,7 +312,7 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "a5a2fkfPvNDGbepOGewHD+k"
+    "fileId": "cc4ddXnnudJla1XjOhwuvJW"
   },
   {
     "__type__": "cc.Node",
@@ -353,7 +354,6 @@
     "_skewY": 0,
     "_localZOrder": 0,
     "_globalZOrder": 0,
-    "_ignoreAnchorPointForPosition": false,
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "",
@@ -382,6 +382,8 @@
     "_texture": {
       "__uuid__": "f00e5de9-f943-42c7-8ef9-2f5695613419"
     },
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
     "playOnLoad": false,
     "_autoRemoveOnFinish": false,
     "_totalParticles": 15,
@@ -465,7 +467,7 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "8efe9OMWkhF8ZaxTebTBCXl"
+    "fileId": "87ab8wivhZOg6GfPABlYMow"
   },
   {
     "__type__": "d887bx46FZAa4lxVyJ37BSp",
@@ -476,7 +478,23 @@
     },
     "_enabled": true,
     "hurtRadius": 45,
+    "atkRange": 150,
+    "atkDist": 200,
+    "atkDuration": 0.3,
+    "atkStun": 0.5,
+    "atkPrepTime": 1,
     "corpseDuration": 3,
+    "sfAtkDirs": [
+      {
+        "__uuid__": "882df9af-ae64-4eb6-8d45-2d0c20db75bb"
+      },
+      {
+        "__uuid__": "94cc035d-003c-430d-a70f-41851863980b"
+      },
+      {
+        "__uuid__": "e3d3b8ed-3216-4da6-89b2-5c2b36224df7"
+      }
+    ],
     "fxSmoke": {
       "__id__": 11
     },
@@ -503,6 +521,6 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "fbcfeZJPQNE66jfAHbCeHcN"
+    "fileId": "e65b7DCixJG6YotnS/d6Cyg"
   }
 ]

@@ -3,11 +3,11 @@ cc.Class({
 
     properties: {
         bar: cc.ProgressBar,
+        head: cc.Node,
         lerpDuration: 0
     },
 
     onLoad () {
-        console.log('wave progress loaded!');
     },
 
     // use this for initialization
@@ -38,5 +38,7 @@ cc.Class({
             this.isLerping = false;
         }
         this.bar.progress = cc.lerp(this.curProgress, this.destProgress, this.timer/this.lerpDuration);
+        let headPosX = this.bar.barSprite.node.width * this.bar.progress;
+        this.head.x = headPosX;
     },
 });

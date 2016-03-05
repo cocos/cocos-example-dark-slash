@@ -9,21 +9,26 @@ cc.Class({
         sfPostAtks: [cc.SpriteFrame],
         spPlayer: cc.Sprite,
         spSlash: cc.Sprite,
+        hurtRadius: 0,
         touchThreshold: 0,
         atkDist: 0,
         atkDuration: 0,
+        atkStun: 0
     },
 
     // use this for initialization
-    init: function () {
+    init (game) {
+        this.game = game;
+        this.anim = this.getComponent('Move').anim;
         this.inputEnabled = false;
         this.isAttacking = false;
+        this.isAlive = true;
         this.nextPoseSF = null;
         this.registerInput();
         this.spArrow.active = false;
     },
 
-    registerInput: function () {
+    registerInput () {
         var self = this;
         // touch input
         cc.eventManager.addListener({
@@ -69,18 +74,18 @@ cc.Class({
         }, self.node);
     },
 
-    ready: function () {
+    ready () {
         this.fxTrail.resetSystem();
         this.node.emit('stand');
         this.inputEnabled = true;
     },
 
-    isTouchHold: function () {
+    isTouchHold () {
         let timeDiff = Date.now() - this.touchStartTime;
         return ( timeDiff >= this.touchThreshold);
     },
 
-    attackOnTarget: function (atkDir, targetPos) {
+    attackOnTarget (atkDir, targetPos) {
         var self = this;
         let deg = cc.radiansToDegrees(cc.pAngleSigned(cc.p(0, 1), atkDir));
         let angleDivider = [0, 12, 35, 56, 79, 101, 124, 146, 168, 180];
@@ -113,8 +118,9 @@ cc.Class({
         }
 
         let moveAction = cc.moveTo(this.atkDuration, targetPos).easing(cc.easeQuinticActionOut());
+        let delay = cc.delayTime(this.atkStun);
         let callback = cc.callFunc(this.onAtkFinished, this);
-        this.node.runAction(cc.sequence(moveAction, callback));
+        this.node.runAction(cc.sequence(moveAction, delay, callback));
         this.spSlash.node.position = slashPos;
         this.spSlash.node.rotation = mag;
         this.spSlash.enabled = true;
@@ -123,7 +129,7 @@ cc.Class({
         this.isAttacking = true;
     },
 
-    onAtkFinished: function () {
+    onAtkFinished () {
         if (this.nextPoseSF) {
             this.spPlayer.spriteFrame = this.nextPoseSF;
         }
@@ -132,9 +138,25 @@ cc.Class({
         this.isAttacking = false;
     },
 
+    dead () {
+        this.node.emit('freeze');
+        this.isAlive = false;
+        this.isAttacking = false;
+        this.inputEnabled = false;
+        this.anim.play('dead');
+    },
+
+    corpse () {
+        this.anim.play('corpse');
+        this.game.gameOver();
+    },
+
     // called every frame, uncomment this function to activate update callback
-    update: function (dt) {
+    update (dt) {
         let shouldStopAction = false;
+        if (this.isAlive === false) {
+            return;
+        }
         if (this.isAttacking) {
             if (this.node.x > this.node.parent.width/2 * 0.9) {
                 this.node.x = this.node.parent.width/2 * 0.9;

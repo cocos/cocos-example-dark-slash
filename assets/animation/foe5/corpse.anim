@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "corpse",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.375,
+  "sample": 8,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "c55bd9e7-66e9-4eff-9a4e-4c7ed3600853"
+            }
+          },
+          {
+            "frame": 0.125,
+            "value": {
+              "__uuid__": "e2922f00-5095-4a05-ab90-59e65ddaa051"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "d9cb13ab-2110-41ec-87a0-dedf78d06726"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
