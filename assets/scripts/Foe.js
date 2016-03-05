@@ -1,9 +1,11 @@
 const MoveState = require('Move').MoveState;
+const FoeType = require('FoePool').FoeType;
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
+        foeType: FoeType.Foe0,
         hurtRadius: 0,
         atkRange: 0,
         atkDist: 0,

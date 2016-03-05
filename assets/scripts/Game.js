@@ -6,6 +6,7 @@ cc.Class({
         inGameUI: cc.Node,
         playerIntro: cc.Node,
         waveMng: cc.Node,
+        foePool: cc.Node,
         foeGroup: cc.Node
     },
 
@@ -16,6 +17,8 @@ cc.Class({
         this.player = this.player.getComponent('Player');
         this.player.init(this);
         this.player.active = false;
+        this.foePool = this.foePool.getComponent('FoePool');
+        this.foePool.init();
         this.waveMng = this.waveMng.getComponent('WaveMng');
         this.waveMng.init(this);
     },
@@ -28,7 +31,6 @@ cc.Class({
     },
 
     playerReady: function () {
-        this.inGameUI.showWave(1);
         this.waveMng.startWave();
         this.player.active = true;
         this.player.ready();

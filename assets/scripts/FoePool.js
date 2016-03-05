@@ -41,7 +41,7 @@ const NodePool = cc.Class({
             obj.active = true;
         }
         --this.idx;
-        return result;
+        return obj;
     },
     return ( obj ) {
         ++this.idx;
@@ -73,7 +73,7 @@ cc.Class({
     },
 
     // use this for initialization
-    onLoad () {
+    init () {
         for (let i = 0; i < this.pools.length; ++i) {
             this.pools[i].init();
         }

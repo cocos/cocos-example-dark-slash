@@ -1,9 +1,14 @@
 const Foe = require('Foe');
+const FoeType = require('FoePool').FoeType;
 
 const Wave = cc.Class({
     name: 'Wave',
     properties: {
         isBossWave: false,
+        foeType: {
+            default: FoeType.Foe0,
+            type: FoeType
+        },
         killToBoss: 0,
         maxFoe: 0,
         spawnInterval: 0,
@@ -25,11 +30,12 @@ cc.Class({
             visible: false,
             default: 0,
             notify: function () {
-                if (this.killedFoe >= this.killToBoss) {
+                if (!this.currentWave) return;
+                if (this.killedFoe >= this.currentWave.killToBoss) {
                     this.endWave();
                 }
                 if (this.waveProgress) {
-                    let ratio = Math.min(this.killedFoe/this.killToBoss, 1);
+                    let ratio = Math.min(this.killedFoe/this.currentWave.killToBoss, 1);
                     this.waveProgress.updateProgress(ratio);
                 }
             }
@@ -43,7 +49,8 @@ cc.Class({
         this.game = game;
         this.player = game.player;
         this.foeGroup = game.foeGroup;
-        this.currentWave = this.waves[this.startWaveIdx];
+        this.waveIdx = this.startWaveIdx;
+        this.currentWave = this.waves[this.waveIdx];
         this.waveProgress = this.waveProgress.getComponent('WaveProgress');
         this.waveProgress.init(this);
         this.bossProgress = this.bossProgress.getComponent('BossProgress');
@@ -57,14 +64,28 @@ cc.Class({
         this.curFoeCount = 0;
         this.killedFoe = 0;
         // this.waveProgress = this.game.inGameUI.waveProgress;
+        this.game.inGameUI.showWave(this.waveIdx + 1);
         this.schedule(this.spawnFoe, this.currentWave.spawnInterval);
     },
 
     endWave () {
         this.unschedule(this.spawnFoe);
         // boss
-        console.log('spawn boss');
-        this.bossProgress.show();
+        if (this.currentWave.isBossWave) {
+            cc.log('hiding boss progress if present');
+            this.bossProgress.hide();
+        }
+        // update wave index
+        if (this.waveIdx < this.waves.length - 1) {
+            this.waveIdx++;
+            this.currentWave = this.waves[this.waveIdx];
+            this.startWave();
+        } else {
+            cc.log('all waves spawned!');
+        }
+        if (this.currentWave.isBossWave) {
+            this.bossProgress.show();
+        }
     },
 
     spawnFoe () {
@@ -72,17 +93,16 @@ cc.Class({
             return;
         }
 
-        let newFoe = null;
-        // 使用给定的模板在场景中生成一个新节点
-        if (cc.pool.hasObject(Foe)) {
-            newFoe = cc.pool.getFromPool(Foe).node;
+        let foeType = this.currentWave.foeType;
+        let newFoe = this.game.foePool.requestFoe(foeType);
+        if (newFoe) {
+            this.foeGroup.addChild(newFoe);
+            newFoe.setPosition(this.getNewFoePosition());
+            newFoe.getComponent('Foe').init(this);
+            this.curFoeCount++;
         } else {
-            newFoe = cc.instantiate(this.currentWave.foePrefab);
+            cc.log('requesting too many foes! please increase size');
         }
-        this.foeGroup.addChild(newFoe);
-        newFoe.setPosition(this.getNewFoePosition());
-        newFoe.getComponent('Foe').init(this);
-        this.curFoeCount++;
     },
 
     killFoe () {
@@ -91,8 +111,8 @@ cc.Class({
     },
 
     despawnFoe (foe) {
-        foe.node.removeFromParent();
-        cc.pool.putInPool(foe);
+        let foeType = foe.foeType;
+        this.game.foePool.returnFoe(foeType, foe.node);
     },
 
     getNewFoePosition () {
