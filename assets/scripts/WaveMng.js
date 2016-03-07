@@ -1,5 +1,5 @@
 const Foe = require('Foe');
-const FoeType = require('FoePool').FoeType;
+const FoeType = require('PoolMng').FoeType;
 
 const Wave = cc.Class({
     name: 'Wave',
@@ -89,13 +89,12 @@ cc.Class({
     },
 
     spawnFoe () {
-        cc.log('cur foe count: ' + this.curFoeCount);
         if (this.curFoeCount >= this.currentWave.maxFoe) {
             return;
         }
 
         let foeType = this.currentWave.foeType;
-        let newFoe = this.game.foePool.requestFoe(foeType);
+        let newFoe = this.game.poolMng.requestFoe(foeType);
         if (newFoe) {
             this.foeGroup.addChild(newFoe);
             newFoe.setPosition(this.getNewFoePosition());
@@ -106,6 +105,17 @@ cc.Class({
         }
     },
 
+    spawnProjectile (projectileType, pos, dir, rot) {
+        let newProjectile = this.game.poolMng.requestProjectile(projectileType);
+        if (newProjectile) {
+            this.foeGroup.addChild(newProjectile);
+            newProjectile.setPosition(pos);
+            newProjectile.getComponent('Projectile').init(this, dir);
+        } else {
+            cc.log('requesting too many projectiles! please increase size');
+        }
+    },
+
     killFoe () {
         this.curFoeCount--;
         this.killedFoe++;
@@ -113,7 +123,12 @@ cc.Class({
 
     despawnFoe (foe) {
         let foeType = foe.foeType;
-        this.game.foePool.returnFoe(foeType, foe.node);
+        this.game.poolMng.returnFoe(foeType, foe.node);
+    },
+
+    despawnProjectile (projectile) {
+        let type = projectile.projectileType;
+        this.game.poolMng.returnProjectile(type, projectile.node);
     },
 
     getNewFoePosition () {

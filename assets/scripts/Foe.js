@@ -1,5 +1,6 @@
 const MoveState = require('Move').MoveState;
-const FoeType = require('FoePool').FoeType;
+const FoeType = require('PoolMng').FoeType;
+const ProjectileType = require('PoolMng').ProjectileType;
 const AttackType = cc.Enum({
     Melee: -1,
     Range: -1
@@ -16,6 +17,10 @@ cc.Class({
         atkType: {
             default: AttackType.Melee,
             type: AttackType
+        },
+        projectileType: {
+            default: ProjectileType.Arrow,
+            type: ProjectileType
         },
         hitPoint: 0,
         hurtRadius: 0,
@@ -152,15 +157,16 @@ cc.Class({
             this.anim.node.scaleX = -1;
             this.spFoe.spriteFrame = getAtkSF(mag, this.sfAtkDirs);
         }
+        let delay = cc.delayTime(this.atkStun);
+        let callback = cc.callFunc(this.onAtkFinished, this);
 
         if (this.atkType === AttackType.Melee) {
             let moveAction = cc.moveTo(this.atkDuration, targetPos).easing(cc.easeQuinticActionOut());
-            let delay = cc.delayTime(this.atkStun);
-            let callback = cc.callFunc(this.onAtkFinished, this);
             this.node.runAction(cc.sequence(moveAction, delay, callback));
             this.isAttacking = true;
         } else {
-
+            this.waveMng.spawnProjectile(this.projectileType, this.node.position, atkDir);
+            this.node.runAction(cc.sequence(delay, callback));
         }
     },
 

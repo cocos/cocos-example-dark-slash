@@ -6,7 +6,7 @@ cc.Class({
         inGameUI: cc.Node,
         playerIntro: cc.Node,
         waveMng: cc.Node,
-        foePool: cc.Node,
+        poolMng: cc.Node,
         foeGroup: cc.Node
     },
 
@@ -17,8 +17,8 @@ cc.Class({
         this.player = this.player.getComponent('Player');
         this.player.init(this);
         this.player.active = false;
-        this.foePool = this.foePool.getComponent('FoePool');
-        this.foePool.init();
+        this.poolMng = this.poolMng.getComponent('PoolMng');
+        this.poolMng.init();
         this.waveMng = this.waveMng.getComponent('WaveMng');
         this.waveMng.init(this);
     },

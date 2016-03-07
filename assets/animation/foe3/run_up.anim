@@ -3,7 +3,7 @@
   "_name": "run_up",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.4,
+  "_duration": 0.3,
   "sample": 10,
   "speed": 1,
   "wrapMode": 2,
@@ -14,25 +14,25 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "c82ebba8-36ff-43bf-8927-95b128d7ba40"
+              "__uuid__": "94c861b3-eebb-4c9d-8365-0190fed6b451"
             }
           },
           {
             "frame": 0.1,
             "value": {
-              "__uuid__": "b5d5c7dc-9bf0-4059-a058-1d7ddaac08c9"
+              "__uuid__": "9547f67a-64a5-4e30-a53e-9869b9c491fc"
             }
           },
           {
             "frame": 0.2,
             "value": {
-              "__uuid__": "20b7dbb3-a17d-4861-967e-2b7c24784637"
+              "__uuid__": "13e35a49-c341-4866-9329-5ee9e4ad7e16"
             }
           },
           {
             "frame": 0.3,
             "value": {
-              "__uuid__": "08ce3d06-0d45-4b6b-8e16-b16b32479bc9"
+              "__uuid__": "afa9585e-de6a-40a0-8614-f4d97f21dc8a"
             }
           }
         ]
