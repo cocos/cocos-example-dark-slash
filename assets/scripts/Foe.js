@@ -1,11 +1,23 @@
 const MoveState = require('Move').MoveState;
 const FoeType = require('FoePool').FoeType;
+const AttackType = cc.Enum({
+    Melee: -1,
+    Range: -1
+});
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        foeType: FoeType.Foe0,
+        foeType: {
+            default: FoeType.Foe0,
+            type: FoeType
+        },
+        atkType: {
+            default: AttackType.Melee,
+            type: AttackType
+        },
+        hitPoint: 0,
         hurtRadius: 0,
         atkRange: 0,
         atkDist: 0,
@@ -24,6 +36,7 @@ cc.Class({
         this.player = waveMng.player;
         this.isAttacking = false;
         this.isAlive = false;
+        this.isInvincible = false;
         this.isMoving = false;
         this.move = this.getComponent('Move');
         this.anim = this.move.anim;
@@ -47,7 +60,7 @@ cc.Class({
 
         let dist = cc.pDistance(this.player.node.position, this.node.position);
 
-        if (this.player.isAttacking) {
+        if (this.player.isAttacking && this.isInvincible === false) {
             if (dist < this.hurtRadius) {
                 this.dead();
                 return;
@@ -104,7 +117,10 @@ cc.Class({
         }
         this.anim.stop();
         let atkDir = cc.pSub(this.player.node.position, this.node.position);
-        let targetPos = cc.pAdd( this.node.position, cc.pMult(cc.pNormalize(atkDir), this.atkDist) );
+        let targetPos = null;
+        if (this.atkType === AttackType.Melee) {
+            targetPos = cc.pAdd( this.node.position, cc.pMult(cc.pNormalize(atkDir), this.atkDist) );
+        }
         this.attackOnTarget(atkDir, targetPos);
     },
 
@@ -137,11 +153,15 @@ cc.Class({
             this.spFoe.spriteFrame = getAtkSF(mag, this.sfAtkDirs);
         }
 
-        let moveAction = cc.moveTo(this.atkDuration, targetPos).easing(cc.easeQuinticActionOut());
-        let delay = cc.delayTime(this.atkStun);
-        let callback = cc.callFunc(this.onAtkFinished, this);
-        this.node.runAction(cc.sequence(moveAction, delay, callback));
-        this.isAttacking = true;
+        if (this.atkType === AttackType.Melee) {
+            let moveAction = cc.moveTo(this.atkDuration, targetPos).easing(cc.easeQuinticActionOut());
+            let delay = cc.delayTime(this.atkStun);
+            let callback = cc.callFunc(this.onAtkFinished, this);
+            this.node.runAction(cc.sequence(moveAction, delay, callback));
+            this.isAttacking = true;
+        } else {
+
+        }
     },
 
     onAtkFinished () {
@@ -154,14 +174,34 @@ cc.Class({
     dead () {
         this.move.stop();
         this.isMoving = false;
-        this.isAlive = false;
         this.isAttacking = false;
         this.anim.play('dead');
         this.fxBlood.node.active = true;
         this.fxBlood.node.scaleX = this.anim.node.scaleX;
         this.fxBlood.play('blood');
-        this.scheduleOnce(this.corpse, this.bloodDuration);
-        this.waveMng.killFoe();
+        this.unscheduleAllCallbacks();
+        this.node.stopAllActions();
+
+        if (--this.hitPoint > 0) {
+            this.isInvincible = true;
+            this.scheduleOnce(this.invincible, this.bloodDuration);
+        } else {
+            this.isAlive = false;
+            this.scheduleOnce(this.corpse, this.bloodDuration);
+            this.waveMng.killFoe();
+        }
+    },
+
+    invincible () {
+        this.fxBlood.node.active = false;
+        this.isMoving = true;
+        let blink = cc.blink(1, 6);
+        let callback = cc.callFunc(this.onInvincibleEnd, this);
+        this.anim.node.runAction(cc.sequence(blink, callback));
+    },
+
+    onInvincibleEnd () {
+        this.isInvincible = false;
     },
 
     corpse () {

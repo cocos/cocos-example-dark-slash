@@ -89,6 +89,7 @@ cc.Class({
     },
 
     spawnFoe () {
+        cc.log('cur foe count: ' + this.curFoeCount);
         if (this.curFoeCount >= this.currentWave.maxFoe) {
             return;
         }
