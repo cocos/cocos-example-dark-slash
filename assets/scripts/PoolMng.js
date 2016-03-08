@@ -1,19 +1,6 @@
 const NodePool = require('NodePool');
-const FoeType = cc.Enum({
-    Foe0: -1,
-    Foe1: -1,
-    Foe2: -1,
-    Foe3: -1,
-    Foe5: -1,
-    Foe6: -1,
-    Boss1: -1,
-    Boss2: -1
-});
-const ProjectileType = cc.Enum({
-    Arrow: -1,
-    Fireball: -1,
-    None: 999
-});
+const FoeType = require('Types').FoeType;
+const ProjectileType = require('Types').ProjectileType;
 
 cc.Class({
     extends: cc.Component,
@@ -27,11 +14,6 @@ cc.Class({
             default: [],
             type: NodePool
         }
-    },
-
-    statics: {
-        FoeType: FoeType,
-        ProjectileType: ProjectileType
     },
 
     // use this for initialization
@@ -82,9 +64,4 @@ cc.Class({
             return;
         }
     }
-
-    // called every frame, uncomment this function to activate update callback
-    // update: function (dt) {
-
-    // },
 });

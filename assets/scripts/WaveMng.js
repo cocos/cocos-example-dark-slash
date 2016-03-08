@@ -1,38 +1,7 @@
 const Foe = require('Foe');
-const FoeType = require('PoolMng').FoeType;
-const BossType = require('BossMng').BossType;
-
-const Spawn = cc.Class({
-    name: 'Spawn',
-    properties: {
-        foeType: {
-            default: FoeType.Foe0,
-            type: FoeType
-        },
-        total: 0,
-        spawnInterval: 0
-    },
-    ctor () {
-        this.spawned = 0;
-        this.finished = false;
-    },
-    spawn (poolMng) {
-        if (this.spawned >= this.total) {
-            return;
-        }
-        let newFoe = poolMng.requestFoe(this.foeType);
-        if (newFoe) {
-            this.spawned++;
-            if (this.spawned === this.total) {
-                this.finished = true;
-            }
-            return newFoe;
-        } else {
-            cc.log('max foe count reached, will delay spawn');
-            return null;
-        }
-    }
-});
+const FoeType = require('Types').FoeType;
+const BossType = require('Types').BossType;
+const Spawn = require('Spawn');
 
 const Wave = cc.Class({
     name: 'Wave',
@@ -41,13 +10,18 @@ const Wave = cc.Class({
             default: [],
             type: Spawn
         },
-        bossType: 0
+        bossType: {
+            default: BossType.Demon,
+            type: BossType
+        }
     },
     init () {
         this.totalFoes = 0;
         this.spawnIdx = 0;
         for (let i = 0; i < this.spawns.length; ++i) {
-            this.totalFoes += this.spawns[i].total;
+            if (this.spawns[i].isCompany === false) {
+                this.totalFoes += this.spawns[i].total;
+            }
         }
     },
     getNextSpawn () {// return next spawn
@@ -74,16 +48,14 @@ cc.Class({
             visible: false,
             default: 0,
             notify: function () {
-                if (!this.currentWave || this.currentWave.totalFoes === 0) {
+                if (!this.currentWave || !this.waveTotalFoes ) {
                     return;
                 }
-                if (this.killedFoe >= this.currentWave.totalFoes) {
+                if (this.waveTotalFoes && this.killedFoe >= this.waveTotalFoes) {
                     this.endWave();
                 }
-                if (this.waveProgress) {
-                    let ratio = Math.min(this.killedFoe/this.currentWave.totalFoes, 1);
-                    cc.log('killedFoe: ' + this.killedFoe);
-                    cc.log('ratio: ' + ratio);
+                if (this.waveProgress && this.waveTotalFoes) {
+                    let ratio = Math.min(this.killedFoe/this.waveTotalFoes, 1);
                     this.waveProgress.updateProgress(ratio);
                 }
             }
@@ -100,17 +72,23 @@ cc.Class({
         this.waveIdx = this.startWaveIdx;
         this.spawnIdx = 0;
         this.currentWave = this.waves[this.waveIdx];
+
         this.waveProgress = this.waveProgress.getComponent('WaveProgress');
         this.waveProgress.init(this);
         this.bossProgress = this.bossProgress.getComponent('BossProgress');
         this.bossProgress.init(this);
-        // this.curFoeCount = 0;
-        this.killedFoe = 0;
     },
 
 
     startSpawn () {
         this.schedule(this.spawnFoe, this.currentSpawn.spawnInterval);
+    },
+
+    startBossSpawn (bossSpawn) {
+        this.bossSpawn = bossSpawn;
+        this.waveTotalFoes = bossSpawn.total;
+        this.killedFoe = 0;
+        this.schedule(this.spawnBossFoe, bossSpawn.spawnInterval);
     },
 
     endSpawn () {
@@ -119,29 +97,38 @@ cc.Class({
         if (nextSpawn) {
             this.currentSpawn = nextSpawn;
             this.startSpawn();
+            if (nextSpawn.isCompany) {
+                this.startBoss();
+            }
         }
     },
 
     startWave () {
-        // this.curFoeCount = 0;
+        this.unschedule(this.spawnFoe);
         this.currentWave.init();
+        this.waveTotalFoes = this.currentWave.totalFoes;
         this.killedFoe = 0;
         this.currentSpawn = this.currentWave.spawns[this.currentWave.spawnIdx];
         this.startSpawn();
-        // this.waveProgress = this.game.inGameUI.waveProgress;
         this.game.inGameUI.showWave(this.waveIdx + 1);
     },
 
-    endWave () {
-        // update wave index
-        // if (this.waveIdx < this.waves.length - 1) {
-        //     this.waveIdx++;
-        //     this.currentWave = this.waves[this.waveIdx];
-        //     this.startWave();
-        // } else {
-        //     cc.log('all waves spawned!');
-        // }
+    startBoss () {
         this.bossProgress.show();
+        this.game.bossMng.startBoss();
+    },
+
+    endWave () {
+        this.bossProgress.hide();
+        this.game.bossMng.endBoss();
+        // update wave index
+        if (this.waveIdx < this.waves.length - 1) {
+            this.waveIdx++;
+            this.currentWave = this.waves[this.waveIdx];
+            this.startWave();
+        } else {
+            cc.log('all waves spawned!');
+        }
     },
 
     spawnFoe () {
@@ -159,6 +146,18 @@ cc.Class({
         }
     },
 
+    spawnBossFoe () {
+        if (this.bossSpawn.finished) {
+            this.unschedule(this.spawnBossFoe);
+        }
+        let newFoe = this.bossSpawn.spawn(this.game.poolMng);
+        if (newFoe) {
+            this.foeGroup.addChild(newFoe);
+            newFoe.setPosition(this.getNewFoePosition());
+            newFoe.getComponent('Foe').init(this);
+        }
+    },
+
     spawnProjectile (projectileType, pos, dir, rot) {
         let newProjectile = this.game.poolMng.requestProjectile(projectileType);
         if (newProjectile) {
@@ -171,7 +170,6 @@ cc.Class({
     },
 
     killFoe () {
-        // this.curFoeCount--;
         this.killedFoe++;
     },
 
@@ -190,9 +188,4 @@ cc.Class({
         var randY = cc.randomMinus1To1() * (this.foeGroup.height - this.spawnMargin)/2;
         return cc.p(randX, randY);
     },
-
-    // called every frame, uncomment this function to activate update callback
-    // update: function (dt) {
-
-    // },
 });

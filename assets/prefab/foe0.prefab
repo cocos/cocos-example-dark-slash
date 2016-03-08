@@ -179,7 +179,7 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "c035dOiBLdFt6Rnm8i6eOuL"
+    "fileId": "d21b5rlQUFCII7GlS8PYZw6"
   },
   {
     "__type__": "cc.Node",
@@ -312,7 +312,7 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "376005bc25I8K+fhRGM3HyY"
+    "fileId": "8c886fmnCdIAIWr0/eKwIhg"
   },
   {
     "__type__": "cc.Node",
@@ -467,7 +467,7 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "4cd5db2NPpMEp7U3tJumD1q"
+    "fileId": "a42b1sNhQZKap6zWHY5MI/1"
   },
   {
     "__type__": "d887bx46FZAa4lxVyJ37BSp",
@@ -478,6 +478,8 @@
     },
     "_enabled": true,
     "foeType": 0,
+    "atkType": 0,
+    "projectileType": 999,
     "hitPoint": 1,
     "hurtRadius": 50,
     "atkRange": 140,
@@ -523,6 +525,6 @@
       "__id__": 1
     },
     "asset": null,
-    "fileId": "0151cHx8iFGgJLabp9cH6Sn"
+    "fileId": "1e9110cLfpGS5ZqBeiylQ2a"
   }
 ]

@@ -1,6 +1,6 @@
 const MoveState = require('Move').MoveState;
-const FoeType = require('PoolMng').FoeType;
-const ProjectileType = require('PoolMng').ProjectileType;
+const FoeType = require('Types').FoeType;
+const ProjectileType = require('Types').ProjectileType;
 const AttackType = cc.Enum({
     Melee: -1,
     Range: -1
@@ -165,6 +165,9 @@ cc.Class({
             this.node.runAction(cc.sequence(moveAction, delay, callback));
             this.isAttacking = true;
         } else {
+            if (this.projectileType === ProjectileType.None) {
+                return;
+            }
             this.waveMng.spawnProjectile(this.projectileType, this.node.position, atkDir);
             this.node.runAction(cc.sequence(delay, callback));
         }

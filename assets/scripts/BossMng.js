@@ -1,16 +1,25 @@
-const BossType = cc.Enum({
-    Demon: -1,
-    SkeletonKing: -1
-});
+const BossType = require('Types').BossType;
+const Spawn = require('Spawn');
 
 cc.Class({
     extends: cc.Component,
     properties: {
-
+        demonSpawn: Spawn,
     },
 
-    statics: {
-        BossType: BossType
-    }
+    init (game) {
+        this.game = game;
+        this.waveMng = game.waveMng;
+        this.bossIdx = 0;
+    },
 
+    startBoss () {
+        if (this.bossIdx === BossType.Demon) {
+            this.waveMng.startBossSpawn(this.demonSpawn);
+        }
+    },
+
+    endBoss () {
+        this.bossIdx++;
+    }
 });

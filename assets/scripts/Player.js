@@ -13,7 +13,8 @@ cc.Class({
         touchThreshold: 0,
         atkDist: 0,
         atkDuration: 0,
-        atkStun: 0
+        atkStun: 0,
+        test: 0
     },
 
     // use this for initialization
@@ -78,6 +79,7 @@ cc.Class({
         this.fxTrail.resetSystem();
         this.node.emit('stand');
         this.inputEnabled = true;
+        this.isAlive = true;
     },
 
     isTouchHold () {
@@ -138,6 +140,13 @@ cc.Class({
         this.isAttacking = false;
     },
 
+    revive () {
+        let hideCB = cc.callFunc(function() {
+            this.node.active = false;
+        }.bind(this));
+        let action = cc.sequence(cc.delayTime(0.6), hideCB);
+    },
+
     dead () {
         this.node.emit('freeze');
         this.isAlive = false;
@@ -148,7 +157,11 @@ cc.Class({
 
     corpse () {
         this.anim.play('corpse');
-        this.game.gameOver();
+        this.scheduleOnce(this.death, 0.7);
+    },
+
+    death () {
+        this.game.death();
     },
 
     // called every frame, uncomment this function to activate update callback

@@ -1,4 +1,4 @@
-const ProjectileType = require('PoolMng').ProjectileType;
+const ProjectileType = require('Types').ProjectileType;
 
 cc.Class({
     extends: cc.Component,
@@ -34,6 +34,11 @@ cc.Class({
         this.fxBroken.play('arrow-break');
     },
 
+    hit () {
+        this.isMoving = false;
+        this.onBrokenFXFinished();
+    },
+
     onBrokenFXFinished () {
         this.fxBroken.node.active = false;
         this.waveMng.despawnProjectile(this);
@@ -45,12 +50,13 @@ cc.Class({
         }
 
         let dist = cc.pDistance(this.player.node.position, this.node.position);
-        if (dist < this.player.hurtRadius) {
+        if (dist < this.player.hurtRadius && this.player.isAlive) {
             if (this.canBreak && this.player.isAttacking) {
                 this.broke();
                 return;
             } else {
                 this.player.dead();
+                this.hit();
                 return;
             }
         }
@@ -63,10 +69,5 @@ cc.Class({
                 this.onBrokenFXFinished();
             }
         }
-    },
-
-    // called every frame, uncomment this function to activate update callback
-    // update: function (dt) {
-
-    // },
+    }
 });
