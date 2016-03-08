@@ -11,7 +11,8 @@ const FoeType = cc.Enum({
 });
 const ProjectileType = cc.Enum({
     Arrow: -1,
-    Fireball: -1
+    Fireball: -1,
+    None: 999
 });
 
 cc.Class({
