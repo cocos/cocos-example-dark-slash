@@ -3,16 +3,22 @@
   "_name": "dead",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0,
+  "_duration": 0.3,
   "sample": 10,
   "speed": 1,
-  "wrapMode": 2,
+  "wrapMode": 1,
   "curveData": {
     "comps": {
       "cc.Sprite": {
         "spriteFrame": [
           {
             "frame": 0,
+            "value": {
+              "__uuid__": "2c7dc243-59a0-4c5c-9d1b-ecee59c9fc4a"
+            }
+          },
+          {
+            "frame": 0.2,
             "value": {
               "__uuid__": "2c7dc243-59a0-4c5c-9d1b-ecee59c9fc4a"
             }

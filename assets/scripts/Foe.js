@@ -43,6 +43,7 @@ cc.Class({
         this.isAlive = false;
         this.isInvincible = false;
         this.isMoving = false;
+        this.hp = this.hitPoint;
         this.move = this.getComponent('Move');
         this.anim = this.move.anim;
         this.spFoe = this.anim.getComponent(cc.Sprite);
@@ -144,7 +145,7 @@ cc.Class({
                 }
             }
             if (atkSF === null) {
-                console.error('cannot find correct attack pose sprite frame! mag: ' + mag);
+                cc.error('cannot find correct attack pose sprite frame! mag: ' + mag);
                 return null;
             }
         }
@@ -191,7 +192,7 @@ cc.Class({
         this.unscheduleAllCallbacks();
         this.node.stopAllActions();
 
-        if (--this.hitPoint > 0) {
+        if (--this.hp > 0) {
             this.isInvincible = true;
             this.scheduleOnce(this.invincible, this.bloodDuration);
         } else {
@@ -214,12 +215,12 @@ cc.Class({
     },
 
     corpse () {
-        this.anim.play('corpse');
         this.fxBlood.node.active = false;
         this.scheduleOnce(this.recycle, this.corpseDuration);
     },
 
     recycle () {
+        cc.log('recycle');
         this.waveMng.despawnFoe(this);
     }
 });
