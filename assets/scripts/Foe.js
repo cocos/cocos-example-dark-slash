@@ -215,12 +215,12 @@ cc.Class({
     },
 
     corpse () {
+        this.anim.play('corpse');
         this.fxBlood.node.active = false;
         this.scheduleOnce(this.recycle, this.corpseDuration);
     },
 
     recycle () {
-        cc.log('recycle');
         this.waveMng.despawnFoe(this);
     }
 });
