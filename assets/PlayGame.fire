@@ -3,7 +3,6 @@
     "__type__": "cc.SceneAsset",
     "_name": "",
     "_objFlags": 0,
-    "_rawFiles": null,
     "scene": {
       "__id__": 1
     }
@@ -3690,7 +3689,8 @@
       "__id__": 81
     },
     "hurtRadius": 30,
-    "touchThreshold": 150,
+    "touchThreshold": 300,
+    "touchMoveThreshold": 50,
     "atkDist": 300,
     "atkDuration": 0.2,
     "atkStun": 0.2,

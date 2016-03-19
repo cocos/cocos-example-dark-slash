@@ -1,7 +1,13 @@
 {
   "excludeScenes": [],
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": true,
+    "upsideDown": false
+  },
   "packageName": "org.cocos2d.dark-slash",
-  "platform": "mac",
+  "platform": "ios",
   "startScene": "9ac97b8e-9ad4-491e-a344-91200969a3ac",
   "title": "dark-slash"
 }

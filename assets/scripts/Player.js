@@ -11,6 +11,7 @@ cc.Class({
         spSlash: cc.Sprite,
         hurtRadius: 0,
         touchThreshold: 0,
+        touchMoveThreshold: 0,
         atkDist: 0,
         atkDuration: 0,
         atkStun: 0,
@@ -50,7 +51,9 @@ cc.Class({
                 var touchLoc = touch.getLocation();
                 self.spArrow.active = true;
                 self.moveToPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
-                self.hasMoved = true;
+                if (cc.pDistance(self.moveToPos, self.node.position) > self.touchMoveThreshold) {
+                    self.hasMoved = true;
+                }
             },
             onTouchEnded: function(touch, event) {
                 if (self.inputEnabled === false) {
