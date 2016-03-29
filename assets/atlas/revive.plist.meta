@@ -1,5 +1,5 @@
 {
-  "ver": "1.1.2",
+  "ver": "1.2.0",
   "uuid": "20b9a49e-1c53-4d46-aa3e-db07dc9c6d55",
   "rawTextureUuid": "b939ff84-5d15-42f7-b533-523a4a1135bf",
   "size": {
@@ -7,6 +7,7 @@
     "height": 1676
   },
   "type": "Texture Packer",
+  "rawTextureUrl": "db://assets/atlas/revive.png",
   "subMetas": {
     "efx_p1bl_1.png": {
       "ver": "1.0.2",

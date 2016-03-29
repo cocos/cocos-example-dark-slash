@@ -40,6 +40,7 @@ cc.Class({
                     return true;
                 }
                 var touchLoc = touch.getLocation();
+                self.touchBeganLoc = touchLoc;
                 self.moveToPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
                 self.touchStartTime = Date.now();
                 return true; // don't capture event
@@ -51,7 +52,7 @@ cc.Class({
                 var touchLoc = touch.getLocation();
                 self.spArrow.active = true;
                 self.moveToPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
-                if (cc.pDistance(self.moveToPos, self.node.position) > self.touchMoveThreshold) {
+                if (cc.pDistance(self.touchBeganLoc, touchLoc) > self.touchMoveThreshold) {
                     self.hasMoved = true;
                 }
             },

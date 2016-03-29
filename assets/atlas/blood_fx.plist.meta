@@ -1,5 +1,5 @@
 {
-  "ver": "1.1.2",
+  "ver": "1.2.0",
   "uuid": "aad1c392-32e5-4482-8797-b852e9b1e2fe",
   "rawTextureUuid": "2f5edd67-a375-4555-bc24-9969b82d264d",
   "size": {
@@ -7,6 +7,7 @@
     "height": 1016
   },
   "type": "Texture Packer",
+  "rawTextureUrl": "db://assets/atlas/blood_fx.png",
   "subMetas": {
     "efx_blood3_1.png": {
       "ver": "1.0.2",

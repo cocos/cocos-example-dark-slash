@@ -1,5 +1,5 @@
 {
-  "ver": "1.1.2",
+  "ver": "1.2.0",
   "uuid": "bcb429e9-2a34-4488-ae6b-9d974bf3ea38",
   "rawTextureUuid": "3836429a-3646-4464-bc4a-283cb78eb4e4",
   "size": {
@@ -7,6 +7,7 @@
     "height": 480
   },
   "type": "Texture Packer",
+  "rawTextureUrl": "db://assets/atlas/item.png",
   "subMetas": {
     "img_soul_1.png": {
       "ver": "1.0.2",
