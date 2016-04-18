@@ -172,6 +172,10 @@ cc.Class({
     killFoe () {
         this.killedFoe++;
     },
+    
+    hitFoe () {
+        this.game.cameraShake();
+    },
 
     despawnFoe (foe) {
         let foeType = foe.foeType;

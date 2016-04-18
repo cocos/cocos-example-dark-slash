@@ -3,7 +3,8 @@ cc.Class({
 
     properties: {
         particleToPlay: cc.ParticleSystem,
-        finishHandler: cc.Component.EventHandler
+        finishHandler: cc.Component.EventHandler,
+        fireHandler: cc.Component.EventHandler
     },
 
     // use this for initialization
@@ -11,6 +12,10 @@ cc.Class({
         if (this.particleToPlay) {
             this.particleToPlay.resetSystem();
         }
+    },
+    
+    fire () {
+        cc.Component.EventHandler.emitEvents([this.fireHandler]);        
     },
 
     finish () {

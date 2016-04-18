@@ -1,0 +1,51 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "camera-shake",
+  "_objFlags": 0,
+  "_duration": 0.25,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            0,
+            0
+          ]
+        },
+        {
+          "frame": 0.05,
+          "value": [
+            2,
+            4
+          ]
+        },
+        {
+          "frame": 0.15,
+          "value": [
+            -2,
+            -3
+          ]
+        },
+        {
+          "frame": 0.2,
+          "value": [
+            -2,
+            3
+          ]
+        },
+        {
+          "frame": 0.25,
+          "value": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

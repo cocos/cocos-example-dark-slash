@@ -183,6 +183,11 @@
   },
   "events": [
     {
+      "frame": 2,
+      "func": "fire",
+      "params": []
+    },
+    {
       "frame": 2.5,
       "func": "finish",
       "params": []

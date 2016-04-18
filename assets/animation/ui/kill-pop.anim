@@ -1,0 +1,168 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "kill-pop",
+  "_objFlags": 0,
+  "_duration": 0.87,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "num_kills": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 7
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 6
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 7
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 6
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "bg": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 1.05
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 0
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 1.05
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 0
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "ba_kills_txt": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 1.1
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 0
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 1.1
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.8666666666666667,
+      "func": "hide",
+      "params": []
+    }
+  ]
+}

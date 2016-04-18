@@ -32,7 +32,8 @@ cc.Class({
         corpseDuration: 0,
         sfAtkDirs: [cc.SpriteFrame],
         fxSmoke: cc.ParticleSystem,
-        fxBlood: cc.Animation
+        fxBlood: cc.Animation,
+        fxBlade: cc.Animation
     },
 
     // use this for initialization
@@ -49,6 +50,7 @@ cc.Class({
         this.spFoe = this.anim.getComponent(cc.Sprite);
         this.bloodDuration = this.fxBlood.getAnimationState('blood').clip.duration;
         this.fxBlood.node.active = false;
+        this.fxBlade.node.active = false;
 
         if (this.anim.getAnimationState('born')) {
             this.anim.play('born');
@@ -189,8 +191,13 @@ cc.Class({
         this.fxBlood.node.active = true;
         this.fxBlood.node.scaleX = this.anim.node.scaleX;
         this.fxBlood.play('blood');
+        this.fxBlade.node.active = true;
+        this.fxBlade.node.rotation = cc.randomMinus1To1() * 40; 
+        this.fxBlade.play('blade');
         this.unscheduleAllCallbacks();
         this.node.stopAllActions();
+        this.waveMng.hitFoe();
+        this.player.addKills();
 
         if (--this.hp > 0) {
             this.isInvincible = true;

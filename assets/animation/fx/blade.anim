@@ -1,0 +1,35 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "blade",
+  "_objFlags": 0,
+  "_duration": 0.35,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 1,
+          "curve": "linear"
+        },
+        {
+          "frame": 0.35,
+          "value": 0
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 1
+        },
+        {
+          "frame": 0.35,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

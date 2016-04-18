@@ -32,5 +32,9 @@ cc.Class({
     reviveFinish () {
         this.game.playerReady();
         this.reviveAnim.node.active = false;
+    },
+    
+    reviveKill () { // kill all enemies
+        this.game.clearAllFoes();
     }
 });
