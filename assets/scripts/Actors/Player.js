@@ -14,7 +14,8 @@ cc.Class({
         touchMoveThreshold: 0,
         atkDist: 0,
         atkDuration: 0,
-        atkStun: 0
+        atkStun: 0,
+        invincible: false
     },
 
     // use this for initialization
@@ -29,7 +30,7 @@ cc.Class({
         this.spArrow.active = false;
         this.atkTargetPos = cc.p(0,0);
         this.isAtkGoingOut = false;
-        this.validAtkRect = cc.rect(50, 50, (this.node.parent.width - 100), (this.node.parent.height - 100));
+        this.validAtkRect = cc.rect(25, 25, (this.node.parent.width - 50), (this.node.parent.height - 50));
         this.oneSlashKills = 0;
     },
 
@@ -159,7 +160,8 @@ cc.Class({
     },
     
     addKills () {
-        this.oneSlashKills++;  
+        this.oneSlashKills++;
+        this.game.inGameUI.addCombo();
     },
 
     revive () {
@@ -170,6 +172,7 @@ cc.Class({
     },
 
     dead () {
+        if (this.invincible) return;
         this.node.emit('freeze');
         this.isAlive = false;
         this.isAttacking = false;
@@ -185,6 +188,19 @@ cc.Class({
     death () {
         this.game.death();
     },
+    
+    shouldStopAttacking () {
+        let curWorldPos = this.node.parent.convertToWorldSpaceAR(this.node.position);
+        let targetWorldPos = this.node.parent.convertToWorldSpaceAR(this.atkTargetPos);
+        if ( (curWorldPos.x < this.validAtkRect.xMin && targetWorldPos.x < this.validAtkRect.xMin) ||
+            (curWorldPos.x > this.validAtkRect.xMax && targetWorldPos.x > this.validAtkRect.xMax) ||
+            (curWorldPos.y < this.validAtkRect.yMin && targetWorldPos.y < this.validAtkRect.yMin) ||
+            (curWorldPos.y > this.validAtkRect.yMax && targetWorldPos.y > this.validAtkRect.yMax)  ) {
+            return true;        
+        } else {
+            return false;
+        }
+    },
 
     // called every frame, uncomment this function to activate update callback
     update (dt) {
@@ -192,30 +208,9 @@ cc.Class({
             return;
         }
         if (this.isAttacking) {
-            // if (this.node.x > this.node.parent.width/2 * 0.95) {
-            //     this.node.x = this.node.parent.width/2 * 0.95;
-            //     shouldStopAction = true;
-            // }
-            // if (this.node.x < -this.node.parent.width/2 * 0.95 ) {
-            //     this.node.x = -this.node.parent.width/2 * 0.95;
-            //     shouldStopAction = true;
-            // }
-            // if (this.node.y > this.node.parent.height/2 * 0.9) {
-            //     this.node.y = this.node.parent.height/2 * 0.9;
-            //     shouldStopAction = true;
-            // }
-            // if (this.node.y < -this.node.parent.height/2 * 0.9) {
-            //     this.node.y = -this.node.parent.height/2 * 0.9;
-            //     shouldStopAction = true;
-            // }
-            
-
-            if (this.isAtkGoingOut) {
-                let curWorldPos = this.node.parent.convertToWorldSpaceAR(this.node.position);
-                if (!cc.rectContainsPoint(this.validAtkRect, curWorldPos)) {
-                    this.node.stopAllActions();
-                    this.onAtkFinished();              
-                }
+            if (this.isAtkGoingOut && this.shouldStopAttacking() ) {
+                this.node.stopAllActions();
+                this.onAtkFinished();
             }
         }
 

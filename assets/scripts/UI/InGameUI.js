@@ -3,7 +3,8 @@ cc.Class({
 
     properties: {
         waveUI: cc.Node,
-        killDisplay: cc.Node
+        killDisplay: cc.Node,
+        comboDisplay: cc.Node
         // waveProgress: cc.Node
     },
 
@@ -13,6 +14,8 @@ cc.Class({
         this.waveUI.node.active = false;
         this.killDisplay = this.killDisplay.getComponent('KillDisplay');
         this.killDisplay.node.active = false;
+        this.comboDisplay = this.comboDisplay.getComponent('ComboDisplay');
+        this.comboDisplay.init();
         // this.waveProgress = this.waveProgress.getComponent('WaveProgress');
         // this.waveProgress.init(game.waveMng);
     },
@@ -24,6 +27,10 @@ cc.Class({
     
     showKills (num) {
         this.killDisplay.playKill(num);
+    },
+    
+    addCombo () {
+        this.comboDisplay.playCombo();
     }
 
     // called every frame, uncomment this function to activate update callback
