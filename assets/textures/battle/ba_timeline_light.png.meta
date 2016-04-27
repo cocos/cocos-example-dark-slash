@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "ba_timeline_light": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "c2f7cb1c-abe8-41e9-a529-59a32d827bc6",
       "rawTextureUuid": "ad900955-4a0d-4837-b764-f5f3ce60abe0",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 0,
       "width": 302,
       "height": 20,
+      "rawWidth": 303,
+      "rawHeight": 20,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

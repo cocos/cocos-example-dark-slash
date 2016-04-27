@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "efx_revive_l1": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "87658cf1-7015-4057-9019-4d3f24ab7c1a",
       "rawTextureUuid": "ff4fb059-f001-4f47-857a-2b491b3c8442",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 27,
       "width": 84,
       "height": 159,
+      "rawWidth": 96,
+      "rawHeight": 192,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "efx_blood": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "1ba2ad4a-24c3-4d67-b5a5-c11ed1005519",
       "rawTextureUuid": "8e519fc6-a0a7-47f9-a1ee-465697cea47a",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 0,
       "width": 12,
       "height": 12,
+      "rawWidth": 12,
+      "rawHeight": 12,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

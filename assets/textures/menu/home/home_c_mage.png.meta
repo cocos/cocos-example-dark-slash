@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "home_c_mage": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "7bd18b46-1a6a-417a-959a-76fa378d5104",
       "rawTextureUuid": "b0289064-7520-4faa-b136-7c4a282b2718",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 0,
       "width": 78,
       "height": 226,
+      "rawWidth": 78,
+      "rawHeight": 226,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

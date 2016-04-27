@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "ba_fz_fire": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "7c4b48ab-e00a-438a-b5a0-29531fa6c217",
       "rawTextureUuid": "a46d1a32-65a5-41de-86e4-d6ec025e1485",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 0,
       "width": 568,
       "height": 59,
+      "rawWidth": 568,
+      "rawHeight": 84,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

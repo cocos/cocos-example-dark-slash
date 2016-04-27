@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "over_icon_boss1": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "f9d1bfa4-5c70-4935-ae4c-b13f405edad2",
       "rawTextureUuid": "395ea016-f5f9-4fa7-a38a-eb51db190aa3",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 22,
       "width": 71,
       "height": 54,
+      "rawWidth": 100,
+      "rawHeight": 96,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

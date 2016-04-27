@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "ba_ui_fzbar": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "380732e4-def9-4bed-a060-c1bb13fa62b4",
       "rawTextureUuid": "b62c9cb3-88d6-4909-8097-882904682a0b",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 0,
       "width": 118,
       "height": 16,
+      "rawWidth": 118,
+      "rawHeight": 16,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

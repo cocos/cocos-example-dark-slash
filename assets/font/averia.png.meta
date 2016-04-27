@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "averia": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "660cd84c-66aa-4f35-944a-d6641351a7e6",
       "rawTextureUuid": "325f7868-3535-4be3-b0d8-1719f3e38950",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 2,
       "width": 250,
       "height": 240,
+      "rawWidth": 256,
+      "rawHeight": 256,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
