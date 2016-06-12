@@ -3,6 +3,7 @@
     "__type__": "cc.Prefab",
     "_name": "",
     "_objFlags": 0,
+    "_rawFiles": null,
     "data": {
       "__id__": 1
     }
@@ -73,7 +74,8 @@
     ],
     "_prefab": {
       "__id__": 19
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -130,7 +132,8 @@
     ],
     "_prefab": {
       "__id__": 5
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -181,7 +184,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "c0475996-a810-4f82-a233-b84716f8fcaa"
+    },
     "fileId": "c2e1a4RTK1FLrmmQjyyh3vc"
   },
   {
@@ -239,7 +244,8 @@
     ],
     "_prefab": {
       "__id__": 9
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -314,7 +320,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "c0475996-a810-4f82-a233-b84716f8fcaa"
+    },
     "fileId": "ef980KBSgFDwYIXD2euHwrN"
   },
   {
@@ -372,7 +380,8 @@
     ],
     "_prefab": {
       "__id__": 13
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -421,7 +430,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "c0475996-a810-4f82-a233-b84716f8fcaa"
+    },
     "fileId": "d3344J79BNOMZnGphnrm1/p"
   },
   {
@@ -476,7 +487,8 @@
     ],
     "_prefab": {
       "__id__": 16
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.ParticleSystem",
@@ -486,9 +498,9 @@
       "__id__": 14
     },
     "_enabled": true,
-    "_custom": true,
+    "_custom": false,
     "_file": {
-      "__uuid__": "b8223619-7e38-47c4-841f-9160c232495a"
+      "__uuid__": "f3ffd92b-aa1f-4ed9-aac3-9718afa95047"
     },
     "_texture": {
       "__uuid__": "f00e5de9-f943-42c7-8ef9-2f5695613419"
@@ -577,7 +589,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "c0475996-a810-4f82-a233-b84716f8fcaa"
+    },
     "fileId": "8f09epdDSBDAI+1IZpBrnpB"
   },
   {
@@ -638,7 +652,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "c0475996-a810-4f82-a233-b84716f8fcaa"
+    },
     "fileId": "c655aRg73dIr6jI3jhxOv/Q"
   }
 ]

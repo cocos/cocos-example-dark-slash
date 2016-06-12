@@ -3,6 +3,7 @@
     "__type__": "cc.Prefab",
     "_name": "",
     "_objFlags": 0,
+    "_rawFiles": null,
     "data": {
       "__id__": 1
     }
@@ -73,7 +74,8 @@
     ],
     "_prefab": {
       "__id__": 21
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -130,7 +132,8 @@
     ],
     "_prefab": {
       "__id__": 5
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -181,7 +184,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "8255e1de-1187-46ae-970a-cba9c5267b02"
+    },
     "fileId": "43e55rLwAxNwoQEkVzaU9i4"
   },
   {
@@ -242,7 +247,8 @@
     ],
     "_prefab": {
       "__id__": 11
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -342,7 +348,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "8255e1de-1187-46ae-970a-cba9c5267b02"
+    },
     "fileId": "0e9e5uBfBZKFord+yoxHXTR"
   },
   {
@@ -400,7 +408,8 @@
     ],
     "_prefab": {
       "__id__": 15
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -449,7 +458,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "8255e1de-1187-46ae-970a-cba9c5267b02"
+    },
     "fileId": "29eacaDfV5DDrcKd3ebRdNA"
   },
   {
@@ -504,7 +515,8 @@
     ],
     "_prefab": {
       "__id__": 18
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.ParticleSystem",
@@ -514,9 +526,9 @@
       "__id__": 16
     },
     "_enabled": true,
-    "_custom": true,
+    "_custom": false,
     "_file": {
-      "__uuid__": "b8223619-7e38-47c4-841f-9160c232495a"
+      "__uuid__": "f3ffd92b-aa1f-4ed9-aac3-9718afa95047"
     },
     "_texture": {
       "__uuid__": "f00e5de9-f943-42c7-8ef9-2f5695613419"
@@ -605,7 +617,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "8255e1de-1187-46ae-970a-cba9c5267b02"
+    },
     "fileId": "3cfaeR67xVLEpml9J3ZuBN2"
   },
   {
@@ -666,7 +680,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "8255e1de-1187-46ae-970a-cba9c5267b02"
+    },
     "fileId": "de78faKl1BAIoe3mib4zuvV"
   }
 ]

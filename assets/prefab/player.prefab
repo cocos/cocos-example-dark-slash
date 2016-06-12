@@ -3,6 +3,7 @@
     "__type__": "cc.Prefab",
     "_name": "",
     "_objFlags": 0,
+    "_rawFiles": null,
     "data": {
       "__id__": 1
     }
@@ -48,7 +49,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": -298,
       "y": 0
     },
     "_skewX": 0,
@@ -59,7 +60,7 @@
     "_opacityModifyRGB": false,
     "_reorderChildDirty": false,
     "_id": "",
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 21
@@ -70,7 +71,8 @@
     ],
     "_prefab": {
       "__id__": 23
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -124,7 +126,8 @@
     ],
     "_prefab": {
       "__id__": 4
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -138,7 +141,6 @@
       "__uuid__": "8da39c96-b8e7-4295-bae6-eb2700c52992"
     },
     "_type": 0,
-    "_useOriginalSize": true,
     "_sizeMode": 1,
     "_fillType": 0,
     "_fillCenter": {
@@ -160,7 +162,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "5bd616e8-8431-40e3-8f08-196a16da6fab"
+    },
     "fileId": "de7efyHZOtBWrah08GZe54q"
   },
   {
@@ -228,7 +232,8 @@
     ],
     "_prefab": {
       "__id__": 17
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -282,7 +287,8 @@
     ],
     "_prefab": {
       "__id__": 8
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.ParticleSystem",
@@ -292,9 +298,9 @@
       "__id__": 6
     },
     "_enabled": true,
-    "_custom": true,
+    "_custom": false,
     "_file": {
-      "__uuid__": "b8223619-7e38-47c4-841f-9160c232495a"
+      "__uuid__": "f0446b89-f249-460f-9354-c8ff6d80d9ca"
     },
     "_texture": {
       "__uuid__": "8e519fc6-a0a7-47f9-a1ee-465697cea47a"
@@ -383,7 +389,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "5bd616e8-8431-40e3-8f08-196a16da6fab"
+    },
     "fileId": "a94efDMQDBJqIVt2FeI7RDU"
   },
   {
@@ -441,7 +449,8 @@
     ],
     "_prefab": {
       "__id__": 12
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -455,7 +464,6 @@
       "__uuid__": "df2834e6-56a0-445f-943a-ad5fe6868784"
     },
     "_type": 0,
-    "_useOriginalSize": true,
     "_sizeMode": 1,
     "_fillType": 0,
     "_fillCenter": {
@@ -493,7 +501,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "5bd616e8-8431-40e3-8f08-196a16da6fab"
+    },
     "fileId": "a7ce0CB8Y1Le7rtvYLgPzaW"
   },
   {
@@ -508,7 +518,6 @@
       "__uuid__": "7d321207-1a43-4428-a542-8ae907177520"
     },
     "_type": 0,
-    "_useOriginalSize": true,
     "_sizeMode": 2,
     "_fillType": 0,
     "_fillCenter": {
@@ -569,7 +578,8 @@
     },
     "finishHandler": {
       "__id__": 16
-    }
+    },
+    "fireHandler": null
   },
   {
     "__type__": "cc.ClickEvent",
@@ -584,7 +594,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "5bd616e8-8431-40e3-8f08-196a16da6fab"
+    },
     "fileId": "d63b3pPcD9Ao45FNJkr13hb"
   },
   {
@@ -639,7 +651,8 @@
     ],
     "_prefab": {
       "__id__": 20
-    }
+    },
+    "groupIndex": 0
   },
   {
     "__type__": "cc.ParticleSystem",
@@ -649,7 +662,7 @@
       "__id__": 18
     },
     "_enabled": true,
-    "_custom": true,
+    "_custom": false,
     "_file": {
       "__uuid__": "95e2b40f-de21-4028-9f43-523492593df2"
     },
@@ -740,7 +753,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "5bd616e8-8431-40e3-8f08-196a16da6fab"
+    },
     "fileId": "09e6f0ACUFPb4LsMzx29uaI"
   },
   {
@@ -856,7 +871,7 @@
     "atkDist": 300,
     "atkDuration": 0.2,
     "atkStun": 0.1,
-    "test": 0
+    "invincible": false
   },
   {
     "__type__": "03fecYvs+9L07SPviQLuLj3",
@@ -876,7 +891,9 @@
     "root": {
       "__id__": 1
     },
-    "asset": null,
+    "asset": {
+      "__uuid__": "5bd616e8-8431-40e3-8f08-196a16da6fab"
+    },
     "fileId": "36ee2zaA2JD05vlFk1lqCPh"
   }
 ]
