@@ -1,0 +1,11 @@
+{
+  "name": "tutorial-dark-slash-server",
+  "version": "0.0.1",
+  "description": "dark slash server",
+  "main": "server.js",
+  "author": "creator",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

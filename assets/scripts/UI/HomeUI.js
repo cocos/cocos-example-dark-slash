@@ -40,8 +40,15 @@ cc.Class({
     },
 
     playGame: function () {
-        cc.eventManager.pauseTarget(this.btnGroup, true);
-        cc.director.loadScene('PlayGame');
+        var self = this;
+        console.log("登录游戏");
+        Network.send('Login', { userId: "00000001" }, function (data) {
+            PlayerInfo.set(data.playerInfo);
+            console.log("人物信息：");
+            console.log(data.playerInfo);
+            cc.eventManager.pauseTarget(self.btnGroup, true);
+            cc.director.loadScene('PlayGame');
+        });
     }
 
     // called every frame, uncomment this function to activate update callback

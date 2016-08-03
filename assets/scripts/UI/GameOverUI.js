@@ -19,6 +19,13 @@ cc.Class({
     },
 
     restart () {
-        this.game.restart();
+        console.log("重新开始");
+        var game = this.game;
+        Network.send('Restart', { userId: PlayerInfo.userId }, function (data) {
+            PlayerInfo.set(data.playerInfo);
+            console.log("人物信息：");
+            console.log(data.playerInfo);
+            game.restart();
+        });
     }
 });
