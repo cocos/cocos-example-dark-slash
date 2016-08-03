@@ -178,6 +178,17 @@ cc.Class({
         this.isAttacking = false;
         this.inputEnabled = false;
         this.anim.play('dead');
+
+        PlayerInfo.hp -= 1;
+
+        var game = this.game;
+        game.inGameUI.refreshHeart();
+        Network.send('Hurt', { userId: PlayerInfo.userId, hp: PlayerInfo.hp }, function (data) {
+            PlayerInfo.set(data.playerInfo);
+            if (PlayerInfo.hp > 0) {
+                game.revive();
+            }
+        });
     },
 
     corpse () {
@@ -186,6 +197,9 @@ cc.Class({
     },
 
     death () {
+        if (PlayerInfo.hp > 0) {
+            return;
+        }
         this.game.death();
     },
     
