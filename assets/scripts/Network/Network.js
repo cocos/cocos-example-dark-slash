@@ -13,22 +13,46 @@ var Network = cc.Class({
             sendData = JSON.stringify(sendData);
         }
         socket.emit(type, sendData);
-        socket.once(type, function (data) {
-            if (cc.sys.isNative) {
-                data = JSON.parse(data);
-            }
-            callback(data || null);
-        });
+        // 由于目前 Native 不支持 once
+        // 并且 on 是只执行一次的所以暂时先这样修改
+        if (cc.sys.isNative) {
+            socket.on(type, function (data) {
+                if (cc.sys.isNative) {
+                    data = JSON.parse(data);
+                }
+                callback(data || null);
+            });
+        }
+        else {
+            socket.once(type, function (data) {
+                if (cc.sys.isNative) {
+                    data = JSON.parse(data);
+                }
+                callback(data || null);
+            });
+        }
     },
 
     // 单纯接收服务器消息
     receive: function (type, callback) {
-        socket.once(type, function (data) {
-            if (cc.sys.isNative) {
-                data = JSON.parse(data);
-            }
-            callback(data || null);
-        });
+        // 由于目前 Native 不支持 once
+        // 并且 on 是只执行一次的所以暂时先这样修改
+        if (cc.sys.isNative) {
+            socket.on(type, function (data) {
+                if (cc.sys.isNative) {
+                    data = JSON.parse(data);
+                }
+                callback(data || null);
+            });
+        }
+        else {
+            socket.once(type, function (data) {
+                if (cc.sys.isNative) {
+                    data = JSON.parse(data);
+                }
+                callback(data || null);
+            });
+        }
     }
 });
 
