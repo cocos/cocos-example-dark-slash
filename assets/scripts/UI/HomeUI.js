@@ -20,7 +20,8 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-
+        // 连接服务器
+        Network.connect();
     },
 
     start: function () {

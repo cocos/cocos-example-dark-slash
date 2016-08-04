@@ -57,4 +57,3 @@ var Network = cc.Class({
 });
 
 window.Network = new Network();
-window.Network.connect();
