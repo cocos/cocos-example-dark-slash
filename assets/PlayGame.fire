@@ -36,7 +36,7 @@
         "__id__": 2
       },
       {
-        "__id__": 283
+        "__id__": 286
       }
     ],
     "_localZOrder": 0,
@@ -95,7 +95,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 282
+        "__id__": 285
       }
     ],
     "_prefab": null,
@@ -156,7 +156,7 @@
         "__id__": 240
       },
       {
-        "__id__": 277
+        "__id__": 280
       }
     ],
     "_rotationX": 0,
@@ -178,10 +178,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 280
+        "__id__": 283
       },
       {
-        "__id__": 281
+        "__id__": 284
       }
     ],
     "_prefab": null,
@@ -5365,7 +5365,7 @@
       "__uuid__": "164cbe9b-04a6-4d09-8f82-4f034d5a7408"
     },
     "_isSystemFontUsed": false,
-    "_N$string": "0",
+    "_N$string": "",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 0,
     "_N$overflow": 1
@@ -9259,10 +9259,10 @@
         "__id__": 263
       },
       {
-        "__id__": 269
+        "__id__": 270
       },
       {
-        "__id__": 274
+        "__id__": 276
       }
     ],
     "_rotationX": 0,
@@ -9284,7 +9284,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 276
+        "__id__": 278
+      },
+      {
+        "__id__": 279
       }
     ],
     "_prefab": null,
@@ -10200,6 +10203,9 @@
       },
       {
         "__id__": 268
+      },
+      {
+        "__id__": 269
       }
     ],
     "_prefab": null,
@@ -10332,6 +10338,15 @@
     "transDuration": 0.1
   },
   {
+    "__type__": "1c9d9nqdRJKOKXdKfgJlomM",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 263
+    },
+    "_enabled": true
+  },
+  {
     "__type__": "cc.Node",
     "_name": "btn_share",
     "_objFlags": 0,
@@ -10377,9 +10392,6 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 270
-      },
-      {
         "__id__": 271
       },
       {
@@ -10387,6 +10399,9 @@
       },
       {
         "__id__": 273
+      },
+      {
+        "__id__": 275
       }
     ],
     "_prefab": null,
@@ -10397,7 +10412,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 269
+      "__id__": 270
     },
     "_enabled": true,
     "isAlignOnce": false,
@@ -10418,7 +10433,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 269
+      "__id__": 270
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -10444,7 +10459,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 269
+      "__id__": 270
     },
     "_enabled": true,
     "transition": 2,
@@ -10469,7 +10484,11 @@
     "hoverSprite": {
       "__uuid__": "da9fbe69-4887-4d7c-b456-0d32241cf031"
     },
-    "clickEvents": [],
+    "clickEvents": [
+      {
+        "__id__": 274
+      }
+    ],
     "_N$interactable": true,
     "_N$normalColor": {
       "__type__": "cc.Color",
@@ -10492,15 +10511,23 @@
       "__uuid__": "da9fbe69-4887-4d7c-b456-0d32241cf031"
     },
     "_N$target": {
-      "__id__": 269
+      "__id__": 270
     }
+  },
+  {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 240
+    },
+    "component": "GameOverUI",
+    "handler": "share"
   },
   {
     "__type__": "d7564Cn9+NOM6YfHHX7zsyO",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 269
+      "__id__": 270
     },
     "_enabled": true,
     "pressedScale": 0.85,
@@ -10552,7 +10579,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 275
+        "__id__": 277
       }
     ],
     "_prefab": null,
@@ -10563,7 +10590,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 274
+      "__id__": 276
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -10586,6 +10613,15 @@
   },
   {
     "__type__": "c3ee4ElVWtB2Lzir0h5v/ow",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 240
+    },
+    "_enabled": true
+  },
+  {
+    "__type__": "1c9d9nqdRJKOKXdKfgJlomM",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -10639,10 +10675,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 278
+        "__id__": 281
       },
       {
-        "__id__": 279
+        "__id__": 282
       }
     ],
     "_prefab": null,
@@ -10653,7 +10689,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 277
+      "__id__": 280
     },
     "_enabled": true,
     "_custom": false,
@@ -10747,7 +10783,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 277
+      "__id__": 280
     },
     "_enabled": true,
     "isAlignOnce": false,
@@ -10844,7 +10880,7 @@
     },
     "_children": [
       {
-        "__id__": 284
+        "__id__": 287
       }
     ],
     "_rotationX": 0,
@@ -10866,16 +10902,16 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 286
+        "__id__": 289
       },
       {
-        "__id__": 287
+        "__id__": 290
       },
       {
-        "__id__": 297
+        "__id__": 300
       },
       {
-        "__id__": 305
+        "__id__": 308
       }
     ],
     "_prefab": null,
@@ -10895,7 +10931,7 @@
     },
     "_cascadeOpacityEnabled": true,
     "_parent": {
-      "__id__": 283
+      "__id__": 286
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -10927,7 +10963,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 285
+        "__id__": 288
       }
     ],
     "_prefab": null,
@@ -10938,7 +10974,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 284
+      "__id__": 287
     },
     "_enabled": true,
     "waveUI": {
@@ -10962,26 +10998,26 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 283
+      "__id__": 286
     },
     "_enabled": true,
     "player": {
       "__id__": 72
     },
     "inGameUI": {
-      "__id__": 284
+      "__id__": 287
     },
     "playerFX": {
       "__id__": 97
     },
     "waveMng": {
-      "__id__": 283
+      "__id__": 286
     },
     "bossMng": {
-      "__id__": 283
+      "__id__": 286
     },
     "poolMng": {
-      "__id__": 283
+      "__id__": 286
     },
     "foeGroup": {
       "__id__": 71
@@ -10993,7 +11029,7 @@
       "__id__": 240
     },
     "cameraRoot": {
-      "__id__": 281
+      "__id__": 284
     }
   },
   {
@@ -11001,15 +11037,15 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 283
+      "__id__": 286
     },
     "_enabled": true,
     "waves": [
       {
-        "__id__": 288
+        "__id__": 291
       },
       {
-        "__id__": 293
+        "__id__": 296
       }
     ],
     "startWaveIdx": 0,
@@ -11026,16 +11062,16 @@
     "__type__": "Wave",
     "spawns": [
       {
-        "__id__": 289
-      },
-      {
-        "__id__": 290
-      },
-      {
-        "__id__": 291
-      },
-      {
         "__id__": 292
+      },
+      {
+        "__id__": 293
+      },
+      {
+        "__id__": 294
+      },
+      {
+        "__id__": 295
       }
     ],
     "bossType": 0
@@ -11072,13 +11108,13 @@
     "__type__": "Wave",
     "spawns": [
       {
-        "__id__": 294
+        "__id__": 297
       },
       {
-        "__id__": 295
+        "__id__": 298
       },
       {
-        "__id__": 296
+        "__id__": 299
       }
     ],
     "bossType": 0
@@ -11109,32 +11145,32 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 283
+      "__id__": 286
     },
     "_enabled": true,
     "foePools": [
-      {
-        "__id__": 298
-      },
-      {
-        "__id__": 299
-      },
-      {
-        "__id__": 300
-      },
       {
         "__id__": 301
       },
       {
         "__id__": 302
-      }
-    ],
-    "projectilePools": [
+      },
       {
         "__id__": 303
       },
       {
         "__id__": 304
+      },
+      {
+        "__id__": 305
+      }
+    ],
+    "projectilePools": [
+      {
+        "__id__": 306
+      },
+      {
+        "__id__": 307
       }
     ]
   },
@@ -11190,11 +11226,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 283
+      "__id__": 286
     },
     "_enabled": true,
     "demonSpawn": {
-      "__id__": 306
+      "__id__": 309
     }
   },
   {

@@ -27,5 +27,11 @@ cc.Class({
             console.log(data.playerInfo);
             game.restart();
         });
-    }
+    },
+    
+    share (){
+        if(cc.sys.isMobile){
+            cc.find('Canvas/root/menu_over').getComponent('SDKManager').share();
+        }
+    },
 });

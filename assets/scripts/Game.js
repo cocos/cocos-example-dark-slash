@@ -32,7 +32,6 @@ cc.Class({
     },
 
     start () {
-        this.playerFX.playIntro();
         // UI initialization
         this.inGameUI = this.inGameUI.getComponent('InGameUI');
         this.inGameUI.init(this);
@@ -40,6 +39,12 @@ cc.Class({
         this.deathUI.init(this);
         this.gameOverUI = this.gameOverUI.getComponent('GameOverUI');
         this.gameOverUI.init(this);
+        var hp = PlayerInfo.hp;
+        if(hp <= 0){
+            this.death();
+        }else{
+            this.playerFX.playIntro();
+        }
     },
 
     pause () {
