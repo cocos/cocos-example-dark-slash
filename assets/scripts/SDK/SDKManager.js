@@ -13,6 +13,10 @@ cc.Class({
         // },
         // ...
     },
+    
+    init (game) {
+        this.game = game;
+    },
 
     // use this for initialization
     onLoad: function () {
@@ -43,22 +47,22 @@ cc.Class({
         this.game = game;
         if(this.iapPlugin){
             var info = {
-                'Product_Id': '816',
-                'Product_Name': 'three hearts',
-                'Product_Price': '1',
-                'Product_Count': '1',
-                'Product_Desc': 'three hearts',
-                'Coin_Name': 'heart',
-                'Coin_Rate': '1',
-                'Role_Id': this.userPlugin.getUserID(),
-                'Role_Name': 'daisy',
-                'Role_Grade': '1',
-                'Role_Balance': 'null',
-                'Vip_Level': '0',
-                'Party_Name': 'null',
-                'Server_Id': '1',
-                'Server_Name': '1',
-                'EXT': 'Cocos Creator'
+                'Product_Id': '107196',                    //商品唯一标示符
+                'Product_Name': 'three hearts',            //商品名称
+                'Product_Price': '0.1',                    //商品单价
+                'Product_Count': '1',                      //商品数量
+                'Product_Desc': 'three hearts',            //商品描述 
+                'Coin_Name': 'heart',                      //虚拟币名称
+                'Coin_Rate': '3',                          //虚拟币兑换率
+                'Role_Id': this.userPlugin.getUserID(),    //角色唯一标示符
+                'Role_Name': 'daisy',                      //角色名称
+                'Role_Grade': '1',                         //角色等级
+                'Role_Balance': PlayerInfo.hp.toString(),  //虚拟币余额
+                'Vip_Level': '0',                          //VIP等级
+                'Party_Name': 'null',                      //工会名称
+                'Server_Id': '1',                          //服务器唯一标示符
+                'Server_Name': '1',                        //服务器名称
+                'EXT': 'Cocos Creator'                     //扩展字段
             };
             this.iapPlugin.payForProduct(info);
         }
@@ -67,17 +71,16 @@ cc.Class({
     share () {
         if(this.sharePlugin){
             var info = {
-                'title' : 'Dark Slash',
-                'titleUrl' : 'http://www.cocos.com',
-                'site' : 'Dark Slash',
-                'siteUrl' : 'http://www.cocos.com',
-                'text' : '暗黑斩游戏制作演示 - Cocos Creator制造',
-                'comment' : '无',
-                'info': '无',
-                'description': '无',
-                'imageTitle': '无',
-                'imageUrl': '无',
-                'url': '无',
+                'title' : 'Dark Slash',                   // 标题名称
+                'titleUrl' : 'http://www.cocos.com',      // 标题链接
+                'site' : 'Dark Slash',                    // 标题网站名
+                'siteUrl' : 'http://www.cocos.com',       // 标题网站链接
+                'text' : '暗黑斩游戏制作演示 - Cocos Creator制造',//分享内容
+                'comment' : '无',                                 //评论
+                'description': '暗黑斩游戏制作演示 - Cocos Creator制造', //描述
+                'imageTitle': 'Dark Slash',                              //图片标题
+                'imageUrl': 'http://veewo.com/promo/img/darkslash_web_web_banner.png', //分享图片链接
+                'url': 'http://www.veewo.com/games/?name=darkslash',       //分享链接
             };
             this.sharePlugin.share(info);
         }
@@ -87,13 +90,13 @@ cc.Class({
         cc.log('########## USER RESULT ########## code: ' + code + ',msg: ' + msg);
         switch(code)
         {
-        case anysdk.UserActionResultCode.kInitSuccess:
+        case anysdk.UserActionResultCode.kInitSuccess://用户系统初始化成功
             //do
             break;
-        case anysdk.UserActionResultCode.kInitFail:
+        case anysdk.UserActionResultCode.kInitFail://用户系统初始化失败
             //do
             break;
-        case anysdk.UserActionResultCode.kLoginSuccess:
+        case anysdk.UserActionResultCode.kLoginSuccess://用户系统登录成功
             console.log('########## LOGIN SUCCESS ##########');
             var self = this;
             Network.send('Login', { userId: this.userPlugin.getUserID()}, function (data) {
@@ -104,16 +107,16 @@ cc.Class({
                 cc.director.loadScene('PlayGame');
             });
             break;
-        case anysdk.UserActionResultCode.kLoginNetworkError:
+        case anysdk.UserActionResultCode.kLoginNetworkError://用户系统网络错误
             //do
             break;
-        case anysdk.UserActionResultCode.kLoginNoNeed:
+        case anysdk.UserActionResultCode.kLoginNoNeed://用户系统无需登录
             //do
             break;
-        case anysdk.UserActionResultCode.kLoginFail:
+        case anysdk.UserActionResultCode.kLoginFail://用户系统登录失败
             //do
             break;
-        case anysdk.UserActionResultCode.kLoginCancel:
+        case anysdk.UserActionResultCode.kLoginCancel://用户系统登录取消
             //do
             break;
         default:
@@ -124,7 +127,7 @@ cc.Class({
     onPayResult (code, msg) {
         cc.log('########## PAY RESULT ########## code: ' + code + ',msg: ' + msg);
         switch(code){
-            case anysdk.PayResultCode.kPaySuccess:
+            case anysdk.PayResultCode.kPaySuccess:// 支付系统支付成功
                 console.log('########## PAY SUCCESS ##########');
                 Network.receive('PayNotice', function (data) {
                     PlayerInfo.set(data.playerInfo);
@@ -134,25 +137,25 @@ cc.Class({
                     this.game.revive();
                 }); 
                 break;
-            case anysdk.PayResultCode.kPayFail:
+            case anysdk.PayResultCode.kPayFail:// 支付系统支付失败
                 //do
                 break;
-            case anysdk.PayResultCode.kPayCancel:
+            case anysdk.PayResultCode.kPayCancel:// 支付系统支付取消
                 //do
                 break;
-            case anysdk.PayResultCode.kPayNetworkError:
+            case anysdk.PayResultCode.kPayNetworkError:// 支付系统网络错误
                 //do
                 break;
-            case anysdk.PayResultCode.kPayProductionInforIncomplete:
+            case anysdk.PayResultCode.kPayProductionInforIncomplete:// 支付系统支付信息不完整
                 //do
                 break;
-            case anysdk.PayResultCode.kPayInitSuccess:
+            case anysdk.PayResultCode.kPayInitSuccess:// 支付系统初始化成功
                 //do
                 break;
-            case anysdk.PayResultCode.kPayInitFail:
+            case anysdk.PayResultCode.kPayInitFail:// 支付系统初始化失败
                 //do
                  break;
-            case anysdk.PayResultCode.kPayNowPaying:
+            case anysdk.PayResultCode.kPayNowPaying:// 支付系统正在支付中
                 //do
                 break;
             default:
@@ -163,16 +166,16 @@ cc.Class({
     onShareResult:function(code, msg){
         cc.log('########## Share RESULT ########## code: ' + code + ',msg: ' + msg);
         switch(code){
-            case anysdk.ShareResultCode.kShareSuccess:
+            case anysdk.ShareResultCode.kShareSuccess://分享系统分享成功
                 //do
                 break;
-            case anysdk.ShareResultCode.kShareFail:
+            case anysdk.ShareResultCode.kShareFail://分享系统分享失败
                 //do
                 break;
-            case anysdk.ShareResultCode.kShareCancel:
+            case anysdk.ShareResultCode.kShareCancel://分享系统分享取消
                 //do
                 break;
-            case anysdk.ShareResultCode.kShareNetworkError:
+            case anysdk.ShareResultCode.kShareNetworkError://分享系统分享网络出错
                 //do
                 break;         
             default:

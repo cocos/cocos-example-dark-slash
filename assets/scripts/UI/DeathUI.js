@@ -28,7 +28,7 @@ cc.Class({
 
     revive () {
         if(cc.sys.isMobile){
-            cc.find('Canvas/root/menu_over').getComponent('SDKManager').pay(this.game);
+            this.game.sdkManager.pay();
         }else{
             // 接收支付后服务器反馈复活的请求
             console.log("支付等待复活");

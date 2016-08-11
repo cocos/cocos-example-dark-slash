@@ -10912,6 +10912,9 @@
       },
       {
         "__id__": 308
+      },
+      {
+        "__id__": 310
       }
     ],
     "_prefab": null,
@@ -11030,6 +11033,9 @@
     },
     "cameraRoot": {
       "__id__": 284
+    },
+    "sdkManager": {
+      "__id__": 286
     }
   },
   {
@@ -11239,5 +11245,14 @@
     "total": 5,
     "spawnInterval": 0.7,
     "isCompany": false
+  },
+  {
+    "__type__": "1c9d9nqdRJKOKXdKfgJlomM",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 286
+    },
+    "_enabled": true
   }
 ]

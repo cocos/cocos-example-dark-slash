@@ -42,7 +42,7 @@ cc.Class({
 
     playGame: function () {
         if(cc.sys.isMobile){
-            cc.find('Canvas/menuAnim/btnGroups').getComponent('SDKManager').login(this.btnGroup);
+            this.btnGroup.getComponent('SDKManager').login(this.btnGroup);
         }else{
             var self = this;
             console.log("登录游戏");

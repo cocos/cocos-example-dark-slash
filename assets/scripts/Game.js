@@ -11,7 +11,8 @@ cc.Class({
         foeGroup: cc.Node,
         deathUI: cc.Node,
         gameOverUI: cc.Node,
-        cameraRoot: cc.Animation
+        cameraRoot: cc.Animation,
+        sdkManager: cc.Node
     },
 
     // use this for initialization
@@ -29,6 +30,8 @@ cc.Class({
         this.bossMng.init(this);
         this.sortMng = this.foeGroup.getComponent('SortMng');
         this.sortMng.init();
+        this.sdkManager = this.sdkManager.getComponent('SDKManager');
+        this.sdkManager.init(this);
     },
 
     start () {

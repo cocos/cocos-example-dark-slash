@@ -31,7 +31,7 @@ cc.Class({
     
     share (){
         if(cc.sys.isMobile){
-            cc.find('Canvas/root/menu_over').getComponent('SDKManager').share();
+            this.game.sdkManager.share();
         }
     },
 });
