@@ -31,7 +31,6 @@ cc.Class({
         this.sortMng = this.foeGroup.getComponent('SortMng');
         this.sortMng.init();
         this.sdkManager = this.sdkManager.getComponent('SDKManager');
-        this.sdkManager.init(this);
     },
 
     start () {
