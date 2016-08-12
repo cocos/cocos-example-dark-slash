@@ -11,7 +11,8 @@ cc.Class({
         foeGroup: cc.Node,
         deathUI: cc.Node,
         gameOverUI: cc.Node,
-        cameraRoot: cc.Animation
+        cameraRoot: cc.Animation,
+        sdkManager: cc.Node
     },
 
     // use this for initialization
@@ -29,10 +30,11 @@ cc.Class({
         this.bossMng.init(this);
         this.sortMng = this.foeGroup.getComponent('SortMng');
         this.sortMng.init();
+        this.sdkManager = this.sdkManager.getComponent('SDKManager');
+        this.sdkManager.init(this);
     },
 
     start () {
-        this.playerFX.playIntro();
         // UI initialization
         this.inGameUI = this.inGameUI.getComponent('InGameUI');
         this.inGameUI.init(this);
@@ -40,6 +42,12 @@ cc.Class({
         this.deathUI.init(this);
         this.gameOverUI = this.gameOverUI.getComponent('GameOverUI');
         this.gameOverUI.init(this);
+        var hp = PlayerInfo.hp;
+        if(hp <= 0){
+            this.death();
+        }else{
+            this.playerFX.playIntro();
+        }
     },
 
     pause () {

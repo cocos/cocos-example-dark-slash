@@ -92,7 +92,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 92
+        "__id__": 93
       }
     ],
     "_prefab": null,
@@ -159,7 +159,7 @@
         "__id__": 72
       },
       {
-        "__id__": 87
+        "__id__": 88
       }
     ],
     "_rotationX": 0,
@@ -181,13 +181,13 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 89
-      },
-      {
         "__id__": 90
       },
       {
         "__id__": 91
+      },
+      {
+        "__id__": 92
       }
     ],
     "_prefab": null,
@@ -2786,7 +2786,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_atlas": null
@@ -3089,6 +3089,9 @@
     "_components": [
       {
         "__id__": 86
+      },
+      {
+        "__id__": 87
       }
     ],
     "_prefab": null,
@@ -3611,6 +3614,15 @@
     "_originalHeight": 0
   },
   {
+    "__type__": "1c9d9nqdRJKOKXdKfgJlomM",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 72
+    },
+    "_enabled": true
+  },
+  {
     "__type__": "cc.Node",
     "_name": "mask",
     "_objFlags": 0,
@@ -3656,7 +3668,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 88
+        "__id__": 89
       }
     ],
     "_prefab": null,
@@ -3667,7 +3679,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 87
+      "__id__": 88
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -3715,7 +3727,7 @@
     },
     "_enabled": true,
     "menuAnim": {
-      "__id__": 89
+      "__id__": 90
     },
     "menuParticle": {
       "__id__": 12

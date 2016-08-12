@@ -27,16 +27,21 @@ cc.Class({
     },
 
     revive () {
-        // 接收支付后服务器反馈复活的请求
-        console.log("支付等待复活");
-        var game = this.game;
-        Network.receive('PayNotice', function (data) {
-            PlayerInfo.set(data.playerInfo);
-            console.log("复活完毕，玩家信息：");
-            console.log(data.playerInfo);
-            game.inGameUI.initHeart();
-            game.revive();
-        });
+        if(cc.sys.isMobile){
+            this.game.sdkManager.pay();
+        }else{
+            // 接收支付后服务器反馈复活的请求
+            console.log("支付等待复活");
+            var game = this.game;
+            Network.receive('PayNotice', function (data) {
+                PlayerInfo.set(data.playerInfo);
+                console.log("复活完毕，玩家信息：");
+                console.log(data.playerInfo);
+                game.inGameUI.initHeart();
+                game.revive();
+            });   
+        }
+        
     },
 
     gameover () {

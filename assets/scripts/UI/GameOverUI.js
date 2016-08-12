@@ -27,5 +27,11 @@ cc.Class({
             console.log(data.playerInfo);
             game.restart();
         });
-    }
+    },
+    
+    share (){
+        if(cc.sys.isMobile){
+            this.game.sdkManager.share();
+        }
+    },
 });
