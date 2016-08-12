@@ -4,7 +4,7 @@ var socket;
 var Network = cc.Class({
 
     connect: function () {
-        socket = io.connect('http://localhost:3000');
+        socket = io.connect('http://sandbox-s1.chinacloudapp.cn:3000');
     },
 
     // 发送消息给服务器并接收

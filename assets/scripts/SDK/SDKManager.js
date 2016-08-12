@@ -2,33 +2,25 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //    default: null,      // The default value will be used only when the component attaching
-        //                           to a node for the first time
-        //    url: cc.Texture2D,  // optional, default is typeof default
-        //    serializable: true, // optional, default is true
-        //    visible: true,      // optional, default is true
-        //    displayName: 'Foo', // optional
-        //    readonly: false,    // optional, default is false
-        // },
-        // ...
-    },
-    
-    init (game) {
-        this.game = game;
+        oauthLoginServer: 'http://sandbox-s1.chinacloudapp.cn:3000/Login',
+        appKey: '69A16BA4-6AE6-E8E8-0078-80E6C2182195',
+        appSecret: 'bd2f2cbf1fcafd81459e97732ffc4a41',
+        privateKey: 'E79D311B958876683851CD117D3B44B8'
     },
 
     // use this for initialization
     onLoad: function () {
         if(cc.sys.isMobile){
-            this.userPlugin = anysdk.agentManager.getUserPlugin();
-            this.iapPlugin = anysdk.agentManager.getIAPPlugin();
-            this.sharePlugin = anysdk.agentManager.getSharePlugin();
+            this.agentManager = anysdk.agentManager;
+            this.agentManager.init(this.appKey, this.appSecret, this.privateKey, this.oauthLoginServer);
+            this.userPlugin = this.agentManager.getUserPlugin();
+            this.iapPlugin = this.agentManager.getIAPPlugin();
+            this.sharePlugin = this.agentManager.getSharePlugin();
             if(this.userPlugin){
                 this.userPlugin.setListener(this.onUserResult, this);
             }
             if(this.iapPlugin){
-                this.iapPlugin.setListener(this.onIAPResult, this);
+                this.iapPlugin.setListener(this.onPayResult, this);
             }
             if(this.sharePlugin){
                 this.sharePlugin.setListener(this.onShareResult, this);
@@ -43,8 +35,7 @@ cc.Class({
         }
     },
     
-    pay (game) {
-        this.game = game;
+    pay () {
         if(this.iapPlugin){
             var info = {
                 'Product_Id': '107196',                    //商品唯一标示符
@@ -129,13 +120,6 @@ cc.Class({
         switch(code){
             case anysdk.PayResultCode.kPaySuccess:// 支付系统支付成功
                 console.log('########## PAY SUCCESS ##########');
-                Network.receive('PayNotice', function (data) {
-                    PlayerInfo.set(data.playerInfo);
-                    console.log("复活完毕，玩家信息：");
-                    console.log(data.playerInfo);
-                    this.game.inGameUI.initHeart();
-                    this.game.revive();
-                }); 
                 break;
             case anysdk.PayResultCode.kPayFail:// 支付系统支付失败
                 //do
