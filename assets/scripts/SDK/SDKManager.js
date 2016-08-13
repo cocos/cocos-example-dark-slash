@@ -1,3 +1,4 @@
+const TipsManager = require('TipsManager');
 cc.Class({
     extends: cc.Component,
 
@@ -89,6 +90,7 @@ cc.Class({
             break;
         case anysdk.UserActionResultCode.kLoginSuccess://用户系统登录成功
             console.log('########## LOGIN SUCCESS ##########');
+            TipsManager.init.showTips('账号登录成功...');
             var self = this;
             Network.send('Login', { userId: this.userPlugin.getUserID()}, function (data) {
                 PlayerInfo.set(data.playerInfo);
@@ -99,16 +101,12 @@ cc.Class({
             });
             break;
         case anysdk.UserActionResultCode.kLoginNetworkError://用户系统网络错误
-            //do
-            break;
         case anysdk.UserActionResultCode.kLoginNoNeed://用户系统无需登录
-            //do
-            break;
         case anysdk.UserActionResultCode.kLoginFail://用户系统登录失败
-            //do
+            TipsManager.init.showTips('账户登录出错,请重新登录...');
             break;
         case anysdk.UserActionResultCode.kLoginCancel://用户系统登录取消
-            //do
+            TipsManager.init.showTips('账户取消登录...');
             break;
         default:
             break;
@@ -120,18 +118,15 @@ cc.Class({
         switch(code){
             case anysdk.PayResultCode.kPaySuccess:// 支付系统支付成功
                 console.log('########## PAY SUCCESS ##########');
-                break;
-            case anysdk.PayResultCode.kPayFail:// 支付系统支付失败
-                //do
+                TipsManager.init.showTips('支付成功...')
                 break;
             case anysdk.PayResultCode.kPayCancel:// 支付系统支付取消
-                //do
+                TipsManager.init.showTips('支付取消...');
                 break;
+            case anysdk.PayResultCode.kPayFail:// 支付系统支付失败
             case anysdk.PayResultCode.kPayNetworkError:// 支付系统网络错误
-                //do
-                break;
             case anysdk.PayResultCode.kPayProductionInforIncomplete:// 支付系统支付信息不完整
-                //do
+                TipsManager.init.showTips('支付失败，请重试...');
                 break;
             case anysdk.PayResultCode.kPayInitSuccess:// 支付系统初始化成功
                 //do
@@ -151,16 +146,12 @@ cc.Class({
         cc.log('########## Share RESULT ########## code: ' + code + ',msg: ' + msg);
         switch(code){
             case anysdk.ShareResultCode.kShareSuccess://分享系统分享成功
-                //do
+                TipsManager.init.showTips('分享成功...');
                 break;
             case anysdk.ShareResultCode.kShareFail://分享系统分享失败
-                //do
-                break;
             case anysdk.ShareResultCode.kShareCancel://分享系统分享取消
-                //do
-                break;
             case anysdk.ShareResultCode.kShareNetworkError://分享系统分享网络出错
-                //do
+                TipsManager.init.showTips('分享失败，请重试...');
                 break;         
             default:
                 break;
