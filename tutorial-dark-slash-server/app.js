@@ -190,7 +190,7 @@ var getSign = function (post, signKey) {
     }
 
     console.log('########## STR CAT ##########:\n' + paramString);
-    var sign = getMD5(paramString)
+    var sign = getMD5(paramString);
     console.log('########## FIRST MD5 ##########:\n' + sign);//做一次md5处理并转换成小写，得到的加密串1
     console.log('########## ADD SIGN KEY ##########:\n' + sign + signKey);
     //在加密串1末尾追加增强密钥，做一次md5加密并转换成小写，得到的字符串就是签名enhanced_sign的值
