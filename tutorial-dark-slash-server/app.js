@@ -34,8 +34,9 @@ var oauthPath = '/api/User/LoginOauth/';
 
 app.post('/Login', function (req, res) {
     console.log('########## Login ##########:\n' + JSON.stringify(req.body));
-    var postData = querystring.stringify(req.body);
-    postData.private_key = privateKey;//for h5
+    var params = req.body;
+    params.private_key = privateKey;//for h5
+    var postData = querystring.stringify(params);
     var options = {
         host: oauthHost,
         path: oauthPath,
