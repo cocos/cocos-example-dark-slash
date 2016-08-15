@@ -84,7 +84,7 @@ app.post('/PayNotice', function (req, res) {
         var info = JSON.parse(json);
 
         // 这里是支付完以后所需要修改的 hp 数值
-        info.hp = 3;
+        info.hp = 5;
 
         // 存储玩家数据
         savePlayerInfoJson(url, info);
@@ -108,6 +108,9 @@ io.sockets.on('connection', function (socket) {
         var json = getPlayerInfoJson(url);
         var info = JSON.parse(json);
         info.userId = userId;
+        if (info.hp <= 0) {
+            info.hp = 3;
+        }
         savePlayerInfoJson(url, info);
         socket.emit('Login', {playerInfo: info});
     });
@@ -131,6 +134,9 @@ io.sockets.on('connection', function (socket) {
         var url = prefixUrl + obj.userId + ".json";
         var json = getPlayerInfoJson(url);
         var info = JSON.parse(json);
+        if (info.hp <= 0) {
+            info.hp = 3;
+        }
         savePlayerInfoJson(url, info);
         socket.emit('Restart', {playerInfo: info});
     });
