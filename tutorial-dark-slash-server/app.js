@@ -34,8 +34,9 @@ var oauthPath = '/api/User/LoginOauth/';
 
 app.post('/Login', function (req, res) {
     console.log('########## Login ##########:\n' + JSON.stringify(req.body));
-    var postData = querystring.stringify(req.body);
-    postData.private_key = privateKey;//for h5
+    var params = req.body;
+    params.private_key = privateKey;//for h5
+    var postData = querystring.stringify(params);
     var options = {
         host: oauthHost,
         path: oauthPath,
@@ -150,6 +151,7 @@ var getMD5 = function (data) {
 //通用验签
 var checkSign = function (post, privateKey) {
     var sourceSign = post.sign;
+    //sign参数不参与签名
     delete post.sign;
     var newSign = getSign(post, privateKey);
 
@@ -162,6 +164,7 @@ var checkSign = function (post, privateKey) {
 //增强验签
 var checkEnhancedSign = function (post, enhancedKey) {
     var sourceEnhancedSign = post.enhanced_sign;
+    //sign与enhanced_sign参数不参与签名
     delete post.enhanced_sign;
     delete post.sign;
     var newSign = getSign(post, enhancedKey);
@@ -177,20 +180,24 @@ var getSign = function (post, signKey) {
     for (var key in post) {
         console.log('########## KEY: ' + key + '\t########## VAULE: ' + post[key]);
         keys.push(key);
-    }  
+    }
+    //获取所有key，按照字母升序进行排序
     keys = keys.sort();
-
+    //将排序后的参数名对应的参数值字符串方式按顺序拼接在一起
     var paramString = '';
     for (var i in keys) {
         paramString += post[keys[i]];
     }
 
     console.log('########## STR CAT ##########:\n' + paramString);
-    console.log('########## FIRST MD5 ##########:\n' + getMD5(paramString));
-    console.log('########## ADD SIGN KEY ##########:\n' + getMD5(paramString) + signKey);
-    console.log('########## SECOND M5D ##########:\n' + getMD5(getMD5(paramString) + signKey));
+    var sign = getMD5(paramString);
+    console.log('########## FIRST MD5 ##########:\n' + sign);//做一次md5处理并转换成小写，得到的加密串1
+    console.log('########## ADD SIGN KEY ##########:\n' + sign + signKey);
+    //在加密串1末尾追加增强密钥，做一次md5加密并转换成小写，得到的字符串就是签名enhanced_sign的值
+    var enhancedSign = getMD5(sign + signKey);
+    console.log('########## SECOND M5D ##########:\n' + enhancedSign);
 
-    return getMD5(getMD5(paramString) + signKey);
+    return enhancedSign;
 };
 
 //下方是一些帮助函数
