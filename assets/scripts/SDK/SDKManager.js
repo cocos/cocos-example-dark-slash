@@ -3,17 +3,18 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        oauthLoginServer: 'http://sandbox-s1.chinacloudapp.cn:3000/Login',
-        appKey: '69A16BA4-6AE6-E8E8-0078-80E6C2182195',
-        appSecret: 'bd2f2cbf1fcafd81459e97732ffc4a41',
-        privateKey: 'E79D311B958876683851CD117D3B44B8'
+        // oauthLoginServer: 'http://sandbox-s1.chinacloudapp.cn:3000/Login',
+        // appKey: '69A16BA4-6AE6-E8E8-0078-80E6C2182195',
+        // appSecret: 'bd2f2cbf1fcafd81459e97732ffc4a41',
+        // privateKey: 'E79D311B958876683851CD117D3B44B8'
     },
 
     // use this for initialization
     onLoad: function () {
         if(cc.sys.isMobile){
             this.agentManager = anysdk.agentManager;
-            this.agentManager.init(this.appKey, this.appSecret, this.privateKey, this.oauthLoginServer);
+            //用户需要到引擎工程中frameworks/runtime-src/Classes/SDKManager.cpp 填写init 方法中的  appKey appSecret privateKey
+            // this.agentManager.init(this.appKey, this.appSecret, this.privateKey, this.oauthLoginServer);
             this.userPlugin = this.agentManager.getUserPlugin();
             this.iapPlugin = this.agentManager.getIAPPlugin();
             this.sharePlugin = this.agentManager.getSharePlugin();
