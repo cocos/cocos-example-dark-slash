@@ -94,6 +94,10 @@ cc.Class({
     gameOver: function () {
         this.deathUI.hide();
         this.gameOverUI.show();
+        cocosAnalytics.CALevels.failed({
+            level : "wave" + this.waveMng.waveIdx,
+            reason : "主角死亡"
+        });
     },
 
     restart: function () {

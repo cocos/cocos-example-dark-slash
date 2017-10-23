@@ -111,6 +111,10 @@ cc.Class({
         this.currentSpawn = this.currentWave.spawns[this.currentWave.spawnIdx];
         this.startSpawn();
         this.game.inGameUI.showWave(this.waveIdx + 1);
+        //ANALYTICS
+        cocosAnalytics.CALevels.begin({
+            level : "wave" + this.waveIdx
+        });
     },
 
     startBoss () {
@@ -121,6 +125,10 @@ cc.Class({
     endWave () {
         this.bossProgress.hide();
         this.game.bossMng.endBoss();
+        //ANALYTICS
+        cocosAnalytics.CALevels.complete({
+            level: "wave" + this.waveIdx
+        });
         // update wave index
         if (this.waveIdx < this.waves.length - 1) {
             this.waveIdx++;

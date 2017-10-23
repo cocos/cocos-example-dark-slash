@@ -1,5 +1,16 @@
 {
+  "appKey": "",
+  "appSecret": "",
   "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
   "orientation": {
     "landscapeLeft": true,
     "landscapeRight": true,
@@ -7,7 +18,10 @@
     "upsideDown": false
   },
   "packageName": "org.cocos2d.darkslash",
+  "privateKey": "",
+  "renderMode": "0",
   "startScene": "9ac97b8e-9ad4-491e-a344-91200969a3ac",
   "title": "darkslash",
-  "webOrientation": "auto"
+  "webOrientation": "auto",
+  "xxteaKey": "0767ae2d-c428-4f"
 }

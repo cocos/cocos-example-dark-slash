@@ -27,6 +27,32 @@ cc.Class({
     },
 
     revive () {
+        //ANALYTICS
+        let orderID = Date.now().toString();
+        cocosAnalytics.CAPayment.payBegin({
+            // amount 付费金额，单位为分，必填
+            amount: 1,
+            // currencyType 货币类型，可选。默认CNY
+            currencyType: 'CNY',
+            // payType 支付方式，可选。默认为空
+            payType: '信用卡',
+            // iapID 付费点，可选。默认为空
+            iapID: '原地满血复活',
+            // orderID 订单编号，可选。默认为空
+            orderID: orderID
+        });        
+        cocosAnalytics.CAPayment.paySuccess({
+            // amount 付费金额，单位为分，必填
+            amount: 1,
+            // currencyType 货币类型，可选。默认CNY
+            currencyType: 'CNY',
+            // payType 支付方式，可选。默认为空
+            payType: '信用卡',
+            // iapID 付费点，可选。默认为空
+            iapID: '原地满血复活',
+            // orderID 订单编号，可选。默认为空
+            orderID: orderID
+        });        
         this.game.revive();
     },
 
