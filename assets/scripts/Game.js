@@ -11,6 +11,7 @@ cc.Class({
         foeGroup: cc.Node,
         deathUI: cc.Node,
         gameOverUI: cc.Node,
+        endLevelUI: cc.Node,
         cameraRoot: cc.Animation
     },
 
@@ -40,6 +41,8 @@ cc.Class({
         this.deathUI.init(this);
         this.gameOverUI = this.gameOverUI.getComponent('GameOverUI');
         this.gameOverUI.init(this);
+        this.endLevelUI = this.endLevelUI.getComponent('EndLevel');
+        this.endLevelUI.init(this);
     },
 
     pause () {

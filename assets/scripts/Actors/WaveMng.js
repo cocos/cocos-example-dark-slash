@@ -121,6 +121,8 @@ cc.Class({
     endWave () {
         this.bossProgress.hide();
         this.game.bossMng.endBoss();
+        // show the end of level in the first wave over
+        this.game.endLevelUI.show();
         // update wave index
         if (this.waveIdx < this.waves.length - 1) {
             this.waveIdx++;
