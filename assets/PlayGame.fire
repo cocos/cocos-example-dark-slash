@@ -8927,8 +8927,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 600,
-      "height": 200
+      "width": 700,
+      "height": 300
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -8937,7 +8937,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 11
+      "y": -1
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -9005,8 +9005,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 700,
-      "height": 100
+      "width": 800,
+      "height": 150
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -9424,7 +9424,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 300,
-      "height": 85
+      "height": 99
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -11632,7 +11632,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 7,
+      "x": -103,
       "y": -142
     },
     "_skewX": 0,
@@ -11738,7 +11738,7 @@
       "__id__": 289
     },
     "component": "EndLevel",
-    "handler": "next",
+    "handler": "restart",
     "customEventData": ""
   },
   {
@@ -11765,7 +11765,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 302
@@ -11884,7 +11884,7 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "install",
+    "_N$string": "Install",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
