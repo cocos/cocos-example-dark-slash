@@ -3,7 +3,7 @@
     "__type__": "cc.SceneAsset",
     "_name": "",
     "_objFlags": 0,
-    "_rawFiles": null,
+    "_native": "",
     "scene": {
       "__id__": 1
     }
@@ -287,7 +287,7 @@
       "__id__": 4
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 45,
     "_left": -15,
@@ -452,7 +452,9 @@
       "__id__": 8
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 45,
     "_left": -15,
@@ -559,7 +561,9 @@
       "__id__": 11
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 45,
     "_left": -15,
@@ -666,7 +670,9 @@
       "__id__": 14
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 45,
     "_left": -15,
@@ -905,7 +911,9 @@
       "__id__": 20
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -1079,7 +1087,9 @@
       "__id__": 24
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -1253,7 +1263,9 @@
       "__id__": 28
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -1585,7 +1597,9 @@
       "__id__": 36
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -1759,7 +1773,9 @@
       "__id__": 40
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -1933,7 +1949,9 @@
       "__id__": 44
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -2049,7 +2067,9 @@
       "__id__": 17
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 45,
     "_left": -99,
@@ -2279,7 +2299,9 @@
       "__id__": 52
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -2601,7 +2623,9 @@
       "__id__": 60
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -2717,7 +2741,9 @@
       "__id__": 49
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 45,
     "_left": -99,
@@ -2947,7 +2973,9 @@
       "__id__": 68
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -3269,7 +3297,9 @@
       "__id__": 76
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -3385,7 +3415,9 @@
       "__id__": 65
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 45,
     "_left": -99,
@@ -4361,7 +4393,7 @@
       "__id__": 81
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 45,
     "_left": 0,
@@ -5763,7 +5795,7 @@
       "__id__": 142
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 33,
     "_left": 0,
@@ -6040,7 +6072,7 @@
       "__id__": 146
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 9,
     "_left": 40,
@@ -6414,7 +6446,7 @@
       "__id__": 151
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 17,
     "_left": 0,
@@ -6837,7 +6869,7 @@
       "__id__": 162
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 1,
     "_left": 0,
@@ -7275,7 +7307,9 @@
       "__id__": 174
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 17,
     "_left": 0,
@@ -7742,7 +7776,7 @@
       "__id__": 186
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 10,
     "_left": 50,
@@ -8615,7 +8649,9 @@
       "__id__": 199
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 1,
+    "_wasAlignOnce": null,
+    "isAlignOnce": null,
     "_target": null,
     "_alignFlags": 1,
     "_left": 0,
@@ -8672,7 +8708,7 @@
       "__id__": 141
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 45,
     "_left": 0,
@@ -10948,7 +10984,7 @@
       "__id__": 275
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -11145,7 +11181,7 @@
       "__id__": 281
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 0,
     "_left": 0,
@@ -13087,7 +13123,7 @@
       "__id__": 331
     },
     "_enabled": true,
-    "isAlignOnce": false,
+    "alignMode": 2,
     "_target": null,
     "_alignFlags": 4,
     "_left": 0,
@@ -13113,7 +13149,7 @@
       "__id__": 3
     },
     "_enabled": true,
-    "isAlignOnce": true,
+    "alignMode": 0,
     "_target": null,
     "_alignFlags": 45,
     "_left": 0,
@@ -13558,7 +13594,7 @@
     "node": {
       "__id__": 337
     },
-    "_enabled": true,
+    "_enabled": false,
     "_clip": {
       "__uuid__": "ab6b2621-818a-4add-a59b-4a5dcef4c38e"
     },
