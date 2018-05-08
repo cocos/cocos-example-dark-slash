@@ -3,7 +3,7 @@
     "__type__": "cc.SceneAsset",
     "_name": "",
     "_objFlags": 0,
-    "_rawFiles": null,
+    "_native": "",
     "scene": {
       "__id__": 1
     }
@@ -554,6 +554,7 @@
     },
     "_enabled": true,
     "_custom": true,
+    "_file": null,
     "_texture": {
       "__uuid__": "35058389-5545-4729-8d42-77e531dd782e"
     },
@@ -3165,7 +3166,7 @@
       "__id__": 73
     },
     "_enabled": true,
-    "isAlignOnce": true,
+    "alignMode": 0,
     "_target": null,
     "_alignFlags": 4,
     "_left": 0,
@@ -3352,7 +3353,7 @@
       "__id__": 78
     },
     "_enabled": true,
-    "isAlignOnce": true,
+    "alignMode": 0,
     "_target": null,
     "_alignFlags": 12,
     "_left": 159.5,
@@ -3526,7 +3527,7 @@
       "__id__": 82
     },
     "_enabled": true,
-    "isAlignOnce": true,
+    "alignMode": 0,
     "_target": null,
     "_alignFlags": 36,
     "_left": 0,
@@ -3642,7 +3643,7 @@
       "__id__": 72
     },
     "_enabled": true,
-    "isAlignOnce": true,
+    "alignMode": 0,
     "_target": null,
     "_alignFlags": 45,
     "_left": 0,
@@ -3782,7 +3783,7 @@
       "__id__": 3
     },
     "_enabled": true,
-    "isAlignOnce": true,
+    "alignMode": 0,
     "_target": null,
     "_alignFlags": 45,
     "_left": 0,
@@ -3807,7 +3808,7 @@
     "node": {
       "__id__": 3
     },
-    "_enabled": true,
+    "_enabled": false,
     "_clip": {
       "__uuid__": "4aa074c3-72e8-4edb-add1-a990949ee69a"
     },
