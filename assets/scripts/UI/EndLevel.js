@@ -34,5 +34,11 @@ cc.Class({
         else {
             console.log('Current device not supported.');
         }
+    },
+    
+    next () {
+        cc.director.resume(true);
+        this.hide();
     }
+
 });
