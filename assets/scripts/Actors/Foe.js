@@ -66,7 +66,7 @@ cc.Class({
             return;
         }
 
-        let dist = cc.pDistance(this.player.node.position, this.node.position);
+        let dist = this.player.node.position.sub(this.node.position).mag();
 
         if (this.player.isAttacking && this.isInvincible === false) {
             if (dist < this.hurtRadius) {
@@ -83,15 +83,15 @@ cc.Class({
         }
 
         if (this.player && this.isMoving) {
-            let dir = cc.pSub(this.player.node.position, this.node.position);
-            let rad = cc.pToAngle(dir);
-            let deg = cc.radiansToDegrees(rad);
+            let dir = this.player.node.position.sub(this.node.position);
+            let rad = Math.atan2(dir.y, dir.x);
+            let deg = cc.misc.radiansToDegrees(rad);
             if (dist < this.atkRange) {
                 this.prepAttack(dir);
                 return;
             }
             this.node.emit('update-dir', {
-                dir: cc.pNormalize(dir)
+                dir: dir.normalize()
             });
         }
     },
@@ -124,16 +124,16 @@ cc.Class({
             return;
         }
         this.anim.stop();
-        let atkDir = cc.pSub(this.player.node.position, this.node.position);
+        let atkDir = this.player.node.position.sub(this.node.position);
         let targetPos = null;
         if (this.atkType === AttackType.Melee) {
-            targetPos = cc.pAdd( this.node.position, cc.pMult(cc.pNormalize(atkDir), this.atkDist) );
+            targetPos = this.node.position.add( atkDir.normalize().mul(this.atkDist) );
         }
         this.attackOnTarget(atkDir, targetPos);
     },
 
     attackOnTarget: function (atkDir, targetPos) {
-        let deg = cc.radiansToDegrees(cc.pAngleSigned(cc.p(0, 1), atkDir));
+        let deg = cc.misc.radiansToDegrees( cc.v2(0, 1).signAngle(atkDir) );
         let angleDivider = [0, 45, 135, 180];
         let slashPos = null;
         function getAtkSF(mag, sfAtkDirs) {
@@ -192,7 +192,7 @@ cc.Class({
         this.fxBlood.node.scaleX = this.anim.node.scaleX;
         this.fxBlood.play('blood');
         this.fxBlade.node.active = true;
-        this.fxBlade.node.rotation = cc.randomMinus1To1() * 40; 
+        this.fxBlade.node.rotation = (Math.random() - 0.5) * 2 * 40; 
         this.fxBlade.play('blade');
         this.unscheduleAllCallbacks();
         this.node.stopAllActions();

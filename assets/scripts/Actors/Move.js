@@ -77,7 +77,7 @@ cc.Class({
     },
 
     updateDir: function (event) {
-        this.moveDir = event.detail.dir;
+        this.moveDir = event.dir;
     },
 
     // called every frame, uncomment this function to activate update callback
@@ -85,7 +85,7 @@ cc.Class({
         if (this.moveDir) {
             this.node.x += this.moveSpeed * this.moveDir.x * dt;
             this.node.y += this.moveSpeed * this.moveDir.y * dt;
-            let deg = cc.radiansToDegrees(cc.pToAngle(this.moveDir));
+            let deg = cc.misc.radiansToDegrees(Math.atan2(this.moveDir.y, this.moveDir.x));
             if (deg >= 45 && deg < 135) {
                 this.moveUp();
             } else if (deg >= 135 || deg < -135) {
