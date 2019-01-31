@@ -18,12 +18,12 @@ cc.Class({
     init (waveMng, dir) {
         this.waveMng = waveMng;
         this.player = waveMng.player;
-        let rad = cc.pToAngle(dir);
-        let deg = cc.radiansToDegrees(rad);
+        let rad = Math.atan2(dir.y, dir.x);
+        let deg = cc.misc.radiansToDegrees(rad);
         let rotation = 90-deg;
         this.sprite.node.rotation = rotation;
         this.sprite.enabled = true;
-        this.direction = cc.pNormalize(dir);
+        this.direction = dir.normalize();
         this.isMoving = true;
     },
 
@@ -49,7 +49,7 @@ cc.Class({
             return;
         }
 
-        let dist = cc.pDistance(this.player.node.position, this.node.position);
+        let dist = this.player.node.position.sub(this.node.position).mag();
         if (dist < this.player.hurtRadius && this.player.isAlive) {
             if (this.canBreak && this.player.isAttacking) {
                 this.broke();

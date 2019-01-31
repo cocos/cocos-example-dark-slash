@@ -196,8 +196,8 @@ cc.Class({
     },
 
     getNewFoePosition () {
-        var randX = cc.randomMinus1To1() * (this.foeGroup.width - this.spawnMargin)/2;
-        var randY = cc.randomMinus1To1() * (this.foeGroup.height - this.spawnMargin)/2;
-        return cc.p(randX, randY);
+        var randX = (Math.random() - 0.5) * 2 * (this.foeGroup.width - this.spawnMargin)/2;
+        var randY = (Math.random() - 0.5) * 2 * (this.foeGroup.height - this.spawnMargin)/2;
+        return cc.v2(randX, randY);
     },
 });

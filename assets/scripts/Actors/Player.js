@@ -28,7 +28,7 @@ cc.Class({
         this.nextPoseSF = null;
         this.registerInput();
         this.spArrow.active = false;
-        this.atkTargetPos = cc.p(0,0);
+        this.atkTargetPos = cc.v2(0,0);
         this.isAtkGoingOut = false;
         this.validAtkRect = cc.rect(25, 25, (this.node.parent.width - 50), (this.node.parent.height - 50));
         this.oneSlashKills = 0;
@@ -56,7 +56,7 @@ cc.Class({
                 var touchLoc = touch.getLocation();
                 self.spArrow.active = true;
                 self.moveToPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
-                if (cc.pDistance(self.touchBeganLoc, touchLoc) > self.touchMoveThreshold) {
+                if (self.touchBeganLoc.sub(touchLoc).mag() > self.touchMoveThreshold) {
                     self.hasMoved = true;
                 }
             },
@@ -73,10 +73,10 @@ cc.Class({
                 if (!self.hasMoved && !isHold) {
                     var touchLoc = touch.getLocation();
                     let atkPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
-                    let atkDir = cc.pSub(atkPos, self.node.position);
-                    self.atkTargetPos = cc.pAdd( self.node.position, cc.pMult(cc.pNormalize(atkDir), self.atkDist) );
+                    let atkDir = atkPos.sub(self.node.position);
+                    self.atkTargetPos = self.node.position.add( atkDir.normalize().mul(self.atkDist) );
                     let atkPosWorld = self.node.parent.convertToWorldSpaceAR(self.atkTargetPos);
-                    if (!cc.rectContainsPoint(self.validAtkRect, atkPosWorld)) {
+                    if (!self.validAtkRect.contains(atkPosWorld)) {
                         self.isAtkGoingOut = true;
                     } else {
                         self.isAtkGoingOut = false;
@@ -104,7 +104,7 @@ cc.Class({
 
     attackOnTarget (atkDir, targetPos) {
         var self = this;
-        let deg = cc.radiansToDegrees(cc.pAngleSigned(cc.p(0, 1), atkDir));
+        let deg = cc.misc.radiansToDegrees( cc.v2(0, 1).signAngle(atkDir) );
         let angleDivider = [0, 12, 35, 56, 79, 101, 124, 146, 168, 180];
         let slashPos = null;
         function getAtkSF(mag, sfAtkDirs) {
@@ -215,12 +215,12 @@ cc.Class({
         }
 
         if (this.inputEnabled && this.moveToPos && this.isTouchHold()) {
-            let dir = cc.pSub(this.moveToPos, this.node.position);
-            let rad = cc.pToAngle(dir);
-            let deg = cc.radiansToDegrees(rad);
+            let dir = this.moveToPos.sub(this.node.position);
+            let rad = Math.atan2(dir.y, dir.x);
+            let deg = cc.misc.radiansToDegrees(rad);
             this.spArrow.rotation = 90-deg;
             this.node.emit('update-dir', {
-                dir: cc.pNormalize(dir)
+                dir: dir.normalize()
             });
         }
     },
