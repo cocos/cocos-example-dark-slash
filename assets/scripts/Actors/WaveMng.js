@@ -112,8 +112,8 @@ cc.Class({
         this.startSpawn();
         this.game.inGameUI.showWave(this.waveIdx + 1);
         //ANALYTICS
-        cocosAnalytics.CALevels.begin({
-            level : "wave" + this.waveIdx
+        cocosAnalytics.CACustomEvent.onStarted("关卡", {
+            level: "wave" + this.waveIdx
         });
     },
 
@@ -126,7 +126,7 @@ cc.Class({
         this.bossProgress.hide();
         this.game.bossMng.endBoss();
         //ANALYTICS
-        cocosAnalytics.CALevels.complete({
+        cocosAnalytics.CACustomEvent.onSuccess("关卡", {
             level: "wave" + this.waveIdx
         });
         // update wave index
