@@ -39,8 +39,20 @@ cc.Class({
             // iapID 付费点，可选。默认为空
             iapID: '原地满血复活',
             // orderID 订单编号，可选。默认为空
-            orderID: orderID
-        });        
+            orderID: orderID,
+            // 充值获得的虚拟币额度
+            virtualCurrencyAmount: 0,
+            // 消费的账号  苹果是appleid 安卓是？？
+            accountID: "",
+            // 支付渠道
+            partner: "微信",
+            // 玩家充值的区服。
+            gameServer: "艾欧尼亚",
+            // 玩家充值时的等级。
+            level: "1",
+            // 玩家充值时所在的关卡或任务。亦可传入一个玩家打到的最高关卡           
+            mission: "wave 1"
+        });
         cocosAnalytics.CAPayment.paySuccess({
             // amount 付费金额，单位为分，必填
             amount: 1,
@@ -51,8 +63,20 @@ cc.Class({
             // iapID 付费点，可选。默认为空
             iapID: '原地满血复活',
             // orderID 订单编号，可选。默认为空
-            orderID: orderID
-        });        
+            orderID: orderID,
+            // 充值获得的虚拟币额度
+            virtualCurrencyAmount: 0,
+            // 消费的账号  苹果是appleid 安卓是？？
+            accountID: "",
+            // 支付渠道
+            partner: "微信",
+            // 玩家充值的区服。
+            gameServer: "艾欧尼亚",
+            // 玩家充值时的等级。
+            level: "1",
+            // 玩家充值时所在的关卡或任务。亦可传入一个玩家打到的最高关卡           
+            mission: "wave 1"
+        });
         this.game.revive();
     },
 

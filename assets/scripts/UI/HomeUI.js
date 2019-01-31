@@ -22,13 +22,11 @@ cc.Class({
     onLoad: function () {
         //ANALYTICS: login
         cocosAnalytics.CAAccount.loginStart();
-        cocosAnalytics.CAAccount.loginSuccess({'userID':'101'});
-        // 设置帐号类型
-        cocosAnalytics.CAAccount.setAccountType('VIP1');
-        // 年龄
-        cocosAnalytics.CAAccount.setAge(18);
-        // 性别：1为男，2为女，其它表示未知
-        cocosAnalytics.CAAccount.setGender(2);
+        cocosAnalytics.CAAccount.loginSuccess({
+            'userID': '101',
+            'age': '24',    // 年龄
+            'sex': '1',     // 性别：1为男，2为女，其它表示未知
+        });
     },
 
     start: function () {
@@ -50,14 +48,20 @@ cc.Class({
     playGame: function () {
         cc.eventManager.pauseTarget(this.btnGroup, true);
         //ANALYTICS: createRole
-        cocosAnalytics.CAAccount.createRole({
-            roleID:'01',
-            userName:'斩哥',
-            race:'人族',
-            class:'刺客',
-            gameServer : 'platform' + cc.sys.platform
+        cocosAnalytics.CACustomEvent.onStarted("角色", {
+            action: 'create',
+            roleID: '01',
+            userName: '斩哥',
+            race: '人族',
+            class: '刺客',
+            gameServer: 'platform' + cc.sys.platform,
+            level: 1
         });
-        cocosAnalytics.CAAccount.setLevel(1);
+        cocosAnalytics.CACustomEvent.onStarted("角色", {
+            action: 'update',
+            level: 100
+        });
+
         cc.director.loadScene('PlayGame');
     }
 
