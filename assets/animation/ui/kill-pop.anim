@@ -172,14 +172,14 @@
               "value": 0
             }
           ],
-          "rotation": [
+          "angle": [
             {
               "frame": 0,
               "value": 0
             },
             {
               "frame": 0.8666666666666667,
-              "value": 50
+              "value": -50
             }
           ]
         }

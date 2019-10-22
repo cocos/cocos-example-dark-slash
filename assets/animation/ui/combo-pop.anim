@@ -89,7 +89,6 @@
           }
         },
         "props": {
-          "rotation": [],
           "opacity": [
             {
               "frame": 0.06666666666666667,
@@ -103,7 +102,8 @@
               "frame": 0.4,
               "value": 0
             }
-          ]
+          ],
+          "angle": []
         }
       },
       "txt_num": {

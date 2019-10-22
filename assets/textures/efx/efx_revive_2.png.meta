@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "a064cf5d-48da-46da-87d5-cc48ff16a306",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "efx_revive_2": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "da8d47fc-3978-4950-a5f9-f631df42af02",
       "rawTextureUuid": "a064cf5d-48da-46da-87d5-cc48ff16a306",
       "trimType": "auto",

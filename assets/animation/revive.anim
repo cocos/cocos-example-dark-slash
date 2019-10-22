@@ -76,16 +76,6 @@
               "value": 1
             }
           ],
-          "rotation": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 2.5,
-              "value": 360
-            }
-          ],
           "opacity": [
             {
               "frame": 0,
@@ -102,6 +92,16 @@
             {
               "frame": 2.5,
               "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2.5,
+              "value": -360
             }
           ]
         }

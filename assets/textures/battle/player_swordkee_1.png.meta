@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "8aff0cf6-19a1-4623-a7b3-855d1fe0e396",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "player_swordkee_1": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "12e44e26-e1d9-4ffc-b06d-db1058929a65",
       "rawTextureUuid": "8aff0cf6-19a1-4623-a7b3-855d1fe0e396",
       "trimType": "auto",

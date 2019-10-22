@@ -88,6 +88,27 @@ cc.Class({
                 self.hasMoved = false;
             }
         }, self.node);
+
+        // // keyboard input
+        // cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, function onKeyDown (event) {
+        //     switch(event.keyCode) {
+        //         case cc.macro.KEY.a:
+        //         case cc.macro.KEY.s:
+        //         case cc.macro.KEY.d:
+        //         case cc.macro.KEY.f:
+        //         break;
+        //     }
+        // }, this);
+        //
+        // cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, function onKeyUp (event) {
+        //     switch(event.keyCode) {
+        //         case cc.macro.KEY.a:
+        //         case cc.macro.KEY.s:
+        //         case cc.macro.KEY.d:
+        //         case cc.macro.KEY.f:
+        //         break;
+        //     }
+        // }, this);
     },
 
     ready () {

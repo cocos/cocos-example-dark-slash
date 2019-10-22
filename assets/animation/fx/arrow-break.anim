@@ -11,20 +11,6 @@
     "paths": {
       "pieceL": {
         "props": {
-          "rotation": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.25,
-              "value": -180
-            },
-            {
-              "frame": 0.5,
-              "value": -355
-            }
-          ],
           "position": [
             {
               "frame": 0,
@@ -67,12 +53,8 @@
               ],
               "motionPath": []
             }
-          ]
-        }
-      },
-      "pieceR": {
-        "props": {
-          "rotation": [
+          ],
+          "angle": [
             {
               "frame": 0,
               "value": 0
@@ -83,9 +65,13 @@
             },
             {
               "frame": 0.5,
-              "value": 360
+              "value": 355
             }
-          ],
+          ]
+        }
+      },
+      "pieceR": {
+        "props": {
           "position": [
             {
               "frame": 0,
@@ -119,6 +105,20 @@
                 11.4
               ],
               "motionPath": []
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": -180
+            },
+            {
+              "frame": 0.5,
+              "value": -360
             }
           ]
         }

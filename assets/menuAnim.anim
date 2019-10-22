@@ -411,10 +411,10 @@
               ]
             }
           ],
-          "rotation": [
+          "angle": [
             {
               "frame": 0.75,
-              "value": 10
+              "value": -10
             },
             {
               "frame": 2.5,
@@ -448,10 +448,10 @@
               ]
             }
           ],
-          "rotation": [
+          "angle": [
             {
               "frame": 0.75,
-              "value": 10
+              "value": -10
             },
             {
               "frame": 2.5,
@@ -485,10 +485,10 @@
               ]
             }
           ],
-          "rotation": [
+          "angle": [
             {
               "frame": 0.75,
-              "value": 10
+              "value": -10
             },
             {
               "frame": 2.5,
@@ -522,10 +522,10 @@
               ]
             }
           ],
-          "rotation": [
+          "angle": [
             {
               "frame": 0.75,
-              "value": 10
+              "value": -10
             },
             {
               "frame": 2.5,
@@ -559,10 +559,10 @@
               ]
             }
           ],
-          "rotation": [
+          "angle": [
             {
               "frame": 0.75,
-              "value": 10
+              "value": -10
             },
             {
               "frame": 2.5,
@@ -627,20 +627,6 @@
               "value": 1
             }
           ],
-          "rotation": [
-            {
-              "frame": 0.18333333333333332,
-              "value": -40
-            },
-            {
-              "frame": 0.23333333333333334,
-              "value": 20
-            },
-            {
-              "frame": 0.65,
-              "value": 30
-            }
-          ],
           "scaleY": [
             {
               "frame": 0.18333333333333332,
@@ -663,6 +649,20 @@
             {
               "frame": 0.65,
               "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.18333333333333332,
+              "value": 40
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": -20
+            },
+            {
+              "frame": 0.65,
+              "value": -30
             }
           ]
         }
