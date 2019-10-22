@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "c3e8d9d4-6c41-410b-9918-bd3fa94b6914",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "home_btn_veewo_on": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "39d8491f-e91e-4ca0-8a37-e31c0a79d4a7",
       "rawTextureUuid": "c3e8d9d4-6c41-410b-9918-bd3fa94b6914",
       "trimType": "auto",

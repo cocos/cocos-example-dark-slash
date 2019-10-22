@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "da7e4ec1-b6bb-48a2-b4a5-be0b376c7a2c",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "home_c_zombie_3": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "158330fa-cd9c-4bdf-86ea-0ef0e9b49537",
       "rawTextureUuid": "da7e4ec1-b6bb-48a2-b4a5-be0b376c7a2c",
       "trimType": "auto",

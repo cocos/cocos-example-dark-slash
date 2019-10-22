@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "325f7868-3535-4be3-b0d8-1719f3e38950",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "averia": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "660cd84c-66aa-4f35-944a-d6641351a7e6",
       "rawTextureUuid": "325f7868-3535-4be3-b0d8-1719f3e38950",
       "trimType": "auto",

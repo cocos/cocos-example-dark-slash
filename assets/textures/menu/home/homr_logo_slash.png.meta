@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "bfa3cbc5-78cd-43be-9622-14b06e03f454",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "homr_logo_slash": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "e9561810-ac30-4e8d-93e7-7174bfc65c15",
       "rawTextureUuid": "bfa3cbc5-78cd-43be-9622-14b06e03f454",
       "trimType": "auto",

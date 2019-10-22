@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "f575eda3-6e6f-417f-a8d6-2771c3c9e36b",
   "type": "sprite",
   "wrapMode": "clamp",
-  "filterMode": "bilinear",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "earphone": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "c41b6fb7-b4fd-4453-bd5e-efc362a091a1",
       "rawTextureUuid": "f575eda3-6e6f-417f-a8d6-2771c3c9e36b",
       "trimType": "auto",
