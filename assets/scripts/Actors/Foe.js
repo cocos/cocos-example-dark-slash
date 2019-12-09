@@ -192,7 +192,7 @@ cc.Class({
         this.fxBlood.node.scaleX = this.anim.node.scaleX;
         this.fxBlood.play('blood');
         this.fxBlade.node.active = true;
-        this.fxBlade.node.rotation = (Math.random() - 0.5) * 2 * 40; 
+        this.fxBlade.node.angle = - (Math.random() - 0.5) * 2 * 40; 
         this.fxBlade.play('blade');
         this.unscheduleAllCallbacks();
         this.node.stopAllActions();

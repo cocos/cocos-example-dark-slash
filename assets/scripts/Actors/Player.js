@@ -37,56 +37,56 @@ cc.Class({
     registerInput () {
         var self = this;
         // touch input
-        cc.eventManager.addListener({
-            event: cc.EventListener.TOUCH_ONE_BY_ONE,
-            onTouchBegan: function(touch, event) {
-                if (self.inputEnabled === false) {
-                    return true;
-                }
-                var touchLoc = touch.getLocation();
-                self.touchBeganLoc = touchLoc;
-                self.moveToPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
-                self.touchStartTime = Date.now();
-                return true; // don't capture event
-            },
-            onTouchMoved: function(touch, event) {
-                if (self.inputEnabled === false) {
-                    return;
-                }
-                var touchLoc = touch.getLocation();
-                self.spArrow.active = true;
-                self.moveToPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
-                if (self.touchBeganLoc.sub(touchLoc).mag() > self.touchMoveThreshold) {
-                    self.hasMoved = true;
-                }
-            },
-            onTouchEnded: function(touch, event) {
-                if (self.inputEnabled === false) {
-                    return;
-                }
-                self.spArrow.active = false;
-                self.moveToPos = null;
-                self.node.emit('update-dir', {
-                    dir: null
-                });
-                let isHold = self.isTouchHold();
-                if (!self.hasMoved && !isHold) {
-                    var touchLoc = touch.getLocation();
-                    let atkPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
-                    let atkDir = atkPos.sub(self.node.position);
-                    self.atkTargetPos = self.node.position.add( atkDir.normalize().mul(self.atkDist) );
-                    let atkPosWorld = self.node.parent.convertToWorldSpaceAR(self.atkTargetPos);
-                    if (!self.validAtkRect.contains(atkPosWorld)) {
-                        self.isAtkGoingOut = true;
-                    } else {
-                        self.isAtkGoingOut = false;
-                    }
-                    self.node.emit('freeze');
-                    self.oneSlashKills = 0;
-                    self.attackOnTarget(atkDir, self.atkTargetPos);
-                }
-                self.hasMoved = false;
+
+        this.node.on('touchstart', function(touch) {
+            if (self.inputEnabled === false) {
+                return true;
             }
+            var touchLoc = touch.getLocation();
+            self.touchBeganLoc = touchLoc;
+            self.moveToPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
+            self.touchStartTime = Date.now();
+            return true; // don't capture event
+        }, self.node);
+
+        this.node.on('touchmove', function(touch) {
+            if (self.inputEnabled === false) {
+                return;
+            }
+            var touchLoc = touch.getLocation();
+            self.spArrow.active = true;
+            self.moveToPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
+            if (self.touchBeganLoc.sub(touchLoc).mag() > self.touchMoveThreshold) {
+                self.hasMoved = true;
+            }
+        }, self.node);
+
+        this.node.on('touchend', function(touch) {
+            if (self.inputEnabled === false) {
+                return;
+            }
+            self.spArrow.active = false;
+            self.moveToPos = null;
+            self.node.emit('update-dir', {
+                dir: null
+            });
+            let isHold = self.isTouchHold();
+            if (!self.hasMoved && !isHold) {
+                var touchLoc = touch.getLocation();
+                let atkPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
+                let atkDir = atkPos.sub(self.node.position);
+                self.atkTargetPos = self.node.position.add( atkDir.normalize().mul(self.atkDist) );
+                let atkPosWorld = self.node.parent.convertToWorldSpaceAR(self.atkTargetPos);
+                if (!self.validAtkRect.contains(atkPosWorld)) {
+                    self.isAtkGoingOut = true;
+                } else {
+                    self.isAtkGoingOut = false;
+                }
+                self.node.emit('freeze');
+                self.oneSlashKills = 0;
+                self.attackOnTarget(atkDir, self.atkTargetPos);
+            }
+            self.hasMoved = false;
         }, self.node);
 
         // // keyboard input
@@ -160,7 +160,7 @@ cc.Class({
         let callback = cc.callFunc(this.onAtkFinished, this);
         this.node.runAction(cc.sequence(moveAction, delay, callback));
         this.spSlash.node.position = slashPos;
-        this.spSlash.node.rotation = mag;
+        this.spSlash.node.angle = - mag;
         this.spSlash.enabled = true;
         this.spSlash.getComponent(cc.Animation).play('slash');
         this.inputEnabled = false;
@@ -239,7 +239,7 @@ cc.Class({
             let dir = this.moveToPos.sub(this.node.position);
             let rad = Math.atan2(dir.y, dir.x);
             let deg = cc.misc.radiansToDegrees(rad);
-            this.spArrow.rotation = 90-deg;
+            this.spArrow.angle = 90 - deg;
             this.node.emit('update-dir', {
                 dir: dir.normalize()
             });
