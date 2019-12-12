@@ -239,7 +239,7 @@ cc.Class({
             let dir = this.moveToPos.sub(this.node.position);
             let rad = Math.atan2(dir.y, dir.x);
             let deg = cc.misc.radiansToDegrees(rad);
-            this.spArrow.angle = 90 - deg;
+            this.spArrow.angle = deg - 90;
             this.node.emit('update-dir', {
                 dir: dir.normalize()
             });
