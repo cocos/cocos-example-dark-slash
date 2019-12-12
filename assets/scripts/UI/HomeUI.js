@@ -24,7 +24,7 @@ cc.Class({
     },
 
     start: function () {
-        cc.eventManager.pauseTarget(this.btnGroup, true);
+        this.btnGroup.pauseSystemEvents(true);
         this.scheduleOnce(function() {
             this.menuAnim.play();
             this.menuParticle.enabled = false;
@@ -36,11 +36,11 @@ cc.Class({
     },
 
     enableButtons: function () {
-        cc.eventManager.resumeTarget(this.btnGroup, true);
+        this.btnGroup.resumeSystemEvents(true);
     },
 
     playGame: function () {
-        cc.eventManager.pauseTarget(this.btnGroup, true);
+        this.btnGroup.pauseSystemEvents(true);
         cc.director.loadScene('PlayGame');
     }
 
