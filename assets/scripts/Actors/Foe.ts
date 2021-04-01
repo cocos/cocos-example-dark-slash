@@ -71,7 +71,7 @@ export class Foe extends Component {
         this.bloodDuration = this.fxBlood.clips[0]!.duration;
         this.fxBlood.node.active = false;
         this.fxBlade.node.active = false;
-        if (this.anim.getAnimationState('born')) {
+        if (this.anim.getState('born')) {
             this.anim.play('born');
         } else {
             this.readyToMove();
