@@ -1,196 +1,353 @@
-{
-  "__type__": "cc.AnimationClip",
-  "_name": "revive",
-  "_objFlags": 0,
-  "_rawFiles": null,
-  "_duration": 2.5,
-  "sample": 30,
-  "speed": 1,
-  "wrapMode": 1,
-  "curveData": {
-    "paths": {
-      "efx_flare": {
-        "comps": {
-          "cc.Sprite": {}
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "revive",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 30,
+    "speed": 1,
+    "wrapMode": 1,
+    "events": [
+      {
+        "frame": 2,
+        "func": "fire",
+        "params": []
+      },
+      {
+        "frame": 2.5,
+        "func": "finish",
+        "params": []
+      }
+    ],
+    "_duration": 2.5,
+    "_keys": [
+      [
+        2,
+        2.5
+      ],
+      [
+        2,
+        2.5
+      ],
+      [
+        1,
+        2,
+        2.2,
+        2.5
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1.8333333333333333,
+        2.5
+      ],
+      [
+        0,
+        2.5
+      ],
+      [
+        0,
+        0.6666666666666666
+      ],
+      [
+        0,
+        0.6666666666666666,
+        1.8333333333333333,
+        2.5
+      ],
+      [
+        0,
+        0.6666666666666666,
+        1.3333333333333333,
+        1.8333333333333333,
+        2.5
+      ],
+      [
+        1.8333333333333333,
+        2.5
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          "x"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            12,
+            100
+          ],
+          "easingMethods": {}
         },
-        "props": {
-          "scaleX": [
-            {
-              "frame": 2,
-              "value": 12
-            },
-            {
-              "frame": 2.5,
-              "value": 100
-            }
+        "commonTarget": 0
+      },
+      {
+        "modifiers": [
+          "y"
+        ],
+        "data": {
+          "keys": 1,
+          "values": [
+            12,
+            100
           ],
-          "scaleY": [
-            {
-              "frame": 2,
-              "value": 12
-            },
-            {
-              "frame": 2.5,
-              "value": 100
-            }
+          "easingMethods": {}
+        },
+        "commonTarget": 0
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          {
+            "__id__": 2
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 2,
+          "values": [
+            0,
+            255,
+            255,
+            0
           ],
-          "opacity": [
-            {
-              "frame": 1,
-              "value": 0
-            },
-            {
-              "frame": 2,
-              "value": 255
-            },
-            {
-              "frame": 2.2,
-              "value": 255
-            },
-            {
-              "frame": 2.5,
-              "value": 0
-            }
-          ]
+          "easingMethods": {}
         }
       },
-      "ring/efx_revive_0": {
-        "props": {
-          "scaleX": [
-            {
-              "frame": 0,
-              "value": 0.3
-            },
-            {
-              "frame": 1,
-              "value": 1
-            }
+      {
+        "modifiers": [
+          "x"
+        ],
+        "data": {
+          "keys": 3,
+          "values": [
+            0.3,
+            1
           ],
-          "scaleY": [
-            {
-              "frame": 0,
-              "value": 0.3
-            },
-            {
-              "frame": 1,
-              "value": 1
-            }
+          "easingMethods": {}
+        },
+        "commonTarget": 1
+      },
+      {
+        "modifiers": [
+          "y"
+        ],
+        "data": {
+          "keys": 4,
+          "values": [
+            0.3,
+            1
           ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 1,
-              "value": 255
-            },
-            {
-              "frame": 1.8333333333333333,
-              "value": 255
-            },
-            {
-              "frame": 2.5,
-              "value": 0
-            }
+          "easingMethods": {}
+        },
+        "commonTarget": 1
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 4
+          },
+          {
+            "__id__": 5
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 5,
+          "values": [
+            0,
+            255,
+            255,
+            0
           ],
-          "angle": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 2.5,
-              "value": -360
-            }
-          ]
+          "easingMethods": {}
         }
       },
-      "ring/efx_revive_l1": {
-        "props": {
-          "scaleY": [
+      {
+        "modifiers": [
+          {
+            "__id__": 4
+          },
+          "eulerAngles"
+        ],
+        "data": {
+          "keys": 6,
+          "values": [
             {
-              "frame": 0,
-              "value": 1
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 0
             },
             {
-              "frame": 0.6666666666666666,
-              "value": 3
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": -360
             }
           ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.6666666666666666,
-              "value": 255
-            },
-            {
-              "frame": 1.8333333333333333,
-              "value": 255
-            },
-            {
-              "frame": 2.5,
-              "value": 0
-            }
-          ]
+          "easingMethods": {}
         }
       },
-      "p1_revive": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.6666666666666666,
-              "value": 0
-            },
-            {
-              "frame": 1.3333333333333333,
-              "value": 255
-            },
-            {
-              "frame": 1.8333333333333333,
-              "value": 255
-            },
-            {
-              "frame": 2.5,
-              "value": 0
-            }
-          ]
+      {
+        "modifiers": [
+          "y"
+        ],
+        "data": {
+          "keys": 7,
+          "values": [
+            1,
+            3
+          ],
+          "easingMethods": {}
+        },
+        "commonTarget": 2
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 6
+          },
+          {
+            "__id__": 7
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 8,
+          "values": [
+            0,
+            255,
+            255,
+            0
+          ],
+          "easingMethods": {}
         }
       },
-      "main": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 1.8333333333333333,
-              "value": 0
-            },
-            {
-              "frame": 2.5,
-              "value": 255
-            }
-          ]
+      {
+        "modifiers": [
+          {
+            "__id__": 8
+          },
+          {
+            "__id__": 9
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 9,
+          "values": [
+            0,
+            0,
+            255,
+            255,
+            0
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 10
+          },
+          {
+            "__id__": 11
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 10,
+          "values": [
+            0,
+            255
+          ],
+          "easingMethods": {}
         }
       }
-    },
-    "props": {}
+    ],
+    "_commonTargets": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "scale"
+        ]
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 4
+          },
+          "scale"
+        ]
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 6
+          },
+          "scale"
+        ]
+      }
+    ],
+    "_hash": 0
   },
-  "events": [
-    {
-      "frame": 2,
-      "func": "fire",
-      "params": []
-    },
-    {
-      "frame": 2.5,
-      "func": "finish",
-      "params": []
-    }
-  ]
-}
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "efx_flare"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "ring/efx_revive_0"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "ring/efx_revive_l1"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "p1_revive"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "main"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  }
+]

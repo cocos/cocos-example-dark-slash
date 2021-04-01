@@ -1,50 +1,60 @@
-{
-  "__type__": "cc.AnimationClip",
-  "_name": "stand",
-  "_objFlags": 0,
-  "_rawFiles": null,
-  "_duration": 0.5,
-  "sample": 10,
-  "speed": 1,
-  "wrapMode": 2,
-  "curveData": {
-    "comps": {
-      "cc.Sprite": {
-        "spriteFrame": [
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "stand",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 10,
+    "speed": 1,
+    "wrapMode": 2,
+    "events": [],
+    "_duration": 0.5,
+    "_keys": [
+      [
+        0,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
           {
-            "frame": 0,
-            "value": {
-              "__uuid__": "7d321207-1a43-4428-a542-8ae907177520"
-            }
+            "__id__": 1
           },
-          {
-            "frame": 0.1,
-            "value": {
-              "__uuid__": "2f878630-44ef-4286-a5af-3565252dc71f"
+          "spriteFrame"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@87968"
+            },
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@64b9d"
+            },
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@2abd3"
+            },
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@64b9d"
+            },
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@87968"
             }
-          },
-          {
-            "frame": 0.2,
-            "value": {
-              "__uuid__": "fab65a2d-01c6-4a21-a02d-06645226c5a7"
-            }
-          },
-          {
-            "frame": 0.3,
-            "value": {
-              "__uuid__": "2f878630-44ef-4286-a5af-3565252dc71f"
-            }
-          },
-          {
-            "frame": 0.4,
-            "value": {
-              "__uuid__": "7d321207-1a43-4428-a542-8ae907177520"
-            }
-          }
-        ]
+          ],
+          "easingMethods": {}
+        }
       }
-    },
-    "props": {}
+    ],
+    "_commonTargets": [],
+    "_hash": 0
   },
-  "events": []
-}
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  }
+]

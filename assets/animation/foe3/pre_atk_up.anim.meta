@@ -1,5 +1,13 @@
 {
-  "ver": "2.1.0",
+  "ver": "1.0.11",
+  "importer": "animation-clip",
+  "imported": true,
   "uuid": "570336eb-4a58-4554-af8c-1544b92aaf4f",
-  "subMetas": {}
+  "files": [
+    ".json"
+  ],
+  "subMetas": {},
+  "userData": {
+    "name": "pre_atk_up"
+  }
 }

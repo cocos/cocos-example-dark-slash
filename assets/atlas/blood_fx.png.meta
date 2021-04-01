@@ -1,34 +1,40 @@
 {
-  "ver": "2.3.3",
+  "ver": "1.0.21",
+  "importer": "image",
+  "imported": true,
   "uuid": "2f5edd67-a375-4555-bc24-9969b82d264d",
-  "type": "sprite",
-  "wrapMode": "clamp",
-  "filterMode": "point",
-  "premultiplyAlpha": false,
-  "genMipmaps": false,
-  "packable": true,
-  "platformSettings": {},
+  "files": [
+    ".png",
+    ".json"
+  ],
   "subMetas": {
-    "blood_fx": {
-      "ver": "1.0.4",
-      "uuid": "51992753-cfe1-4b7e-a364-5a0ffc5b6257",
-      "rawTextureUuid": "2f5edd67-a375-4555-bc24-9969b82d264d",
-      "trimType": "auto",
-      "trimThreshold": 1,
-      "rotated": false,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trimX": 2,
-      "trimY": 2,
-      "width": 336,
-      "height": 1012,
-      "rawWidth": 340,
-      "rawHeight": 1016,
-      "borderTop": 0,
-      "borderBottom": 0,
-      "borderLeft": 0,
-      "borderRight": 0,
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "2f5edd67-a375-4555-bc24-9969b82d264d@6c48a",
+      "displayName": "blood_fx",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "minfilter": "nearest",
+        "magfilter": "nearest",
+        "wrapModeT": "clamp-to-edge",
+        "wrapModeS": "clamp-to-edge",
+        "mipfilter": "none",
+        "imageUuidOrDatabaseUri": "2f5edd67-a375-4555-bc24-9969b82d264d",
+        "anisotropy": 1,
+        "isUuid": true
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
       "subMetas": {}
     }
+  },
+  "userData": {
+    "type": "texture",
+    "hasAlpha": true,
+    "redirect": "2f5edd67-a375-4555-bc24-9969b82d264d@6c48a"
   }
 }

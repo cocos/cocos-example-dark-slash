@@ -1,8 +1,13 @@
 {
-  "ver": "1.2.2",
+  "ver": "1.1.27",
+  "importer": "prefab",
+  "imported": true,
   "uuid": "5bd616e8-8431-40e3-8f08-196a16da6fab",
-  "optimizationPolicy": "AUTO",
-  "asyncLoadAssets": false,
-  "readonly": false,
-  "subMetas": {}
+  "files": [
+    ".json"
+  ],
+  "subMetas": {},
+  "userData": {
+    "syncNodeName": "player"
+  }
 }

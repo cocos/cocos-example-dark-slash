@@ -1,43 +1,56 @@
-{
-  "__type__": "cc.AnimationClip",
-  "_name": "run_right",
-  "_objFlags": 0,
-  "_rawFiles": null,
-  "_duration": 0.3,
-  "sample": 10,
-  "speed": 1,
-  "wrapMode": 2,
-  "curveData": {
-    "comps": {
-      "cc.Sprite": {
-        "spriteFrame": [
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "run_right",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 10,
+    "speed": 1,
+    "wrapMode": 2,
+    "events": [],
+    "_duration": 0.3,
+    "_keys": [
+      [
+        0,
+        0.1,
+        0.2,
+        0.3
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
           {
-            "frame": 0,
-            "value": {
-              "__uuid__": "3c3a01cb-aec9-4ec4-b7b9-dd8053590903"
-            }
+            "__id__": 1
           },
-          {
-            "frame": 0.1,
-            "value": {
-              "__uuid__": "86bb52e7-597c-41d2-897a-f128167e59b7"
+          "spriteFrame"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            {
+              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@e2901"
+            },
+            {
+              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@a0d2f"
+            },
+            {
+              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@b0aaf"
+            },
+            {
+              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@8360a"
             }
-          },
-          {
-            "frame": 0.2,
-            "value": {
-              "__uuid__": "015c8129-8993-4f4d-97c7-3d7ba8eba2b7"
-            }
-          },
-          {
-            "frame": 0.3,
-            "value": {
-              "__uuid__": "36988355-1553-4fc2-ba39-7866e861280d"
-            }
-          }
-        ]
+          ],
+          "easingMethods": {}
+        }
       }
-    }
+    ],
+    "_commonTargets": [],
+    "_hash": 0
   },
-  "events": []
-}
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  }
+]

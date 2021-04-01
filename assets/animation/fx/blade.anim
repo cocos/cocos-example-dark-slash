@@ -2,34 +2,61 @@
   "__type__": "cc.AnimationClip",
   "_name": "blade",
   "_objFlags": 0,
-  "_duration": 0.35,
+  "_native": "",
   "sample": 20,
   "speed": 1,
   "wrapMode": 1,
-  "curveData": {
-    "props": {
-      "scaleX": [
-        {
-          "frame": 0,
-          "value": 1,
-          "curve": "linear"
-        },
-        {
-          "frame": 0.35,
-          "value": 0
-        }
+  "events": [],
+  "_duration": 0.35,
+  "_keys": [
+    [
+      0,
+      0.35
+    ],
+    [
+      0,
+      0.35
+    ]
+  ],
+  "_stepness": 0,
+  "_curves": [
+    {
+      "modifiers": [
+        "x"
       ],
-      "scaleY": [
-        {
-          "frame": 0,
-          "value": 1
-        },
-        {
-          "frame": 0.35,
-          "value": 0
+      "data": {
+        "keys": 0,
+        "values": [
+          1,
+          0
+        ],
+        "easingMethods": {
+          "0": "linear"
         }
+      },
+      "commonTarget": 0
+    },
+    {
+      "modifiers": [
+        "y"
+      ],
+      "data": {
+        "keys": 1,
+        "values": [
+          1,
+          0
+        ],
+        "easingMethods": {}
+      },
+      "commonTarget": 0
+    }
+  ],
+  "_commonTargets": [
+    {
+      "modifiers": [
+        "scale"
       ]
     }
-  },
-  "events": []
+  ],
+  "_hash": 0
 }

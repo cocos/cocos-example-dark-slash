@@ -1,146 +1,251 @@
-{
-  "__type__": "cc.AnimationClip",
-  "_name": "combo-pop",
-  "_objFlags": 0,
-  "_duration": 0.4,
-  "sample": 30,
-  "speed": 1,
-  "wrapMode": 1,
-  "curveData": {
-    "paths": {
-      "ba_combo_txt": {
-        "props": {
-          "position": [
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "combo-pop",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 30,
+    "speed": 1,
+    "wrapMode": 1,
+    "events": [],
+    "_duration": 0.4,
+    "_keys": [
+      [
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        0.13333333333333333,
+        0.16666666666666666,
+        0.2,
+        0.23333333333333334,
+        0.3,
+        0.36666666666666664
+      ],
+      [
+        0.06666666666666667,
+        0.1,
+        0.4
+      ],
+      [],
+      [
+        0
+      ],
+      [
+        0,
+        0.26666666666666666
+      ],
+      [
+        0,
+        0.26666666666666666
+      ],
+      [
+        0,
+        0.26666666666666666
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "position"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
             {
-              "frame": 0.03333333333333333,
-              "value": [
-                0,
-                9.5
-              ]
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 9.5,
+              "z": 0
             },
             {
-              "frame": 0.06666666666666667,
-              "value": [
-                0,
-                11
-              ]
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 11,
+              "z": 0
             },
             {
-              "frame": 0.1,
-              "value": [
-                -1,
-                11
-              ]
+              "__type__": "cc.Vec3",
+              "x": -1,
+              "y": 11,
+              "z": 0
             },
             {
-              "frame": 0.13333333333333333,
-              "value": [
-                -1,
-                8
-              ]
+              "__type__": "cc.Vec3",
+              "x": -1,
+              "y": 8,
+              "z": 0
             },
             {
-              "frame": 0.16666666666666666,
-              "value": [
-                2,
-                8
-              ]
+              "__type__": "cc.Vec3",
+              "x": 2,
+              "y": 8,
+              "z": 0
             },
             {
-              "frame": 0.2,
-              "value": [
-                -1,
-                11
-              ]
+              "__type__": "cc.Vec3",
+              "x": -1,
+              "y": 11,
+              "z": 0
             },
             {
-              "frame": 0.23333333333333334,
-              "value": [
-                0,
-                9.5
-              ]
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 9.5,
+              "z": 0
             },
             {
-              "frame": 0.3,
-              "value": [
-                -1,
-                11
-              ]
+              "__type__": "cc.Vec3",
+              "x": -1,
+              "y": 11,
+              "z": 0
             },
             {
-              "frame": 0.36666666666666664,
-              "value": [
-                0,
-                9.5
-              ]
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 9.5,
+              "z": 0
             }
-          ]
+          ],
+          "easingMethods": {}
         }
       },
-      "efx_flare": {
-        "comps": {
-          "cc.Sprite": {
-            "enabled": [
-              {
-                "frame": 0,
-                "value": true
-              }
-            ]
-          }
+      {
+        "modifiers": [
+          {
+            "__id__": 2
+          },
+          {
+            "__id__": 3
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 1,
+          "values": [
+            0,
+            255,
+            0
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 2
+          },
+          "eulerAngles"
+        ],
+        "data": {
+          "keys": 2,
+          "values": [],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 2
+          },
+          {
+            "__id__": 4
+          },
+          "enabled"
+        ],
+        "data": {
+          "keys": 3,
+          "values": [
+            true
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 5
+          },
+          {
+            "__id__": 6
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 4,
+          "values": [
+            0,
+            255
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          "x"
+        ],
+        "data": {
+          "keys": 5,
+          "values": [
+            2,
+            1
+          ],
+          "easingMethods": {}
         },
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.06666666666666667,
-              "value": 0
-            },
-            {
-              "frame": 0.1,
-              "value": 255
-            },
-            {
-              "frame": 0.4,
-              "value": 0
-            }
-          ],
-          "angle": []
-        }
+        "commonTarget": 0
       },
-      "txt_num": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.26666666666666666,
-              "value": 255
-            }
+      {
+        "modifiers": [
+          "y"
+        ],
+        "data": {
+          "keys": 6,
+          "values": [
+            2,
+            1
           ],
-          "scaleX": [
-            {
-              "frame": 0,
-              "value": 2
-            },
-            {
-              "frame": 0.26666666666666666,
-              "value": 1
-            }
-          ],
-          "scaleY": [
-            {
-              "frame": 0,
-              "value": 2
-            },
-            {
-              "frame": 0.26666666666666666,
-              "value": 1
-            }
-          ]
-        }
+          "easingMethods": {}
+        },
+        "commonTarget": 0
       }
-    }
+    ],
+    "_commonTargets": [
+      {
+        "modifiers": [
+          {
+            "__id__": 5
+          },
+          "scale"
+        ]
+      }
+    ],
+    "_hash": 0
   },
-  "events": []
-}
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "ba_combo_txt"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "efx_flare"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "txt_num"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  }
+]

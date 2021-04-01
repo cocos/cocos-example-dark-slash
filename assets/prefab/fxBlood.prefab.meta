@@ -1,8 +1,13 @@
 {
-  "ver": "1.2.2",
+  "ver": "1.1.27",
+  "importer": "prefab",
+  "imported": true,
   "uuid": "c6bfe4df-3268-4fe6-b70c-93b4ba4842fe",
-  "optimizationPolicy": "AUTO",
-  "asyncLoadAssets": false,
-  "readonly": false,
-  "subMetas": {}
+  "files": [
+    ".json"
+  ],
+  "subMetas": {},
+  "userData": {
+    "syncNodeName": "fxBlood"
+  }
 }

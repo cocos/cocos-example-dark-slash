@@ -1,196 +1,316 @@
-{
-  "__type__": "cc.AnimationClip",
-  "_name": "kill-pop",
-  "_objFlags": 0,
-  "_duration": 0.87,
-  "sample": 30,
-  "speed": 1,
-  "wrapMode": 1,
-  "curveData": {
-    "paths": {
-      "num_kills": {
-        "props": {
-          "scaleX": [
-            {
-              "frame": 0,
-              "value": 7
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": 1
-            },
-            {
-              "frame": 0.7333333333333333,
-              "value": 1
-            },
-            {
-              "frame": 0.8666666666666667,
-              "value": 6
-            }
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "kill-pop",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 30,
+    "speed": 1,
+    "wrapMode": 1,
+    "events": [
+      {
+        "frame": 0.8666666666666667,
+        "func": "hide",
+        "params": []
+      }
+    ],
+    "_duration": 0.87,
+    "_keys": [
+      [
+        0,
+        0.06666666666666667,
+        0.7333333333333333,
+        0.8666666666666667
+      ],
+      [
+        0,
+        0.06666666666666667,
+        0.7333333333333333,
+        0.8666666666666667
+      ],
+      [
+        0,
+        0.06666666666666667,
+        0.7333333333333333,
+        0.8666666666666667
+      ],
+      [
+        0,
+        0.03333333333333333,
+        0.7333333333333333,
+        0.8666666666666667
+      ],
+      [
+        0,
+        0.03333333333333333,
+        0.7333333333333333,
+        0.8666666666666667
+      ],
+      [
+        0,
+        0.03333333333333333
+      ],
+      [
+        0,
+        0.03333333333333333,
+        0.7333333333333333,
+        0.8666666666666667
+      ],
+      [
+        0,
+        0.03333333333333333,
+        0.7333333333333333,
+        0.8666666666666667
+      ],
+      [
+        0,
+        0.06666666666666667,
+        0.8666666666666667
+      ],
+      [
+        0,
+        0.8666666666666667
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          "x"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            7,
+            1,
+            1,
+            6
           ],
-          "scaleY": [
-            {
-              "frame": 0,
-              "value": 7
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": 1
-            },
-            {
-              "frame": 0.7333333333333333,
-              "value": 1
-            },
-            {
-              "frame": 0.8666666666666667,
-              "value": 6
-            }
+          "easingMethods": {}
+        },
+        "commonTarget": 0
+      },
+      {
+        "modifiers": [
+          "y"
+        ],
+        "data": {
+          "keys": 1,
+          "values": [
+            7,
+            1,
+            1,
+            6
           ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": 255
-            },
-            {
-              "frame": 0.7333333333333333,
-              "value": 255
-            },
-            {
-              "frame": 0.8666666666666667,
-              "value": 0
-            }
-          ]
+          "easingMethods": {}
+        },
+        "commonTarget": 0
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          {
+            "__id__": 2
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 2,
+          "values": [
+            0,
+            255,
+            255,
+            0
+          ],
+          "easingMethods": {}
         }
       },
-      "bg": {
-        "props": {
-          "scaleX": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.03333333333333333,
-              "value": 1
-            },
-            {
-              "frame": 0.7333333333333333,
-              "value": 1.05
-            },
-            {
-              "frame": 0.8666666666666667,
-              "value": 0
-            }
+      {
+        "modifiers": [
+          "x"
+        ],
+        "data": {
+          "keys": 3,
+          "values": [
+            0,
+            1,
+            1.05,
+            0
           ],
-          "scaleY": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.03333333333333333,
-              "value": 1
-            },
-            {
-              "frame": 0.7333333333333333,
-              "value": 1.05
-            },
-            {
-              "frame": 0.8666666666666667,
-              "value": 0
-            }
+          "easingMethods": {}
+        },
+        "commonTarget": 1
+      },
+      {
+        "modifiers": [
+          "y"
+        ],
+        "data": {
+          "keys": 4,
+          "values": [
+            0,
+            1,
+            1.05,
+            0
           ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.03333333333333333,
-              "value": 255
-            }
-          ]
+          "easingMethods": {}
+        },
+        "commonTarget": 1
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 3
+          },
+          {
+            "__id__": 4
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 5,
+          "values": [
+            0,
+            255
+          ],
+          "easingMethods": {}
         }
       },
-      "ba_kills_txt": {
-        "props": {
-          "scaleX": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.03333333333333333,
-              "value": 1
-            },
-            {
-              "frame": 0.7333333333333333,
-              "value": 1.1
-            },
-            {
-              "frame": 0.8666666666666667,
-              "value": 0
-            }
+      {
+        "modifiers": [
+          "x"
+        ],
+        "data": {
+          "keys": 6,
+          "values": [
+            0,
+            1,
+            1.1,
+            0
           ],
-          "scaleY": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.03333333333333333,
-              "value": 1
-            },
-            {
-              "frame": 0.7333333333333333,
-              "value": 1.1
-            },
-            {
-              "frame": 0.8666666666666667,
-              "value": 0
-            }
-          ]
+          "easingMethods": {}
+        },
+        "commonTarget": 2
+      },
+      {
+        "modifiers": [
+          "y"
+        ],
+        "data": {
+          "keys": 7,
+          "values": [
+            0,
+            1,
+            1.1,
+            0
+          ],
+          "easingMethods": {}
+        },
+        "commonTarget": 2
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 6
+          },
+          {
+            "__id__": 7
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 8,
+          "values": [
+            0,
+            255,
+            0
+          ],
+          "easingMethods": {}
         }
       },
-      "light": {
-        "props": {
-          "opacity": [
+      {
+        "modifiers": [
+          {
+            "__id__": 6
+          },
+          "eulerAngles"
+        ],
+        "data": {
+          "keys": 9,
+          "values": [
             {
-              "frame": 0,
-              "value": 0
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 0
             },
             {
-              "frame": 0.06666666666666667,
-              "value": 255
-            },
-            {
-              "frame": 0.8666666666666667,
-              "value": 0
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": -50
             }
           ],
-          "angle": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.8666666666666667,
-              "value": -50
-            }
-          ]
+          "easingMethods": {}
         }
       }
-    }
+    ],
+    "_commonTargets": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "scale"
+        ]
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 3
+          },
+          "scale"
+        ]
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 5
+          },
+          "scale"
+        ]
+      }
+    ],
+    "_hash": 0
   },
-  "events": [
-    {
-      "frame": 0.8666666666666667,
-      "func": "hide",
-      "params": []
-    }
-  ]
-}
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "num_kills"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "bg"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "ba_kills_txt"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "light"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  }
+]

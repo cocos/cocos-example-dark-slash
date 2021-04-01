@@ -1,34 +1,74 @@
 {
-  "ver": "2.3.3",
+  "ver": "1.0.21",
+  "importer": "image",
+  "imported": true,
   "uuid": "78cf9b0a-d3d6-4a1b-9341-d7917a0edf7b",
-  "type": "sprite",
-  "wrapMode": "clamp",
-  "filterMode": "point",
-  "premultiplyAlpha": false,
-  "genMipmaps": false,
-  "packable": true,
-  "platformSettings": {},
+  "files": [
+    ".png",
+    ".json"
+  ],
   "subMetas": {
-    "ba_btn_pause_on": {
-      "ver": "1.0.4",
-      "uuid": "92b374c4-8110-4263-b5ba-88b80c39dd95",
-      "rawTextureUuid": "78cf9b0a-d3d6-4a1b-9341-d7917a0edf7b",
-      "trimType": "auto",
-      "trimThreshold": 1,
-      "rotated": false,
-      "offsetX": 9,
-      "offsetY": 8,
-      "trimX": 22,
-      "trimY": 8,
-      "width": 74,
-      "height": 68,
-      "rawWidth": 100,
-      "rawHeight": 100,
-      "borderTop": 0,
-      "borderBottom": 0,
-      "borderLeft": 0,
-      "borderRight": 0,
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "78cf9b0a-d3d6-4a1b-9341-d7917a0edf7b@6c48a",
+      "displayName": "ba_btn_pause_on",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "minfilter": "nearest",
+        "magfilter": "nearest",
+        "wrapModeT": "clamp-to-edge",
+        "wrapModeS": "clamp-to-edge",
+        "mipfilter": "none",
+        "imageUuidOrDatabaseUri": "78cf9b0a-d3d6-4a1b-9341-d7917a0edf7b",
+        "anisotropy": 1,
+        "isUuid": true
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "78cf9b0a-d3d6-4a1b-9341-d7917a0edf7b@f9941",
+      "displayName": "ba_btn_pause_on",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 9,
+        "offsetY": 8,
+        "trimX": 22,
+        "trimY": 8,
+        "width": 74,
+        "height": 68,
+        "rawWidth": 100,
+        "rawHeight": 100,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "imageUuidOrDatabaseUri": "78cf9b0a-d3d6-4a1b-9341-d7917a0edf7b@6c48a",
+        "packable": true,
+        "isUuid": true,
+        "atlasUuid": ""
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
       "subMetas": {}
     }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "hasAlpha": true,
+    "redirect": "78cf9b0a-d3d6-4a1b-9341-d7917a0edf7b@f9941"
   }
 }

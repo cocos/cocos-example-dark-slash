@@ -1,34 +1,40 @@
 {
-  "ver": "2.3.3",
+  "ver": "1.0.21",
+  "importer": "image",
+  "imported": true,
   "uuid": "c00a9ebd-446a-42d0-b4db-c6ee05b356f6",
-  "type": "sprite",
-  "wrapMode": "clamp",
-  "filterMode": "point",
-  "premultiplyAlpha": false,
-  "genMipmaps": false,
-  "packable": true,
-  "platformSettings": {},
+  "files": [
+    ".png",
+    ".json"
+  ],
   "subMetas": {
-    "player": {
-      "ver": "1.0.4",
-      "uuid": "9cbc9ffb-ed5e-42b6-9aa9-95a1b6652a5e",
-      "rawTextureUuid": "c00a9ebd-446a-42d0-b4db-c6ee05b356f6",
-      "trimType": "auto",
-      "trimThreshold": 1,
-      "rotated": false,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trimX": 0,
-      "trimY": 0,
-      "width": 1016,
-      "height": 254,
-      "rawWidth": 1016,
-      "rawHeight": 254,
-      "borderTop": 0,
-      "borderBottom": 0,
-      "borderLeft": 0,
-      "borderRight": 0,
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "c00a9ebd-446a-42d0-b4db-c6ee05b356f6@6c48a",
+      "displayName": "player",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "minfilter": "nearest",
+        "magfilter": "nearest",
+        "wrapModeT": "clamp-to-edge",
+        "wrapModeS": "clamp-to-edge",
+        "mipfilter": "none",
+        "imageUuidOrDatabaseUri": "c00a9ebd-446a-42d0-b4db-c6ee05b356f6",
+        "anisotropy": 1,
+        "isUuid": true
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
       "subMetas": {}
     }
+  },
+  "userData": {
+    "type": "texture",
+    "hasAlpha": true,
+    "redirect": "c00a9ebd-446a-42d0-b4db-c6ee05b356f6@6c48a"
   }
 }
