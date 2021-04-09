@@ -1,8 +1,13 @@
 {
-  "ver": "1.2.2",
+  "ver": "1.1.27",
+  "importer": "prefab",
+  "imported": true,
   "uuid": "8255e1de-1187-46ae-970a-cba9c5267b02",
-  "optimizationPolicy": "AUTO",
-  "asyncLoadAssets": false,
-  "readonly": false,
-  "subMetas": {}
+  "files": [
+    ".json"
+  ],
+  "subMetas": {},
+  "userData": {
+    "syncNodeName": "foe5"
+  }
 }

@@ -7,9 +7,9 @@
     <key>angleVariance</key>
     <integer>5</integer>
     <key>blendFuncDestination</key>
-    <integer>771</integer>
+    <integer>4</integer>
     <key>blendFuncSource</key>
-    <integer>770</integer>
+    <integer>2</integer>
     <key>duration</key>
     <integer>-1</integer>
     <key>emitterType</key>
@@ -104,7 +104,7 @@
     <integer>0</integer>
     <key>emissionRate</key>
     <integer>1000</integer>
-    <key>textureUuid</key>
-    <string>e3620e24-2776-4358-879d-55b445e9fed2</string>
+    <key>spriteFrameUuid</key>
+    <string>e3620e24-2776-4358-879d-55b445e9fed2@f9941</string>
   </dict>
 </plist>

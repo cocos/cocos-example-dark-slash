@@ -1,34 +1,40 @@
 {
-  "ver": "2.3.3",
+  "ver": "1.0.21",
+  "importer": "image",
+  "imported": true,
   "uuid": "b939ff84-5d15-42f7-b533-523a4a1135bf",
-  "type": "sprite",
-  "wrapMode": "clamp",
-  "filterMode": "point",
-  "premultiplyAlpha": false,
-  "genMipmaps": false,
-  "packable": true,
-  "platformSettings": {},
+  "files": [
+    ".png",
+    ".json"
+  ],
   "subMetas": {
-    "revive": {
-      "ver": "1.0.4",
-      "uuid": "c583441c-ed23-4ce3-8a56-ce7cde322233",
-      "rawTextureUuid": "b939ff84-5d15-42f7-b533-523a4a1135bf",
-      "trimType": "auto",
-      "trimThreshold": 1,
-      "rotated": false,
-      "offsetX": 0,
-      "offsetY": 1.5,
-      "trimX": 2,
-      "trimY": 2,
-      "width": 190,
-      "height": 1669,
-      "rawWidth": 194,
-      "rawHeight": 1676,
-      "borderTop": 0,
-      "borderBottom": 0,
-      "borderLeft": 0,
-      "borderRight": 0,
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "b939ff84-5d15-42f7-b533-523a4a1135bf@6c48a",
+      "displayName": "revive",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "minfilter": "nearest",
+        "magfilter": "nearest",
+        "wrapModeT": "clamp-to-edge",
+        "wrapModeS": "clamp-to-edge",
+        "mipfilter": "none",
+        "imageUuidOrDatabaseUri": "b939ff84-5d15-42f7-b533-523a4a1135bf",
+        "anisotropy": 1,
+        "isUuid": true
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
       "subMetas": {}
     }
+  },
+  "userData": {
+    "type": "texture",
+    "hasAlpha": true,
+    "redirect": "b939ff84-5d15-42f7-b533-523a4a1135bf@6c48a"
   }
 }

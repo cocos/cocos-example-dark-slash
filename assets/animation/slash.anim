@@ -1,39 +1,70 @@
-{
-  "__type__": "cc.AnimationClip",
-  "_name": "slash",
-  "_objFlags": 0,
-  "_rawFiles": null,
-  "_duration": 0.3333333333333333,
-  "sample": 60,
-  "speed": 1,
-  "wrapMode": 1,
-  "curveData": {
-    "props": {
-      "scaleY": [
-        {
-          "frame": 0,
-          "value": 0
-        },
-        {
-          "frame": 0.08333333333333333,
-          "value": 1
-        }
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "slash",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 60,
+    "speed": 1,
+    "wrapMode": 1,
+    "events": [],
+    "_duration": 0.3333333333333333,
+    "_keys": [
+      [
+        0,
+        0.08333333333333333
       ],
-      "opacity": [
-        {
-          "frame": 0,
-          "value": 255
-        },
-        {
-          "frame": 0.25,
-          "value": 255
-        },
-        {
-          "frame": 0.3333333333333333,
-          "value": 0
-        }
+      [
+        0,
+        0.25,
+        0.3333333333333333
       ]
-    }
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          "y"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            0,
+            1
+          ],
+          "easingMethods": {}
+        },
+        "commonTarget": 0
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 1,
+          "values": [
+            255,
+            255,
+            0
+          ],
+          "easingMethods": {}
+        }
+      }
+    ],
+    "_commonTargets": [
+      {
+        "modifiers": [
+          "scale"
+        ]
+      }
+    ],
+    "_hash": 0
   },
-  "events": []
-}
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  }
+]

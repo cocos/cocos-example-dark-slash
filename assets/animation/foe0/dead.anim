@@ -1,31 +1,48 @@
-{
-  "__type__": "cc.AnimationClip",
-  "_name": "dead",
-  "_objFlags": 0,
-  "_rawFiles": null,
-  "_duration": 0.3,
-  "sample": 10,
-  "speed": 1,
-  "wrapMode": 1,
-  "curveData": {
-    "comps": {
-      "cc.Sprite": {
-        "spriteFrame": [
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "dead",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 10,
+    "speed": 1,
+    "wrapMode": 1,
+    "events": [],
+    "_duration": 0.3,
+    "_keys": [
+      [
+        0,
+        0.2
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
           {
-            "frame": 0,
-            "value": {
-              "__uuid__": "2c7dc243-59a0-4c5c-9d1b-ecee59c9fc4a"
-            }
+            "__id__": 1
           },
-          {
-            "frame": 0.2,
-            "value": {
-              "__uuid__": "2c7dc243-59a0-4c5c-9d1b-ecee59c9fc4a"
+          "spriteFrame"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            {
+              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@6877d"
+            },
+            {
+              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@6877d"
             }
-          }
-        ]
+          ],
+          "easingMethods": {}
+        }
       }
-    }
+    ],
+    "_commonTargets": [],
+    "_hash": 0
   },
-  "events": []
-}
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  }
+]

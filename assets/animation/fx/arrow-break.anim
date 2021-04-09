@@ -1,135 +1,189 @@
-{
-  "__type__": "cc.AnimationClip",
-  "_name": "arrow-break",
-  "_objFlags": 0,
-  "_rawFiles": null,
-  "_duration": 0.5025000000000001,
-  "sample": 40,
-  "speed": 1,
-  "wrapMode": 1,
-  "curveData": {
-    "paths": {
-      "pieceL": {
-        "props": {
-          "position": [
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "arrow-break",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 40,
+    "speed": 1,
+    "wrapMode": 1,
+    "events": [
+      {
+        "frame": 0.5,
+        "func": "finish",
+        "params": []
+      }
+    ],
+    "_duration": 0.5025000000000001,
+    "_keys": [
+      [
+        0,
+        0.125,
+        0.25,
+        0.5
+      ],
+      [
+        0,
+        0.25,
+        0.5
+      ],
+      [
+        0,
+        0.25,
+        0.5
+      ],
+      [
+        0,
+        0.25,
+        0.5
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "position"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
             {
-              "frame": 0,
-              "value": [
-                -6,
-                0
-              ],
-              "motionPath": []
+              "__type__": "cc.Vec3",
+              "x": -6,
+              "y": 0,
+              "z": 0
             },
             {
-              "frame": 0.125,
-              "value": [
-                -6,
-                0
-              ],
-              "motionPath": []
+              "__type__": "cc.Vec3",
+              "x": -6,
+              "y": 0,
+              "z": 0
             },
             {
-              "frame": 0.25,
-              "value": [
-                -5.9,
-                10.2
-              ],
-              "motionPath": [
-                [
-                  -15,
-                  22.5,
-                  -5.3,
-                  21.4,
-                  -23.4,
-                  23.6
-                ]
-              ]
+              "__type__": "cc.Vec3",
+              "x": -5.9,
+              "y": 10.2,
+              "z": 0
             },
             {
-              "frame": 0.5,
-              "value": [
-                -24.9,
-                15.3
-              ],
-              "motionPath": []
+              "__type__": "cc.Vec3",
+              "x": -24.9,
+              "y": 15.3,
+              "z": 0
             }
           ],
-          "angle": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.25,
-              "value": 180
-            },
-            {
-              "frame": 0.5,
-              "value": 355
-            }
-          ]
+          "easingMethods": {}
         }
       },
-      "pieceR": {
-        "props": {
-          "position": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "eulerAngles"
+        ],
+        "data": {
+          "keys": 1,
+          "values": [
             {
-              "frame": 0,
-              "value": [
-                5.6,
-                0
-              ],
-              "motionPath": []
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 0
             },
             {
-              "frame": 0.25,
-              "value": [
-                5.6,
-                11.4
-              ],
-              "motionPath": [
-                [
-                  15.6,
-                  20.7,
-                  6.5,
-                  20.9,
-                  23.9,
-                  20.9
-                ]
-              ]
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 180
             },
             {
-              "frame": 0.5,
-              "value": [
-                26.7,
-                11.4
-              ],
-              "motionPath": []
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 355
             }
           ],
-          "angle": [
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 2
+          },
+          "position"
+        ],
+        "data": {
+          "keys": 2,
+          "values": [
             {
-              "frame": 0,
-              "value": 0
+              "__type__": "cc.Vec3",
+              "x": 5.6,
+              "y": 0,
+              "z": 0
             },
             {
-              "frame": 0.25,
-              "value": -180
+              "__type__": "cc.Vec3",
+              "x": 5.6,
+              "y": 11.4,
+              "z": 0
             },
             {
-              "frame": 0.5,
-              "value": -360
+              "__type__": "cc.Vec3",
+              "x": 26.7,
+              "y": 11.4,
+              "z": 0
             }
-          ]
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 2
+          },
+          "eulerAngles"
+        ],
+        "data": {
+          "keys": 3,
+          "values": [
+            {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": -180
+            },
+            {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": -360
+            }
+          ],
+          "easingMethods": {}
         }
       }
-    }
+    ],
+    "_commonTargets": [],
+    "_hash": 0
   },
-  "events": [
-    {
-      "frame": 0.5,
-      "func": "finish",
-      "params": []
-    }
-  ]
-}
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "pieceL"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "pieceR"
+  }
+]

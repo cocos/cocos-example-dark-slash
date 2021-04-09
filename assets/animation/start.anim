@@ -1,239 +1,375 @@
-{
-  "__type__": "cc.AnimationClip",
-  "_name": "start",
-  "_objFlags": 0,
-  "_rawFiles": null,
-  "_duration": 0.21666666666666667,
-  "sample": 60,
-  "speed": 1,
-  "wrapMode": 0,
-  "curveData": {
-    "paths": {
-      "main": {
-        "props": {
-          "position": [
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "start",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 60,
+    "speed": 1,
+    "wrapMode": 0,
+    "events": [
+      {
+        "frame": 0.21666666666666667,
+        "func": "finish",
+        "params": []
+      }
+    ],
+    "_duration": 0.21666666666666667,
+    "_keys": [
+      [
+        0,
+        0.05
+      ],
+      [
+        0,
+        0.06666666666666667,
+        0.08333333333333333,
+        0.1,
+        0.11666666666666667,
+        0.13333333333333333,
+        0.15
+      ],
+      [
+        0,
+        0.06666666666666667,
+        0.08333333333333333
+      ],
+      [
+        0,
+        0.03333333333333333,
+        0.05,
+        0.06666666666666667,
+        0.21666666666666667
+      ],
+      [
+        0,
+        0.06666666666666667,
+        0.21666666666666667
+      ],
+      [
+        0,
+        0.06666666666666667,
+        0.21666666666666667
+      ],
+      [
+        0,
+        0.05,
+        0.06666666666666667,
+        0.18333333333333332
+      ],
+      [
+        0.06666666666666667,
+        0.1,
+        0.18333333333333332
+      ],
+      [
+        0.06666666666666667,
+        0.1,
+        0.18333333333333332
+      ],
+      [
+        0.05,
+        0.06666666666666667
+      ],
+      [
+        0.05,
+        0.06666666666666667
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "position"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
             {
-              "frame": 0,
-              "value": [
-                0,
-                430
-              ]
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 430,
+              "z": 0
             },
             {
-              "frame": 0.05,
-              "value": [
-                0,
-                0
-              ]
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 0
             }
-          ]
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          {
+            "__id__": 2
+          },
+          "spriteFrame"
+        ],
+        "data": {
+          "keys": 1,
+          "values": [
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@79e05"
+            },
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@ba277"
+            },
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@2eb93"
+            },
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@04aac"
+            },
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@63179"
+            },
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@81128"
+            },
+            {
+              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@5864f"
+            }
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 3
+          },
+          {
+            "__id__": 4
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 2,
+          "values": [
+            128,
+            128,
+            0
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 5
+          },
+          {
+            "__id__": 6
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 3,
+          "values": [
+            0,
+            0,
+            40,
+            77,
+            0
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          "x"
+        ],
+        "data": {
+          "keys": 4,
+          "values": [
+            1,
+            1,
+            8
+          ],
+          "easingMethods": {}
         },
-        "comps": {
-          "cc.Sprite": {
-            "spriteFrame": [
-              {
-                "frame": 0,
-                "value": {
-                  "__uuid__": "ce6caf51-7ad0-4ffe-aa5f-caf81438d868"
-                }
-              },
-              {
-                "frame": 0.06666666666666667,
-                "value": {
-                  "__uuid__": "07764261-8178-44f3-bd3f-19d33f9ea6cd"
-                }
-              },
-              {
-                "frame": 0.08333333333333333,
-                "value": {
-                  "__uuid__": "a77b67fb-c300-4568-bc45-b08e8a5a778c"
-                }
-              },
-              {
-                "frame": 0.1,
-                "value": {
-                  "__uuid__": "f0e9630c-8226-4f8b-896f-9aabaaca76fe"
-                }
-              },
-              {
-                "frame": 0.11666666666666667,
-                "value": {
-                  "__uuid__": "80fee9c9-d2d4-4fbe-b2f9-de620f02b263"
-                }
-              },
-              {
-                "frame": 0.13333333333333333,
-                "value": {
-                  "__uuid__": "02d5af9d-fb7e-4fb6-9bbd-b31db40728e7"
-                }
-              },
-              {
-                "frame": 0.15,
-                "value": {
-                  "__uuid__": "81d35b4b-4154-4282-b895-37e93f329663"
-                }
-              }
-            ]
-          }
-        }
+        "commonTarget": 0
       },
-      "main/drop": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 128
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": 128
-            },
-            {
-              "frame": 0.08333333333333333,
-              "value": 0
-            }
-          ]
-        }
-      },
-      "ring": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.03333333333333333,
-              "value": 0
-            },
-            {
-              "frame": 0.05,
-              "value": 40
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": 77
-            },
-            {
-              "frame": 0.21666666666666667,
-              "value": 0
-            }
+      {
+        "modifiers": [
+          "y"
+        ],
+        "data": {
+          "keys": 5,
+          "values": [
+            1,
+            1,
+            3
           ],
-          "scaleX": [
-            {
-              "frame": 0,
-              "value": 1
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": 1
-            },
-            {
-              "frame": 0.21666666666666667,
-              "value": 8
-            }
+          "easingMethods": {}
+        },
+        "commonTarget": 0
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 7
+          },
+          {
+            "__id__": 8
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 6,
+          "values": [
+            0,
+            0,
+            255,
+            0
           ],
-          "scaleY": [
-            {
-              "frame": 0,
-              "value": 1
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": 1
-            },
-            {
-              "frame": 0.21666666666666667,
-              "value": 3
-            }
-          ]
+          "easingMethods": {}
         }
       },
-      "impact": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.05,
-              "value": 0
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": 255
-            },
-            {
-              "frame": 0.18333333333333332,
-              "value": 0
-            }
+      {
+        "modifiers": [
+          "x"
+        ],
+        "data": {
+          "keys": 7,
+          "values": [
+            0.857,
+            0.918,
+            1.5
           ],
-          "scaleX": [
-            {
-              "frame": 0.06666666666666667,
-              "value": 0.857
-            },
-            {
-              "frame": 0.1,
-              "value": 0.918
-            },
-            {
-              "frame": 0.18333333333333332,
-              "value": 1.5
-            }
+          "easingMethods": {}
+        },
+        "commonTarget": 1
+      },
+      {
+        "modifiers": [
+          "y"
+        ],
+        "data": {
+          "keys": 8,
+          "values": [
+            0.485,
+            2.258,
+            0.5
           ],
-          "scaleY": [
-            {
-              "frame": 0.06666666666666667,
-              "value": 0.485
-            },
-            {
-              "frame": 0.1,
-              "value": 2.258
-            },
-            {
-              "frame": 0.18333333333333332,
-              "value": 0.5
-            }
-          ]
+          "easingMethods": {}
+        },
+        "commonTarget": 1
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 9
+          },
+          {
+            "__id__": 10
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 9,
+          "values": [
+            255,
+            0
+          ],
+          "easingMethods": {}
         }
       },
-      "main/line1": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.05,
-              "value": 255
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": 0
-            }
-          ]
-        }
-      },
-      "main/line2": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.05,
-              "value": 255
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": 0
-            }
-          ]
+      {
+        "modifiers": [
+          {
+            "__id__": 11
+          },
+          {
+            "__id__": 12
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 10,
+          "values": [
+            255,
+            0
+          ],
+          "easingMethods": {}
         }
       }
-    }
+    ],
+    "_commonTargets": [
+      {
+        "modifiers": [
+          {
+            "__id__": 5
+          },
+          "scale"
+        ]
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 7
+          },
+          "scale"
+        ]
+      }
+    ],
+    "_hash": 0
   },
-  "events": [
-    {
-      "frame": 0.21666666666666667,
-      "func": "finish",
-      "params": []
-    }
-  ]
-}
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "main"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "main/drop"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "ring"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "impact"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "main/line1"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "main/line2"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  }
+]
