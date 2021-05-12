@@ -63,12 +63,14 @@ export class Player extends Component {
         this.spArrow.active = false;
         this.atkTargetPos = v3(0, 0, 0);
         this.isAtkGoingOut = false;
-
-        var utf = this.node.parent!.getComponent(UITransform)!;
-        this.validAtkRect = rect(25, 25, (utf.width - 50), (utf.height - 50));
         this.oneSlashKills = 0;
 
         this.ownCamera = find("Canvas/Main Camera")!.getComponent(CameraComponent)!;
+    }
+
+    start() {
+        var utf = this.node.parent!.getComponent(UITransform)!;
+        this.validAtkRect = rect(25, 25, (utf.width - 50), (utf.height - 50));
     }
 
     registerInput() {
