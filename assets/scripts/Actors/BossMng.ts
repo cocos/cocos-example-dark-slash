@@ -2,7 +2,7 @@ import { _decorator, Component } from 'cc';
 import { Game } from '../Game';
 import { BossType } from '../Types';
 import { Spawn } from './Spawn';
-import { WaveMng } from './WaveMng';
+
 const { ccclass, property } = _decorator;
 
 @ccclass('BossMng')
@@ -12,11 +12,11 @@ export class BossMng extends Component {
 
     private game: Game = null!;
     private bossIdx: number = 0;
-    private waveMng: WaveMng = null!;
+    private waveMng: any = null!;
 
     init(game: Game) {
         this.game = game;
-        this.waveMng = game.waveMng.getComponent(WaveMng)!;
+        this.waveMng = game.waveMng.getComponent("WaveMng")!;
         this.bossIdx = 0;
     }
 
