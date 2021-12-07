@@ -105,14 +105,15 @@ export class Player extends Component {
         });
 
         systemEvent.on(SystemEventType.TOUCH_END, (touch: Touch, event: EventTouch) => {
-            if (this.inputEnabled === false) {
-                return;
-            }
             this.spArrow.active = false;
             this.moveToPos = null!;
             this.node.emit('update-dir', {
                 dir: null
             });
+
+            if (this.inputEnabled === false) {
+                return;
+            }            
 
             let isHold = this.isTouchHold();
             if (!this.hasMoved && !isHold) {
