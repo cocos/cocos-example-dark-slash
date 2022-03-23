@@ -14,8 +14,8 @@
     "lifeVar": 0.25,
     "emissionRate": 70,
     "duration": 1.8,
-    "srcBlendFactor": 1,
-    "dstBlendFactor": 2,
+    "srcBlendFactor": 2,
+    "dstBlendFactor": 4,
     "startColor": {
       "_val": 4294967295,
       "r": 255,
@@ -81,6 +81,6 @@
     "endRadiusVar": 0,
     "rotatePerS": 0,
     "rotatePerSVar": 0,
-    "spriteFrameUuid": ""
+    "spriteFrameUuid": "45dc4029-f219-48d4-b3aa-ad97fab653e6@f9941"
   }
 }
