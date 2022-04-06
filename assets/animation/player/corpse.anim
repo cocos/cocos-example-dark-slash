@@ -7,46 +7,67 @@
     "sample": 30,
     "speed": 1,
     "wrapMode": 1,
-    "events": [],
     "_duration": 0.13333333333333333,
-    "_keys": [
-      [
-        0,
-        0.06666666666666667,
-        0.13333333333333333
-      ]
-    ],
-    "_stepness": 0,
-    "_curves": [
+    "_hash": 0,
+    "_tracks": [
       {
-        "modifiers": [
-          {
-            "__id__": 1
-          },
-          "spriteFrame"
-        ],
-        "data": {
-          "keys": 0,
-          "values": [
-            {
-              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@30bbd"
-            },
-            {
-              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@04cf3"
-            },
-            {
-              "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@c2d13"
-            }
-          ],
-          "easingMethods": {}
-        }
+        "__id__": 1
       }
     ],
-    "_commonTargets": [],
-    "_hash": 0
+    "_events": [],
+    "_exoticAnimation": null
+  },
+  {
+    "__type__": "cc.animation.ObjectTrack",
+    "_binding": {
+      "__type__": "cc.animation.TrackBinding",
+      "path": {
+        "__id__": 2
+      }
+    },
+    "_channel": {
+      "__id__": 4
+    }
+  },
+  {
+    "__type__": "cc.animation.TrackPath",
+    "_paths": [
+      {
+        "__id__": 3
+      },
+      "spriteFrame"
+    ]
   },
   {
     "__type__": "cc.animation.ComponentPath",
     "component": "cc.Sprite"
+  },
+  {
+    "__type__": "cc.animation.Channel",
+    "_curve": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.ObjectCurve",
+    "_times": [
+      0,
+      0.06666666666666667,
+      0.13333333333333333
+    ],
+    "_values": [
+      {
+        "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@30bbd",
+        "__expectedType__": "cc.Asset"
+      },
+      {
+        "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@04cf3",
+        "__expectedType__": "cc.Asset"
+      },
+      {
+        "__uuid__": "37a3e48d-1032-438e-a2e4-939eaf02797c@c2d13",
+        "__expectedType__": "cc.Asset"
+      }
+    ]
   }
 ]

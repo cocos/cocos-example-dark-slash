@@ -7,72 +7,98 @@
     "sample": 10,
     "speed": 1,
     "wrapMode": 1,
-    "events": [
+    "_duration": 0.8,
+    "_hash": 0,
+    "_tracks": [
+      {
+        "__id__": 1
+      }
+    ],
+    "_events": [
       {
         "frame": 0.8,
         "func": "finish",
         "params": []
       }
     ],
-    "_duration": 0.8,
-    "_keys": [
-      [
-        0,
-        0.1,
-        0.2,
-        0.3,
-        0.4,
-        0.5,
-        0.6,
-        0.8
-      ]
-    ],
-    "_stepness": 0,
-    "_curves": [
-      {
-        "modifiers": [
-          {
-            "__id__": 1
-          },
-          "spriteFrame"
-        ],
-        "data": {
-          "keys": 0,
-          "values": [
-            {
-              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@7b56e"
-            },
-            {
-              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@e6e6b"
-            },
-            {
-              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@34908"
-            },
-            {
-              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@ac577"
-            },
-            {
-              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@f127e"
-            },
-            {
-              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@53839"
-            },
-            {
-              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@3772d"
-            },
-            {
-              "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@fa926"
-            }
-          ],
-          "easingMethods": {}
-        }
+    "_exoticAnimation": null
+  },
+  {
+    "__type__": "cc.animation.ObjectTrack",
+    "_binding": {
+      "__type__": "cc.animation.TrackBinding",
+      "path": {
+        "__id__": 2
       }
-    ],
-    "_commonTargets": [],
-    "_hash": 0
+    },
+    "_channel": {
+      "__id__": 4
+    }
+  },
+  {
+    "__type__": "cc.animation.TrackPath",
+    "_paths": [
+      {
+        "__id__": 3
+      },
+      "spriteFrame"
+    ]
   },
   {
     "__type__": "cc.animation.ComponentPath",
     "component": "cc.Sprite"
+  },
+  {
+    "__type__": "cc.animation.Channel",
+    "_curve": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.ObjectCurve",
+    "_times": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.8
+    ],
+    "_values": [
+      {
+        "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@7b56e",
+        "__expectedType__": "cc.Asset"
+      },
+      {
+        "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@e6e6b",
+        "__expectedType__": "cc.Asset"
+      },
+      {
+        "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@34908",
+        "__expectedType__": "cc.Asset"
+      },
+      {
+        "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@ac577",
+        "__expectedType__": "cc.Asset"
+      },
+      {
+        "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@f127e",
+        "__expectedType__": "cc.Asset"
+      },
+      {
+        "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@53839",
+        "__expectedType__": "cc.Asset"
+      },
+      {
+        "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@3772d",
+        "__expectedType__": "cc.Asset"
+      },
+      {
+        "__uuid__": "555561a7-a7e9-4786-a1f5-4e4fd6d2a18c@fa926",
+        "__expectedType__": "cc.Asset"
+      }
+    ]
   }
 ]
