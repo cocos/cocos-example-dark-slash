@@ -1,4 +1,4 @@
-import { _decorator, Component, ParticleSystem2D, Node, SpriteFrame, rect, v2, Vec3, v3, misc, Sprite, Animation, Rect, UITransform, systemEvent, SystemEventType, Touch, EventTouch, tween, TweenSystem, Vec2, find, CameraComponent } from 'cc';
+import { _decorator, Component, ParticleSystem2D, Node, SpriteFrame, rect, v2, Vec3, v3, misc, Sprite, Animation, Rect, UITransform, systemEvent, SystemEventType, Touch, EventTouch, tween, TweenSystem, Vec2, find, CameraComponent, Input, input } from 'cc';
 import { Game } from '../Game';
 import { InGameUI } from '../UI/InGameUI';
 import { Move } from './Move';
@@ -73,71 +73,85 @@ export class Player extends Component {
         this.validAtkRect = rect(25, 25, (utf.width - 50), (utf.height - 50));
     }
 
-    registerInput() {
-        systemEvent.on(SystemEventType.TOUCH_START, (touch: Touch, event: EventTouch) => {
-            if (this.inputEnabled === false) {
-                return true;
-            }
+    onDestroy() {        
+        this.unRegisterInput();
+    }
 
-            var touchLoc = touch.getLocation();
-            this.touchBeganLoc = this.ownCamera.screenToWorld(new Vec3(touchLoc.x, touchLoc.y, 0));
-            this.moveToPos = this.ownCamera.convertToUINode(this.touchBeganLoc, this.node.parent!);
+    onTouchStart(touch: EventTouch) {
+        if (this.inputEnabled === false) {
+            return true;
+        }
 
-            this.touchStartTime = Date.now();
-            return true; // don't capture event            
+        var touchLoc = touch.getLocation();
+        this.touchBeganLoc = this.ownCamera.screenToWorld(new Vec3(touchLoc.x, touchLoc.y, 0));
+        this.moveToPos = this.ownCamera.convertToUINode(this.touchBeganLoc, this.node.parent!);
+
+        this.touchStartTime = Date.now();
+        return true; // don't capture event      
+    }
+
+    onTouchMove(touch: EventTouch) {
+        if (this.inputEnabled === false) {
+            return;
+        }
+        var touchLoc = touch.getLocation();
+        var touchLocV3 = this.ownCamera.screenToWorld(new Vec3(touchLoc.x, touchLoc.y, 0));
+        this.moveToPos = this.ownCamera.convertToUINode(touchLocV3, this.node.parent!);
+
+        this.spArrow.active = true;
+
+        let moveDir = new Vec3();
+        let dist = Vec3.subtract(moveDir, this.touchBeganLoc, touchLocV3).length()
+        if (dist > this.touchMoveThreshold) {
+            this.hasMoved = true;
+        }
+    }
+
+    onTouchEnd(touch: EventTouch) {
+        this.spArrow.active = false;
+        this.moveToPos = null!;
+        this.node.emit('update-dir', {
+            dir: null
         });
 
-        systemEvent.on(SystemEventType.TOUCH_MOVE, (touch: Touch, event: EventTouch) => {
-            if (this.inputEnabled === false) {
-                return;
-            }
+        if (this.inputEnabled === false) {
+            return;
+        }
+
+        let isHold = this.isTouchHold();
+        if (!this.hasMoved && !isHold) {
             var touchLoc = touch.getLocation();
             var touchLocV3 = this.ownCamera.screenToWorld(new Vec3(touchLoc.x, touchLoc.y, 0));
-            this.moveToPos = this.ownCamera.convertToUINode(touchLocV3, this.node.parent!);
+            let atkPos = this.ownCamera.convertToUINode(touchLocV3, this.node.parent!);
 
-            this.spArrow.active = true;
+            let atkDir = atkPos.subtract(this.node.position);
+            Vec3.add(this.atkTargetPos, this.node.position, atkDir.normalize().multiplyScalar(this.atkDist));
 
-            let moveDir = new Vec3();
-            let dist = Vec3.subtract(moveDir, this.touchBeganLoc, touchLocV3).length()
-            if (dist > this.touchMoveThreshold) {
-                this.hasMoved = true;
+            var utf = this.node.parent!.getComponent(UITransform)!;
+            let atkPosWorld = utf.convertToWorldSpaceAR(this.atkTargetPos);
+
+            if (!this.validAtkRect.contains(<any>atkPosWorld)) {
+                this.isAtkGoingOut = true;
+            } else {
+                this.isAtkGoingOut = false;
             }
-        });
+            this.node.emit('freeze');
+            this.oneSlashKills = 0;
+            this.attackOnTarget(atkDir, this.atkTargetPos);
+        }
+        this.hasMoved = false;
+    }
 
-        systemEvent.on(SystemEventType.TOUCH_END, (touch: Touch, event: EventTouch) => {
-            this.spArrow.active = false;
-            this.moveToPos = null!;
-            this.node.emit('update-dir', {
-                dir: null
-            });
+    unRegisterInput() {
+        input.off(Input.EventType.TOUCH_START, this.onTouchStart, this);
+        input.off(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        input.off(Input.EventType.TOUCH_END, this.onTouchEnd, this);
+    }
 
-            if (this.inputEnabled === false) {
-                return;
-            }            
-
-            let isHold = this.isTouchHold();
-            if (!this.hasMoved && !isHold) {
-                var touchLoc = touch.getLocation();
-                var touchLocV3 = this.ownCamera.screenToWorld(new Vec3(touchLoc.x, touchLoc.y, 0));
-                let atkPos = this.ownCamera.convertToUINode(touchLocV3, this.node.parent!);
-
-                let atkDir = atkPos.subtract(this.node.position);
-                Vec3.add(this.atkTargetPos, this.node.position, atkDir.normalize().multiplyScalar(this.atkDist));
-
-                var utf = this.node.parent!.getComponent(UITransform)!;
-                let atkPosWorld = utf.convertToWorldSpaceAR(this.atkTargetPos);
-
-                if (!this.validAtkRect.contains(<any>atkPosWorld)) {
-                    this.isAtkGoingOut = true;
-                } else {
-                    this.isAtkGoingOut = false;
-                }
-                this.node.emit('freeze');
-                this.oneSlashKills = 0;
-                this.attackOnTarget(atkDir, this.atkTargetPos);
-            }
-            this.hasMoved = false;
-        });
+    registerInput() {
+        input.on(Input.EventType.TOUCH_START, this.onTouchStart, this);
+        input.on(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
     }
 
     ready() {
