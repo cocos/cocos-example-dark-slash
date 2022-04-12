@@ -70,7 +70,7 @@ export class Player extends Component {
 
     start() {
         var utf = this.node.parent!.getComponent(UITransform)!;
-        this.validAtkRect = rect(25, 25, (utf.width - 50), (utf.height - 50));
+        this.validAtkRect = rect(50, 50, (utf.width - 50), (utf.height - 50));
     }
 
     onDestroy() {        
