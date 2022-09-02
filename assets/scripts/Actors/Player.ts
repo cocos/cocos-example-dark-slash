@@ -1,4 +1,4 @@
-import { _decorator, Component, ParticleSystem2D, Node, SpriteFrame, rect, v2, Vec3, v3, misc, Sprite, Animation, Rect, UITransform, systemEvent, SystemEventType, Touch, EventTouch, tween, TweenSystem, Vec2, find, CameraComponent, Input, input } from 'cc';
+import { _decorator, Component, ParticleSystem2D, Node, SpriteFrame, rect, v2, Vec3, v3, misc, Sprite, Animation, Rect, UITransform, Touch, EventTouch, tween, TweenSystem, Vec2, find, CameraComponent, Input, input } from 'cc';
 import { Game } from '../Game';
 import { InGameUI } from '../UI/InGameUI';
 import { Move } from './Move';
